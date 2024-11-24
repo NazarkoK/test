@@ -20,15 +20,15 @@ jobs:
         with:
           vs-version: '16.0'
       - name: Restore NuGet packages
-        run: nuget restore Client/Client.sln
+        run: nuget restore src/client/client.sln
       - name: Build solution
         run: |
-          msbuild Client/Client.sln /p:Configuration=Release /p:Platform="x64" /p:OutputPath="Client/build"
+          msbuild src/client/client.sln /p:Configuration=Release /p:Platform="x64" /p:OutputPath="src/client/build"
       - name: Upload Windows binaries
         uses: actions/upload-artifact@v4
         with:
-          name: Client
-          path: Client/x64/Release/*.exe
+          name: src/client
+          path: src/client/x64/Release/*.exe
   
   arduino:
     runs-on: windows-latest
