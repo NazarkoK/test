@@ -1,0 +1,68 @@
+# Visual Studio
+.vs/
+
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+[xX]64/
+[x86]/
+[Oo]bj/
+[Bb]in/
+[Ll]og/
+*.ilk
+*.pdb
+*.idb
+*.tlog
+*.lastbuildstate
+
+# User-specific files
+*.aps
+*.ncb
+*.sdf
+*.opensdf
+*.suo
+*.sln.docstates
+*.vcxproj.user
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Windows Installer files
+*.msi
+*.msm
+*.msp
+
+# Executables
+*.exe
+*.dll
+*.lib
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.cache
+*.db
+
+# Additional files
+*.ilk
+*.pdb
+*.obj
+*.idb
+*.iobj
+*.ipdb
+*.tlog
+
+# Backup files
+*~
+*.bak
+*.swp
+
+# Packages directory
+packages/

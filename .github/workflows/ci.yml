@@ -1,0 +1,62 @@
+name: TicTacToeCI
+
+on:
+  push:
+    branches:
+      - develop
+      - feature/develop/task3
+  pull_request:
+    branches:
+      - develop
+      
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4  
+      - name: Set up Visual Studio
+        uses: microsoft/setup-msbuild@v2  
+        with:
+          vs-version: '16.0'
+      - name: Restore NuGet packages
+        run: nuget restore Client/Client.sln
+      - name: Build solution
+        run: |
+          msbuild Client/Client.sln /p:Configuration=Release /p:Platform="x64" /p:OutputPath="Client/build"
+      - name: Upload Windows binaries
+        uses: actions/upload-artifact@v4
+        with:
+          name: Client
+          path: Client/x64/Release/*.exe
+  
+  arduino:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4 
+
+      - name: Set up Visual Studio
+        uses: microsoft/setup-msbuild@v2
+        with:
+          vs-version: '16.0'
+
+      - name: Restore NuGet packages
+        run: nuget restore tests/test_server/test_server.sln
+
+      - name: Board firmware
+        shell: pwsh
+        run: |
+            .\ci\server-script.ps1
+  
+      - name: Upload Windows binaries
+        uses: actions/upload-artifact@v4
+        with:
+          name: Test_Server
+          path: bin/test_server/test_server.exe
+
+      - name: Upload Arduino binaries
+        uses: actions/upload-artifact@v4 
+        with:
+          name: server-hex
+          path: ./ci/build/server.ino.hex
