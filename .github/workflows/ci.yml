@@ -27,7 +27,7 @@ jobs:
       - name: Upload Windows binaries
         uses: actions/upload-artifact@v4
         with:
-          name: src/client
+          name: client
           path: src/client/x64/Release/*.exe
   
   arduino:
