@@ -70,3 +70,4 @@ packages/
 # CI directories
 ci/build/
 ci/test_result/
+ci/documentation/
