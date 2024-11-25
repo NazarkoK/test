@@ -1,7 +1,7 @@
 $repoDir = (Get-Item -Path $PSScriptRoot).Parent.FullName
 $binDir = "$repoDir\bin"
 $srcDir = "$repoDir\src"
-$testsDir = "$repoDir\tests"
+$testsDir = "$repoDir\tests\test_server\test_server"
 $documentationDir = "$repoDir\ci\documentation"
 $latexDir = "$documentationDir\latex"
 $xmlDir = "$documentationDir\xml"
