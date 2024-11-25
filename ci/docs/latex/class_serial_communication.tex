@@ -1,0 +1,115 @@
+\doxysection{Serial\+Communication Class Reference}
+\hypertarget{class_serial_communication}{}\label{class_serial_communication}\index{SerialCommunication@{SerialCommunication}}
+
+
+Handles serial communication with a device.  
+
+
+
+
+{\ttfamily \#include $<$Serial\+Port.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_serial_communication_ae4a085f0c6162f1f6303a7a2197db2eb}{connect}} (const std\+::string \&\mbox{\hyperlink{_serial_port_8h_a0baa2a14fddc9486557407a0f5813b8f}{port}}, int \mbox{\hyperlink{_serial_port_8h_a352a05efbed742a2c47e738725ee5613}{baud\+Rate}})
+\begin{DoxyCompactList}\small\item\em Connects to a serial port with the specified settings. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_serial_communication_a93063f0f7e6c5d9889624698cd23f1c2}{send\+Message}} (const std\+::string \&message)
+\begin{DoxyCompactList}\small\item\em Sends a message to the serial port and reads the response. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_serial_communication_a7df8c2b0b7631375cac7cca3b69c1a25}{disconnect}} ()
+\begin{DoxyCompactList}\small\item\em Disconnects from the serial port. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_serial_communication_acad400a3b4799015279810204df2dc8c}{draw\+Board}} (const std\+::string \&board\+State)
+\begin{DoxyCompactList}\small\item\em Draws a tic-\/tac-\/toe board based on the given board state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+HANDLE \mbox{\hyperlink{class_serial_communication_aac189f411832b94c00591694528c93d1}{h\+Serial}} = INVALID\+\_\+\+HANDLE\+\_\+\+VALUE
+\begin{DoxyCompactList}\small\item\em Handle for the serial port. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles serial communication with a device. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_serial_communication_ae4a085f0c6162f1f6303a7a2197db2eb}\index{SerialCommunication@{SerialCommunication}!connect@{connect}}
+\index{connect@{connect}!SerialCommunication@{SerialCommunication}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily \label{class_serial_communication_ae4a085f0c6162f1f6303a7a2197db2eb} 
+bool Serial\+Communication\+::connect (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{port}{, }\item[{int}]{baud\+Rate}{}\end{DoxyParamCaption})}
+
+
+
+Connects to a serial port with the specified settings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & The name of the serial port to connect to. \\
+\hline
+{\em baud\+Rate} & The baud rate for the connection. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the connection is successful, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_serial_communication_a7df8c2b0b7631375cac7cca3b69c1a25}\index{SerialCommunication@{SerialCommunication}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!SerialCommunication@{SerialCommunication}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}}
+{\footnotesize\ttfamily \label{class_serial_communication_a7df8c2b0b7631375cac7cca3b69c1a25} 
+void Serial\+Communication\+::disconnect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Disconnects from the serial port. 
+
+\Hypertarget{class_serial_communication_acad400a3b4799015279810204df2dc8c}\index{SerialCommunication@{SerialCommunication}!drawBoard@{drawBoard}}
+\index{drawBoard@{drawBoard}!SerialCommunication@{SerialCommunication}}
+\doxysubsubsection{\texorpdfstring{drawBoard()}{drawBoard()}}
+{\footnotesize\ttfamily \label{class_serial_communication_acad400a3b4799015279810204df2dc8c} 
+void Serial\+Communication\+::draw\+Board (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{board\+State}{}\end{DoxyParamCaption})}
+
+
+
+Draws a tic-\/tac-\/toe board based on the given board state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board\+State} & The state of the board as a string (e.\+g., "{}\+XO XO XO "{}). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_serial_communication_a93063f0f7e6c5d9889624698cd23f1c2}\index{SerialCommunication@{SerialCommunication}!sendMessage@{sendMessage}}
+\index{sendMessage@{sendMessage}!SerialCommunication@{SerialCommunication}}
+\doxysubsubsection{\texorpdfstring{sendMessage()}{sendMessage()}}
+{\footnotesize\ttfamily \label{class_serial_communication_a93063f0f7e6c5d9889624698cd23f1c2} 
+std\+::string Serial\+Communication\+::send\+Message (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{message}{}\end{DoxyParamCaption})}
+
+
+
+Sends a message to the serial port and reads the response. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message to send. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The response from the serial device. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_serial_communication_aac189f411832b94c00591694528c93d1}\index{SerialCommunication@{SerialCommunication}!hSerial@{hSerial}}
+\index{hSerial@{hSerial}!SerialCommunication@{SerialCommunication}}
+\doxysubsubsection{\texorpdfstring{hSerial}{hSerial}}
+{\footnotesize\ttfamily \label{class_serial_communication_aac189f411832b94c00591694528c93d1} 
+HANDLE Serial\+Communication\+::h\+Serial = INVALID\+\_\+\+HANDLE\+\_\+\+VALUE\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Handle for the serial port. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/csad2425\+KI405\+Kachur\+Nazar11/src/client/client/\mbox{\hyperlink{_serial_port_8h}{Serial\+Port.\+h}}\item 
+D\+:/csad2425\+KI405\+Kachur\+Nazar11/src/client/client/\mbox{\hyperlink{_serial_port_8cpp}{Serial\+Port.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classdetail_1_1output__stream__adapter" kind="class" language="C++" prot="public">
+    <compoundname>detail::output_stream_adapter</compoundname>
+    <basecompoundref refid="structdetail_1_1output__adapter__protocol" prot="public" virt="non-virtual">detail::output_adapter_protocol&lt; CharType &gt;</basecompoundref>
+    <includes refid="json_8hpp" local="no">json.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename CharType</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdetail_1_1output__stream__adapter_1a9ba28bcd682f7807a6dc93fd39bb9b1b" prot="private" static="no" mutable="no">
+        <type>std::basic_ostream&lt; CharType &gt; &amp;</type>
+        <definition>std::basic_ostream&lt;CharType&gt;&amp; detail::output_stream_adapter&lt; CharType &gt;::stream</definition>
+        <argsstring></argsstring>
+        <name>stream</name>
+        <qualifiedname>detail::output_stream_adapter::stream</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="14883" column="24" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="14883" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdetail_1_1output__stream__adapter_1a1fcebb3df911763e1d92caa2a5416620" prot="public" static="no" const="no" explicit="yes" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>detail::output_stream_adapter&lt; CharType &gt;::output_stream_adapter</definition>
+        <argsstring>(std::basic_ostream&lt; CharType &gt; &amp;s) noexcept</argsstring>
+        <name>output_stream_adapter</name>
+        <qualifiedname>detail::output_stream_adapter::output_stream_adapter</qualifiedname>
+        <param>
+          <type>std::basic_ostream&lt; CharType &gt; &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="14867" column="14" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="14867" bodyend="14869"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1output__stream__adapter_1a4267cde53202637ff7d7b877fb9ac859" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void detail::output_stream_adapter&lt; CharType &gt;::write_character</definition>
+        <argsstring>(CharType c) override</argsstring>
+        <name>write_character</name>
+        <qualifiedname>detail::output_stream_adapter::write_character</qualifiedname>
+        <reimplements refid="structdetail_1_1output__adapter__protocol_1a57fbeab6c9e6dac2def4f0a7708b807a">write_character</reimplements>
+        <param>
+          <type>CharType</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="14871" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="14871" bodyend="14874"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1output__stream__adapter_1a19fd5667f311a1dcd86469c25c21d13d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void detail::output_stream_adapter&lt; CharType &gt;::write_characters</definition>
+        <argsstring>(const CharType *s, std::size_t length) override</argsstring>
+        <name>write_characters</name>
+        <qualifiedname>detail::output_stream_adapter::write_characters</qualifiedname>
+        <reimplements refid="structdetail_1_1output__adapter__protocol_1afefb88bb4c134a02e136aaf69d0ecee9">write_characters</reimplements>
+        <param>
+          <type>const CharType *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="14877" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="14877" bodyend="14880"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>output adapter for output streams </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>detail::output_adapter_protocol&lt; CharType &gt;</label>
+        <link refid="structdetail_1_1output__adapter__protocol"/>
+      </node>
+      <node id="1">
+        <label>detail::output_stream_adapter&lt; CharType &gt;</label>
+        <link refid="classdetail_1_1output__stream__adapter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>detail::output_adapter_protocol&lt; CharType &gt;</label>
+        <link refid="structdetail_1_1output__adapter__protocol"/>
+      </node>
+      <node id="1">
+        <label>detail::output_stream_adapter&lt; CharType &gt;</label>
+        <link refid="classdetail_1_1output__stream__adapter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="14864" column="1" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="14865" bodyend="14884"/>
+    <listofallmembers>
+      <member refid="structdetail_1_1output__adapter__protocol_1a4f9a119946157498ea36e1b92ec90a05" prot="public" virt="non-virtual"><scope>detail::output_stream_adapter</scope><name>operator=</name></member>
+      <member refid="structdetail_1_1output__adapter__protocol_1ae2abfac28a47d21eb1ece0a2b7f06ff5" prot="public" virt="non-virtual"><scope>detail::output_stream_adapter</scope><name>operator=</name></member>
+      <member refid="structdetail_1_1output__adapter__protocol_1abc3c05de1a9637889969f59da9ba0a03" prot="public" virt="non-virtual"><scope>detail::output_stream_adapter</scope><name>output_adapter_protocol</name></member>
+      <member refid="structdetail_1_1output__adapter__protocol_1a03466aec8b97f99d19e27f0f05c66655" prot="public" virt="non-virtual"><scope>detail::output_stream_adapter</scope><name>output_adapter_protocol</name></member>
+      <member refid="structdetail_1_1output__adapter__protocol_1a641001ae666e338cb9753901a8a3ef91" prot="public" virt="non-virtual"><scope>detail::output_stream_adapter</scope><name>output_adapter_protocol</name></member>
+      <member refid="classdetail_1_1output__stream__adapter_1a1fcebb3df911763e1d92caa2a5416620" prot="public" virt="non-virtual"><scope>detail::output_stream_adapter</scope><name>output_stream_adapter</name></member>
+      <member refid="classdetail_1_1output__stream__adapter_1a9ba28bcd682f7807a6dc93fd39bb9b1b" prot="private" virt="non-virtual"><scope>detail::output_stream_adapter</scope><name>stream</name></member>
+      <member refid="classdetail_1_1output__stream__adapter_1a4267cde53202637ff7d7b877fb9ac859" prot="public" virt="virtual"><scope>detail::output_stream_adapter</scope><name>write_character</name></member>
+      <member refid="classdetail_1_1output__stream__adapter_1a19fd5667f311a1dcd86469c25c21d13d" prot="public" virt="virtual"><scope>detail::output_stream_adapter</scope><name>write_characters</name></member>
+      <member refid="structdetail_1_1output__adapter__protocol_1a4c588cc9ce24c3a46460f33580dc5f11" prot="public" virt="virtual"><scope>detail::output_stream_adapter</scope><name>~output_adapter_protocol</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

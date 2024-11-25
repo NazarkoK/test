@@ -1,11 +1,22 @@
+/**
+ * @file MainGame.cpp
+ * @brief Main game logic for Tic-Tac-Toe.
+ */
+
 #include <iostream>
 #include "SerialPort.h"
 
+ /**
+  * @brief Entry point for the Tic-Tac-Toe game.
+  *
+  * This program initializes serial communication, sets up the game,
+  * and handles user interaction during the game.
+  * @return Exit status code (0 for success, non-zero for errors).
+  */
 int main()
 {
     const int BOARD_SIZE = 3;
     char boardDisplay[BOARD_SIZE][BOARD_SIZE] = { { '1', '2', '3' }, { '4', '5', '6' }, { '7', '8', '9' } };
-
 
     try
     {

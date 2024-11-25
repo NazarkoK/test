@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structdetail_1_1iterator__traits" kind="struct" language="C++" prot="public">
+    <compoundname>detail::iterator_traits</compoundname>
+    <includes refid="json_8hpp" local="no">json.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>typename</type>
+        <defval>void</defval>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="3273" column="1" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="3274" bodyend="3275"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

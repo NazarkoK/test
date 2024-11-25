@@ -1,3 +1,7 @@
+/**
+ * @file SerialPort.cpp
+ * @brief Implementation of the serial port communication functions.
+ */
 #include "SerialPort.h"
 #include <iostream>
 #include <nlohmann/json.hpp>
@@ -8,6 +12,10 @@ HANDLE hConsole;
 std::string port;
 int baudRate;
 
+ /**
+  * @brief Sets the text color in the console.
+  * @param textColor The color code for the text.
+  */
 void setColor(int textColor) {
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     SetConsoleTextAttribute(hConsole, textColor);

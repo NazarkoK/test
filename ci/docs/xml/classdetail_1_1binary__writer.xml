@@ -1,0 +1,1249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classdetail_1_1binary__writer" kind="class" language="C++" prot="public">
+    <compoundname>detail::binary_writer</compoundname>
+    <includes refid="json_8hpp" local="no">json.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename BasicJsonType</type>
+      </param>
+      <param>
+        <type>typename CharType</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classdetail_1_1binary__writer_1a1dff4172c549dc614b2f15715966b101" prot="private" static="no">
+        <type>typename BasicJsonType::string_t</type>
+        <definition>using detail::binary_writer&lt; BasicJsonType, CharType &gt;::string_t =  typename BasicJsonType::string_t</definition>
+        <argsstring></argsstring>
+        <name>string_t</name>
+        <qualifiedname>detail::binary_writer::string_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="14956" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="14956" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdetail_1_1binary__writer_1a1bed62ac592abf5c247b66f8ed1dbcdc" prot="private" static="no">
+        <type>typename BasicJsonType::binary_t</type>
+        <definition>using detail::binary_writer&lt; BasicJsonType, CharType &gt;::binary_t =  typename BasicJsonType::binary_t</definition>
+        <argsstring></argsstring>
+        <name>binary_t</name>
+        <qualifiedname>detail::binary_writer::binary_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="14957" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="14957" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdetail_1_1binary__writer_1ab02b25aae50e9016a4cecb945465b31e" prot="private" static="no">
+        <type>typename BasicJsonType::number_float_t</type>
+        <definition>using detail::binary_writer&lt; BasicJsonType, CharType &gt;::number_float_t =  typename BasicJsonType::number_float_t</definition>
+        <argsstring></argsstring>
+        <name>number_float_t</name>
+        <qualifiedname>detail::binary_writer::number_float_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="14958" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="14958" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdetail_1_1binary__writer_1af56f3d5b2ac90e06cc43ec1ff7ae4bca" prot="private" static="no" mutable="no">
+        <type>const bool</type>
+        <definition>const bool detail::binary_writer&lt; BasicJsonType, CharType &gt;::is_little_endian</definition>
+        <argsstring></argsstring>
+        <name>is_little_endian</name>
+        <qualifiedname>detail::binary_writer::is_little_endian</qualifiedname>
+        <initializer>= <ref refid="namespacedetail_1a9a6920228c2b39db99481d6952ca1add" kindref="member">little_endianness</ref>()</initializer>
+        <briefdescription>
+<para>whether we can assume little endianness </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="16746" column="16" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="16746" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdetail_1_1binary__writer_1ae237dddfb00736854f4ceaee2164156b" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacedetail_1a558c0470e929e42aad8be2527da6c033" kindref="member">output_adapter_t</ref>&lt; CharType &gt;</type>
+        <definition>output_adapter_t&lt;CharType&gt; detail::binary_writer&lt; BasicJsonType, CharType &gt;::oa</definition>
+        <argsstring></argsstring>
+        <name>oa</name>
+        <qualifiedname>detail::binary_writer::oa</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>the output </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="16749" column="22" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="16749" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1a5b4f1bfcd0f3f7b57060c059e008c45b" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>detail::binary_writer&lt; BasicJsonType, CharType &gt;::binary_writer</definition>
+        <argsstring>(output_adapter_t&lt; CharType &gt; adapter)</argsstring>
+        <name>binary_writer</name>
+        <qualifiedname>detail::binary_writer::binary_writer</qualifiedname>
+        <param>
+          <type><ref refid="namespacedetail_1a558c0470e929e42aad8be2527da6c033" kindref="member">output_adapter_t</ref>&lt; CharType &gt;</type>
+          <declname>adapter</declname>
+        </param>
+        <briefdescription>
+<para>create a binary writer </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">adapter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output adapter to write to </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="14966" column="14" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="14966" bodyend="14969"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1a1aae361b7492825979cbb80245b9c0d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void detail::binary_writer&lt; BasicJsonType, CharType &gt;::write_bson</definition>
+        <argsstring>(const BasicJsonType &amp;j)</argsstring>
+        <name>write_bson</name>
+        <qualifiedname>detail::binary_writer::write_bson</qualifiedname>
+        <param>
+          <type>const BasicJsonType &amp;</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON value to serialize </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>j.type() == <ref refid="namespacedetail_1a917c3efabea8a20dc72d9ae2c673d632aa8cfde6331bd59eb2ac96f8911c4b666" kindref="member">value_t::object</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="14975" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="14975" bodyend="14999"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1ae6ab36b61e8ad346e75d9f9abc983d4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void detail::binary_writer&lt; BasicJsonType, CharType &gt;::write_cbor</definition>
+        <argsstring>(const BasicJsonType &amp;j)</argsstring>
+        <name>write_cbor</name>
+        <qualifiedname>detail::binary_writer::write_cbor</qualifiedname>
+        <param>
+          <type>const BasicJsonType &amp;</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON value to serialize </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="15004" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="15004" bodyend="15323"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1adc3dbefa80134d3530a1b3f1c9629586" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void detail::binary_writer&lt; BasicJsonType, CharType &gt;::write_msgpack</definition>
+        <argsstring>(const BasicJsonType &amp;j)</argsstring>
+        <name>write_msgpack</name>
+        <qualifiedname>detail::binary_writer::write_msgpack</qualifiedname>
+        <param>
+          <type>const BasicJsonType &amp;</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON value to serialize </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="15328" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="15328" bodyend="15645"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1a972bec9688cbc5673bb482bbe9543e2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void detail::binary_writer&lt; BasicJsonType, CharType &gt;::write_ubjson</definition>
+        <argsstring>(const BasicJsonType &amp;j, const bool use_count, const bool use_type, const bool add_prefix=true, const bool use_bjdata=false)</argsstring>
+        <name>write_ubjson</name>
+        <qualifiedname>detail::binary_writer::write_ubjson</qualifiedname>
+        <param>
+          <type>const BasicJsonType &amp;</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>use_count</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>use_type</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>add_prefix</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>use_bjdata</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON value to serialize </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">use_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether to use &apos;#&apos; prefixes (optimized format) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">use_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether to use &apos;$&apos; prefixes (optimized format) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">add_prefix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether prefixes need to be used for this value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">use_bjdata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether write in BJData format, default is false </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="15654" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="15654" bodyend="15864"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1aad96b5f9b144981e2bbeac6621830d00" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>static std::size_t detail::binary_writer&lt; BasicJsonType, CharType &gt;::calc_bson_entry_header_size</definition>
+        <argsstring>(const string_t &amp;name, const BasicJsonType &amp;j)</argsstring>
+        <name>calc_bson_entry_header_size</name>
+        <qualifiedname>detail::binary_writer::calc_bson_entry_header_size</qualifiedname>
+        <param>
+          <type>const <ref refid="classdetail_1_1binary__writer_1a1dff4172c549dc614b2f15715966b101" kindref="member">string_t</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const BasicJsonType &amp;</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The size of a BSON document entry header, including the id marker and the entry name size (and its null-terminator). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="15875" column="24" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="15875" bodyend="15885"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1aa5bf4b6949fd349197afb2fbda698eaa" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>static std::size_t detail::binary_writer&lt; BasicJsonType, CharType &gt;::calc_bson_string_size</definition>
+        <argsstring>(const string_t &amp;value)</argsstring>
+        <name>calc_bson_string_size</name>
+        <qualifiedname>detail::binary_writer::calc_bson_string_size</qualifiedname>
+        <param>
+          <type>const <ref refid="classdetail_1_1binary__writer_1a1dff4172c549dc614b2f15715966b101" kindref="member">string_t</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The size of the BSON-encoded string in <emphasis>value</emphasis> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="15922" column="24" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="15922" bodyend="15925"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1aff00422b8c743de598277c79268970e3" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>static std::size_t detail::binary_writer&lt; BasicJsonType, CharType &gt;::calc_bson_integer_size</definition>
+        <argsstring>(const std::int64_t value)</argsstring>
+        <name>calc_bson_integer_size</name>
+        <qualifiedname>detail::binary_writer::calc_bson_integer_size</qualifiedname>
+        <param>
+          <type>const std::int64_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The size of the BSON-encoded integer <emphasis>value</emphasis> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="15952" column="24" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="15952" bodyend="15957"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1a31b027931d741fb332ca54071b5c9ca0" prot="private" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>static constexpr std::size_t detail::binary_writer&lt; BasicJsonType, CharType &gt;::calc_bson_unsigned_size</definition>
+        <argsstring>(const std::uint64_t value) noexcept</argsstring>
+        <name>calc_bson_unsigned_size</name>
+        <qualifiedname>detail::binary_writer::calc_bson_unsigned_size</qualifiedname>
+        <param>
+          <type>const std::uint64_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The size of the BSON-encoded unsigned integer in <emphasis>j</emphasis> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="15980" column="34" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="15980" bodyend="15985"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1af8d6408cc5daa2e485d3f7d6cdb0eb58" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>static std::size_t detail::binary_writer&lt; BasicJsonType, CharType &gt;::calc_bson_array_size</definition>
+        <argsstring>(const typename BasicJsonType::array_t &amp;value)</argsstring>
+        <name>calc_bson_array_size</name>
+        <qualifiedname>detail::binary_writer::calc_bson_array_size</qualifiedname>
+        <param>
+          <type>const typename BasicJsonType::array_t &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The size of the BSON-encoded array <emphasis>value</emphasis> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="16022" column="24" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="16022" bodyend="16032"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1ab69ca812898ed26caf0a54dcd95f894f" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>static std::size_t detail::binary_writer&lt; BasicJsonType, CharType &gt;::calc_bson_binary_size</definition>
+        <argsstring>(const typename BasicJsonType::binary_t &amp;value)</argsstring>
+        <name>calc_bson_binary_size</name>
+        <qualifiedname>detail::binary_writer::calc_bson_binary_size</qualifiedname>
+        <param>
+          <type>const typename BasicJsonType::binary_t &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The size of the BSON-encoded binary array <emphasis>value</emphasis> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="16037" column="24" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="16037" bodyend="16040"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1accdf775201461343bd5a2c420b4d6db9" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>static std::size_t detail::binary_writer&lt; BasicJsonType, CharType &gt;::calc_bson_element_size</definition>
+        <argsstring>(const string_t &amp;name, const BasicJsonType &amp;j)</argsstring>
+        <name>calc_bson_element_size</name>
+        <qualifiedname>detail::binary_writer::calc_bson_element_size</qualifiedname>
+        <param>
+          <type>const <ref refid="classdetail_1_1binary__writer_1a1dff4172c549dc614b2f15715966b101" kindref="member">string_t</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const BasicJsonType &amp;</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the size necessary to serialize the JSON value <emphasis>j</emphasis> with its <emphasis>name</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The calculated size for the BSON document entry for <emphasis>j</emphasis> with the given <emphasis>name</emphasis>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="16079" column="24" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="16079" bodyend="16119"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1adc40d21af75e25e8c38747e3e92046ca" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>static std::size_t detail::binary_writer&lt; BasicJsonType, CharType &gt;::calc_bson_object_size</definition>
+        <argsstring>(const typename BasicJsonType::object_t &amp;value)</argsstring>
+        <name>calc_bson_object_size</name>
+        <qualifiedname>detail::binary_writer::calc_bson_object_size</qualifiedname>
+        <param>
+          <type>const typename BasicJsonType::object_t &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the size of the BSON serialization of the given JSON-object <emphasis>j</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON value to serialize </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>value.type() == <ref refid="namespacedetail_1a917c3efabea8a20dc72d9ae2c673d632aa8cfde6331bd59eb2ac96f8911c4b666" kindref="member">value_t::object</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="16174" column="24" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="16174" bodyend="16183"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1aeac61e27c0d1b834a8e0114170511a97" prot="private" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>CharType</type>
+        <definition>static constexpr CharType detail::binary_writer&lt; BasicJsonType, CharType &gt;::get_cbor_float_prefix</definition>
+        <argsstring>(float)</argsstring>
+        <name>get_cbor_float_prefix</name>
+        <qualifiedname>detail::binary_writer::get_cbor_float_prefix</qualifiedname>
+        <param>
+          <type>float</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="16205" column="31" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="16205" bodyend="16208"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1a56a61a6c22a3b3f7a4ac40a20b7f518f" prot="private" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>CharType</type>
+        <definition>static constexpr CharType detail::binary_writer&lt; BasicJsonType, CharType &gt;::get_cbor_float_prefix</definition>
+        <argsstring>(double)</argsstring>
+        <name>get_cbor_float_prefix</name>
+        <qualifiedname>detail::binary_writer::get_cbor_float_prefix</qualifiedname>
+        <param>
+          <type>double</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="16210" column="31" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="16210" bodyend="16213"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1af199e07c12948a357eb8dfe9471f5453" prot="private" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>CharType</type>
+        <definition>static constexpr CharType detail::binary_writer&lt; BasicJsonType, CharType &gt;::get_msgpack_float_prefix</definition>
+        <argsstring>(float)</argsstring>
+        <name>get_msgpack_float_prefix</name>
+        <qualifiedname>detail::binary_writer::get_msgpack_float_prefix</qualifiedname>
+        <param>
+          <type>float</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="16219" column="31" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="16219" bodyend="16222"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1a71dfa0adffeb52759f91223208f08937" prot="private" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>CharType</type>
+        <definition>static constexpr CharType detail::binary_writer&lt; BasicJsonType, CharType &gt;::get_msgpack_float_prefix</definition>
+        <argsstring>(double)</argsstring>
+        <name>get_msgpack_float_prefix</name>
+        <qualifiedname>detail::binary_writer::get_msgpack_float_prefix</qualifiedname>
+        <param>
+          <type>double</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="16224" column="31" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="16224" bodyend="16227"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1ab695ec5f8626b333a681c15adf5ab5e4" prot="private" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>CharType</type>
+        <definition>static constexpr CharType detail::binary_writer&lt; BasicJsonType, CharType &gt;::get_ubjson_float_prefix</definition>
+        <argsstring>(float)</argsstring>
+        <name>get_ubjson_float_prefix</name>
+        <qualifiedname>detail::binary_writer::get_ubjson_float_prefix</qualifiedname>
+        <param>
+          <type>float</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="16520" column="31" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="16520" bodyend="16523"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1a60d49c47a03c575a985460a56f637f71" prot="private" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>CharType</type>
+        <definition>static constexpr CharType detail::binary_writer&lt; BasicJsonType, CharType &gt;::get_ubjson_float_prefix</definition>
+        <argsstring>(double)</argsstring>
+        <name>get_ubjson_float_prefix</name>
+        <qualifiedname>detail::binary_writer::get_ubjson_float_prefix</qualifiedname>
+        <param>
+          <type>double</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="16525" column="31" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="16525" bodyend="16528"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1aec35b5420c48539db2959ef88ae296d5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void detail::binary_writer&lt; BasicJsonType, CharType &gt;::write_bson_entry_header</definition>
+        <argsstring>(const string_t &amp;name, const std::uint8_t element_type)</argsstring>
+        <name>write_bson_entry_header</name>
+        <qualifiedname>detail::binary_writer::write_bson_entry_header</qualifiedname>
+        <param>
+          <type>const <ref refid="classdetail_1_1binary__writer_1a1dff4172c549dc614b2f15715966b101" kindref="member">string_t</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const std::uint8_t</type>
+          <declname>element_type</declname>
+        </param>
+        <briefdescription>
+<para>Writes the given <emphasis>element_type</emphasis> and <emphasis>name</emphasis> to the output adapter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="15890" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="15890" bodyend="15897"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1a1981a99a95f67eb1d433077e736b0f74" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void detail::binary_writer&lt; BasicJsonType, CharType &gt;::write_bson_boolean</definition>
+        <argsstring>(const string_t &amp;name, const bool value)</argsstring>
+        <name>write_bson_boolean</name>
+        <qualifiedname>detail::binary_writer::write_bson_boolean</qualifiedname>
+        <param>
+          <type>const <ref refid="classdetail_1_1binary__writer_1a1dff4172c549dc614b2f15715966b101" kindref="member">string_t</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Writes a BSON element with key <emphasis>name</emphasis> and boolean value <emphasis>value</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="15902" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="15902" bodyend="15907"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1a9bd4a3aae88527f267ffd607d89f4a57" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void detail::binary_writer&lt; BasicJsonType, CharType &gt;::write_bson_double</definition>
+        <argsstring>(const string_t &amp;name, const double value)</argsstring>
+        <name>write_bson_double</name>
+        <qualifiedname>detail::binary_writer::write_bson_double</qualifiedname>
+        <param>
+          <type>const <ref refid="classdetail_1_1binary__writer_1a1dff4172c549dc614b2f15715966b101" kindref="member">string_t</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Writes a BSON element with key <emphasis>name</emphasis> and double value <emphasis>value</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="15912" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="15912" bodyend="15917"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1a5aa8c085600b442cbb13acea438a2ce1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void detail::binary_writer&lt; BasicJsonType, CharType &gt;::write_bson_string</definition>
+        <argsstring>(const string_t &amp;name, const string_t &amp;value)</argsstring>
+        <name>write_bson_string</name>
+        <qualifiedname>detail::binary_writer::write_bson_string</qualifiedname>
+        <param>
+          <type>const <ref refid="classdetail_1_1binary__writer_1a1dff4172c549dc614b2f15715966b101" kindref="member">string_t</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdetail_1_1binary__writer_1a1dff4172c549dc614b2f15715966b101" kindref="member">string_t</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Writes a BSON element with key <emphasis>name</emphasis> and string value <emphasis>value</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="15930" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="15930" bodyend="15939"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1aaf86b30c0beb86fafdb0cad5573ce753" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void detail::binary_writer&lt; BasicJsonType, CharType &gt;::write_bson_null</definition>
+        <argsstring>(const string_t &amp;name)</argsstring>
+        <name>write_bson_null</name>
+        <qualifiedname>detail::binary_writer::write_bson_null</qualifiedname>
+        <param>
+          <type>const <ref refid="classdetail_1_1binary__writer_1a1dff4172c549dc614b2f15715966b101" kindref="member">string_t</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Writes a BSON element with key <emphasis>name</emphasis> and null value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="15944" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="15944" bodyend="15947"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1a1c1c00c936b40970ec1305dce7e266e3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void detail::binary_writer&lt; BasicJsonType, CharType &gt;::write_bson_integer</definition>
+        <argsstring>(const string_t &amp;name, const std::int64_t value)</argsstring>
+        <name>write_bson_integer</name>
+        <qualifiedname>detail::binary_writer::write_bson_integer</qualifiedname>
+        <param>
+          <type>const <ref refid="classdetail_1_1binary__writer_1a1dff4172c549dc614b2f15715966b101" kindref="member">string_t</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const std::int64_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Writes a BSON element with key <emphasis>name</emphasis> and integer <emphasis>value</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="15962" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="15962" bodyend="15975"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1ab58b6af7866fc56b9c4b326b4db62e12" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void detail::binary_writer&lt; BasicJsonType, CharType &gt;::write_bson_unsigned</definition>
+        <argsstring>(const string_t &amp;name, const BasicJsonType &amp;j)</argsstring>
+        <name>write_bson_unsigned</name>
+        <qualifiedname>detail::binary_writer::write_bson_unsigned</qualifiedname>
+        <param>
+          <type>const <ref refid="classdetail_1_1binary__writer_1a1dff4172c549dc614b2f15715966b101" kindref="member">string_t</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const BasicJsonType &amp;</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Writes a BSON element with key <emphasis>name</emphasis> and unsigned <emphasis>value</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="15990" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="15990" bodyend="16007"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1aec965617342a951a3b60f89fcf2e633d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void detail::binary_writer&lt; BasicJsonType, CharType &gt;::write_bson_object_entry</definition>
+        <argsstring>(const string_t &amp;name, const typename BasicJsonType::object_t &amp;value)</argsstring>
+        <name>write_bson_object_entry</name>
+        <qualifiedname>detail::binary_writer::write_bson_object_entry</qualifiedname>
+        <param>
+          <type>const <ref refid="classdetail_1_1binary__writer_1a1dff4172c549dc614b2f15715966b101" kindref="member">string_t</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const typename BasicJsonType::object_t &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Writes a BSON element with key <emphasis>name</emphasis> and object <emphasis>value</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="16012" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="16012" bodyend="16017"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1a3da500027916d93a83e7922006ddc331" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void detail::binary_writer&lt; BasicJsonType, CharType &gt;::write_bson_array</definition>
+        <argsstring>(const string_t &amp;name, const typename BasicJsonType::array_t &amp;value)</argsstring>
+        <name>write_bson_array</name>
+        <qualifiedname>detail::binary_writer::write_bson_array</qualifiedname>
+        <param>
+          <type>const <ref refid="classdetail_1_1binary__writer_1a1dff4172c549dc614b2f15715966b101" kindref="member">string_t</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const typename BasicJsonType::array_t &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Writes a BSON element with key <emphasis>name</emphasis> and array <emphasis>value</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="16045" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="16045" bodyend="16059"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1a15de15c0a19048ca8377b0d076b4a785" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void detail::binary_writer&lt; BasicJsonType, CharType &gt;::write_bson_binary</definition>
+        <argsstring>(const string_t &amp;name, const binary_t &amp;value)</argsstring>
+        <name>write_bson_binary</name>
+        <qualifiedname>detail::binary_writer::write_bson_binary</qualifiedname>
+        <param>
+          <type>const <ref refid="classdetail_1_1binary__writer_1a1dff4172c549dc614b2f15715966b101" kindref="member">string_t</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdetail_1_1binary__writer_1a1bed62ac592abf5c247b66f8ed1dbcdc" kindref="member">binary_t</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Writes a BSON element with key <emphasis>name</emphasis> and binary value <emphasis>value</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="16064" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="16064" bodyend="16073"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1a882debd723dd172f42e0690f84d4b94f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void detail::binary_writer&lt; BasicJsonType, CharType &gt;::write_bson_element</definition>
+        <argsstring>(const string_t &amp;name, const BasicJsonType &amp;j)</argsstring>
+        <name>write_bson_element</name>
+        <qualifiedname>detail::binary_writer::write_bson_element</qualifiedname>
+        <param>
+          <type>const <ref refid="classdetail_1_1binary__writer_1a1dff4172c549dc614b2f15715966b101" kindref="member">string_t</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const BasicJsonType &amp;</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Serializes the JSON value <emphasis>j</emphasis> to BSON and associates it with the key <emphasis>name</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name to associate with the JSON entity <emphasis>j</emphasis> within the current BSON document </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="16127" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="16127" bodyend="16166"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1a93441bda8d804f4e93742f3cf3868da4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void detail::binary_writer&lt; BasicJsonType, CharType &gt;::write_bson_object</definition>
+        <argsstring>(const typename BasicJsonType::object_t &amp;value)</argsstring>
+        <name>write_bson_object</name>
+        <qualifiedname>detail::binary_writer::write_bson_object</qualifiedname>
+        <param>
+          <type>const typename BasicJsonType::object_t &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON value to serialize </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>value.type() == <ref refid="namespacedetail_1a917c3efabea8a20dc72d9ae2c673d632aa8cfde6331bd59eb2ac96f8911c4b666" kindref="member">value_t::object</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="16189" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="16189" bodyend="16199"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1a6df4a13e59faa87a72b0fbe8c5f838ba" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename NumberType</type>
+          </param>
+          <param>
+            <type>typename std::enable_if&lt; std::is_floating_point&lt; NumberType &gt;<ref refid="namespacedetail_1a47b1bb0bbd3596589ed9187059c312efa2063c1608d6e0baf80249c42e2be5804" kindref="member">::value</ref>, int &gt;::type</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void detail::binary_writer&lt; BasicJsonType, CharType &gt;::write_number_with_ubjson_prefix</definition>
+        <argsstring>(const NumberType n, const bool add_prefix, const bool use_bjdata)</argsstring>
+        <name>write_number_with_ubjson_prefix</name>
+        <qualifiedname>detail::binary_writer::write_number_with_ubjson_prefix</qualifiedname>
+        <param>
+          <type>const NumberType</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>add_prefix</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>use_bjdata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="16236" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="16236" bodyend="16245"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1a6df4a13e59faa87a72b0fbe8c5f838ba" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename NumberType</type>
+          </param>
+          <param>
+            <type>typename std::enable_if&lt; std::is_unsigned&lt; NumberType &gt;<ref refid="namespacedetail_1a47b1bb0bbd3596589ed9187059c312efa2063c1608d6e0baf80249c42e2be5804" kindref="member">::value</ref>, int &gt;::type</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void detail::binary_writer&lt; BasicJsonType, CharType &gt;::write_number_with_ubjson_prefix</definition>
+        <argsstring>(const NumberType n, const bool add_prefix, const bool use_bjdata)</argsstring>
+        <name>write_number_with_ubjson_prefix</name>
+        <qualifiedname>detail::binary_writer::write_number_with_ubjson_prefix</qualifiedname>
+        <param>
+          <type>const NumberType</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>add_prefix</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>use_bjdata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="16250" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="16250" bodyend="16332"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1a6df4a13e59faa87a72b0fbe8c5f838ba" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename NumberType</type>
+          </param>
+          <param>
+            <type>typename std::enable_if&lt; std::is_signed&lt; NumberType &gt;<ref refid="namespacedetail_1a47b1bb0bbd3596589ed9187059c312efa2063c1608d6e0baf80249c42e2be5804" kindref="member">::value</ref> &amp;&amp;!std::is_floating_point&lt; NumberType &gt;<ref refid="namespacedetail_1a47b1bb0bbd3596589ed9187059c312efa2063c1608d6e0baf80249c42e2be5804" kindref="member">::value</ref>, int &gt;::type</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void detail::binary_writer&lt; BasicJsonType, CharType &gt;::write_number_with_ubjson_prefix</definition>
+        <argsstring>(const NumberType n, const bool add_prefix, const bool use_bjdata)</argsstring>
+        <name>write_number_with_ubjson_prefix</name>
+        <qualifiedname>detail::binary_writer::write_number_with_ubjson_prefix</qualifiedname>
+        <param>
+          <type>const NumberType</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>add_prefix</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>use_bjdata</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="16338" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="16338" bodyend="16414"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1ab4f174660b2ad22a9ac900f9e7cce278" prot="private" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>CharType</type>
+        <definition>CharType detail::binary_writer&lt; BasicJsonType, CharType &gt;::ubjson_prefix</definition>
+        <argsstring>(const BasicJsonType &amp;j, const bool use_bjdata) const noexcept</argsstring>
+        <name>ubjson_prefix</name>
+        <qualifiedname>detail::binary_writer::ubjson_prefix</qualifiedname>
+        <param>
+          <type>const BasicJsonType &amp;</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>use_bjdata</declname>
+        </param>
+        <briefdescription>
+<para>determine the type prefix of container values </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="16419" column="14" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="16419" bodyend="16518"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1a449ad96e1066a6a0c75ca983a086f46c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool detail::binary_writer&lt; BasicJsonType, CharType &gt;::write_bjdata_ndarray</definition>
+        <argsstring>(const typename BasicJsonType::object_t &amp;value, const bool use_count, const bool use_type)</argsstring>
+        <name>write_bjdata_ndarray</name>
+        <qualifiedname>detail::binary_writer::write_bjdata_ndarray</qualifiedname>
+        <param>
+          <type>const typename BasicJsonType::object_t &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>use_count</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>use_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>false if the object is successfully converted to a bjdata ndarray, true if the type or size is invalid </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="16533" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="16533" bodyend="16640"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1aab9bf30c969ca7694eed2bfd39d9274a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename NumberType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void detail::binary_writer&lt; BasicJsonType, CharType &gt;::write_number</definition>
+        <argsstring>(const NumberType n, const bool OutputIsLittleEndian=false)</argsstring>
+        <name>write_number</name>
+        <qualifiedname>detail::binary_writer::write_number</qualifiedname>
+        <param>
+          <type>const NumberType</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>OutputIsLittleEndian</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="16660" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="16660" bodyend="16674"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1ae17b8f4f14cdf533e19c170c1f67651a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void detail::binary_writer&lt; BasicJsonType, CharType &gt;::write_compact_float</definition>
+        <argsstring>(const number_float_t n, detail::input_format_t format)</argsstring>
+        <name>write_compact_float</name>
+        <qualifiedname>detail::binary_writer::write_compact_float</qualifiedname>
+        <param>
+          <type>const <ref refid="classdetail_1_1binary__writer_1ab02b25aae50e9016a4cecb945465b31e" kindref="member">number_float_t</ref></type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacedetail_1a0ab3b338d0eadc6890b72cccef0ea04f" kindref="member">detail::input_format_t</ref></type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="16676" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="16676" bodyend="16701"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1a2822d4a58bbb0dc2198686da430e8906" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename C</type>
+            <defval>CharType</defval>
+          </param>
+          <param>
+            <type><ref refid="namespacedetail_1a469b9c0b78404c24509a221801bc4c26" kindref="member">enable_if_t</ref>&lt; std::is_signed&lt; C &gt;<ref refid="namespacedetail_1a47b1bb0bbd3596589ed9187059c312efa2063c1608d6e0baf80249c42e2be5804" kindref="member">::value</ref> &amp;&amp;std::is_signed&lt; char &gt;<ref refid="namespacedetail_1a47b1bb0bbd3596589ed9187059c312efa2063c1608d6e0baf80249c42e2be5804" kindref="member">::value</ref> &gt; *</type>
+            <defval>nullptr</defval>
+          </param>
+        </templateparamlist>
+        <type>CharType</type>
+        <definition>static constexpr CharType detail::binary_writer&lt; BasicJsonType, CharType &gt;::to_char_type</definition>
+        <argsstring>(std::uint8_t x) noexcept</argsstring>
+        <name>to_char_type</name>
+        <qualifiedname>detail::binary_writer::to_char_type</qualifiedname>
+        <param>
+          <type>std::uint8_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="16710" column="31" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="16710" bodyend="16713"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1a4bc03434de56f9c9afd24702922a7ec8" prot="public" static="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename C</type>
+            <defval>CharType</defval>
+          </param>
+          <param>
+            <type><ref refid="namespacedetail_1a469b9c0b78404c24509a221801bc4c26" kindref="member">enable_if_t</ref>&lt; std::is_signed&lt; C &gt;<ref refid="namespacedetail_1a47b1bb0bbd3596589ed9187059c312efa2063c1608d6e0baf80249c42e2be5804" kindref="member">::value</ref> &amp;&amp;std::is_unsigned&lt; char &gt;<ref refid="namespacedetail_1a47b1bb0bbd3596589ed9187059c312efa2063c1608d6e0baf80249c42e2be5804" kindref="member">::value</ref> &gt; *</type>
+            <defval>nullptr</defval>
+          </param>
+        </templateparamlist>
+        <type>CharType</type>
+        <definition>static CharType detail::binary_writer&lt; BasicJsonType, CharType &gt;::to_char_type</definition>
+        <argsstring>(std::uint8_t x) noexcept</argsstring>
+        <name>to_char_type</name>
+        <qualifiedname>detail::binary_writer::to_char_type</qualifiedname>
+        <param>
+          <type>std::uint8_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="16717" column="21" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="16717" bodyend="16724"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1a2822d4a58bbb0dc2198686da430e8906" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename C</type>
+            <defval>CharType</defval>
+          </param>
+          <param>
+            <type><ref refid="namespacedetail_1a469b9c0b78404c24509a221801bc4c26" kindref="member">enable_if_t</ref>&lt; std::is_unsigned&lt; C &gt;<ref refid="namespacedetail_1a47b1bb0bbd3596589ed9187059c312efa2063c1608d6e0baf80249c42e2be5804" kindref="member">::value</ref> &gt; *</type>
+            <defval>nullptr</defval>
+          </param>
+        </templateparamlist>
+        <type>CharType</type>
+        <definition>static constexpr CharType detail::binary_writer&lt; BasicJsonType, CharType &gt;::to_char_type</definition>
+        <argsstring>(std::uint8_t x) noexcept</argsstring>
+        <name>to_char_type</name>
+        <qualifiedname>detail::binary_writer::to_char_type</qualifiedname>
+        <param>
+          <type>std::uint8_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="16728" column="31" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="16728" bodyend="16731"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1binary__writer_1a91bfd3642a0f90c295f9ce79c9447be9" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename InputCharType</type>
+          </param>
+          <param>
+            <type>typename C</type>
+            <defval>CharType</defval>
+          </param>
+          <param>
+            <type><ref refid="namespacedetail_1a469b9c0b78404c24509a221801bc4c26" kindref="member">enable_if_t</ref>&lt; std::is_signed&lt; C &gt;<ref refid="namespacedetail_1a47b1bb0bbd3596589ed9187059c312efa2063c1608d6e0baf80249c42e2be5804" kindref="member">::value</ref> &amp;&amp;std::is_signed&lt; char &gt;<ref refid="namespacedetail_1a47b1bb0bbd3596589ed9187059c312efa2063c1608d6e0baf80249c42e2be5804" kindref="member">::value</ref> &amp;&amp;std::is_same&lt; char, typename std::remove_cv&lt; InputCharType &gt;::type &gt;<ref refid="namespacedetail_1a47b1bb0bbd3596589ed9187059c312efa2063c1608d6e0baf80249c42e2be5804" kindref="member">::value</ref> &gt; *</type>
+            <defval>nullptr</defval>
+          </param>
+        </templateparamlist>
+        <type>CharType</type>
+        <definition>static constexpr CharType detail::binary_writer&lt; BasicJsonType, CharType &gt;::to_char_type</definition>
+        <argsstring>(InputCharType x) noexcept</argsstring>
+        <name>to_char_type</name>
+        <qualifiedname>detail::binary_writer::to_char_type</qualifiedname>
+        <param>
+          <type>InputCharType</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="16739" column="31" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="16739" bodyend="16742"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>serialization to CBOR and MessagePack values </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="14954" column="1" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="14955" bodyend="16750"/>
+    <listofallmembers>
+      <member refid="classdetail_1_1binary__writer_1a1bed62ac592abf5c247b66f8ed1dbcdc" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>binary_t</name></member>
+      <member refid="classdetail_1_1binary__writer_1a5b4f1bfcd0f3f7b57060c059e008c45b" prot="public" virt="non-virtual"><scope>detail::binary_writer</scope><name>binary_writer</name></member>
+      <member refid="classdetail_1_1binary__writer_1af8d6408cc5daa2e485d3f7d6cdb0eb58" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>calc_bson_array_size</name></member>
+      <member refid="classdetail_1_1binary__writer_1ab69ca812898ed26caf0a54dcd95f894f" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>calc_bson_binary_size</name></member>
+      <member refid="classdetail_1_1binary__writer_1accdf775201461343bd5a2c420b4d6db9" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>calc_bson_element_size</name></member>
+      <member refid="classdetail_1_1binary__writer_1aad96b5f9b144981e2bbeac6621830d00" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>calc_bson_entry_header_size</name></member>
+      <member refid="classdetail_1_1binary__writer_1aff00422b8c743de598277c79268970e3" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>calc_bson_integer_size</name></member>
+      <member refid="classdetail_1_1binary__writer_1adc40d21af75e25e8c38747e3e92046ca" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>calc_bson_object_size</name></member>
+      <member refid="classdetail_1_1binary__writer_1aa5bf4b6949fd349197afb2fbda698eaa" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>calc_bson_string_size</name></member>
+      <member refid="classdetail_1_1binary__writer_1a31b027931d741fb332ca54071b5c9ca0" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>calc_bson_unsigned_size</name></member>
+      <member refid="classdetail_1_1binary__writer_1aeac61e27c0d1b834a8e0114170511a97" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>get_cbor_float_prefix</name></member>
+      <member refid="classdetail_1_1binary__writer_1a56a61a6c22a3b3f7a4ac40a20b7f518f" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>get_cbor_float_prefix</name></member>
+      <member refid="classdetail_1_1binary__writer_1af199e07c12948a357eb8dfe9471f5453" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>get_msgpack_float_prefix</name></member>
+      <member refid="classdetail_1_1binary__writer_1a71dfa0adffeb52759f91223208f08937" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>get_msgpack_float_prefix</name></member>
+      <member refid="classdetail_1_1binary__writer_1ab695ec5f8626b333a681c15adf5ab5e4" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>get_ubjson_float_prefix</name></member>
+      <member refid="classdetail_1_1binary__writer_1a60d49c47a03c575a985460a56f637f71" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>get_ubjson_float_prefix</name></member>
+      <member refid="classdetail_1_1binary__writer_1af56f3d5b2ac90e06cc43ec1ff7ae4bca" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>is_little_endian</name></member>
+      <member refid="classdetail_1_1binary__writer_1ab02b25aae50e9016a4cecb945465b31e" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>number_float_t</name></member>
+      <member refid="classdetail_1_1binary__writer_1ae237dddfb00736854f4ceaee2164156b" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>oa</name></member>
+      <member refid="classdetail_1_1binary__writer_1a1dff4172c549dc614b2f15715966b101" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>string_t</name></member>
+      <member refid="classdetail_1_1binary__writer_1a2822d4a58bbb0dc2198686da430e8906" prot="public" virt="non-virtual"><scope>detail::binary_writer</scope><name>to_char_type</name></member>
+      <member refid="classdetail_1_1binary__writer_1a4bc03434de56f9c9afd24702922a7ec8" prot="public" virt="non-virtual"><scope>detail::binary_writer</scope><name>to_char_type</name></member>
+      <member refid="classdetail_1_1binary__writer_1a2822d4a58bbb0dc2198686da430e8906" prot="public" virt="non-virtual"><scope>detail::binary_writer</scope><name>to_char_type</name></member>
+      <member refid="classdetail_1_1binary__writer_1a91bfd3642a0f90c295f9ce79c9447be9" prot="public" virt="non-virtual"><scope>detail::binary_writer</scope><name>to_char_type</name></member>
+      <member refid="classdetail_1_1binary__writer_1ab4f174660b2ad22a9ac900f9e7cce278" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>ubjson_prefix</name></member>
+      <member refid="classdetail_1_1binary__writer_1a449ad96e1066a6a0c75ca983a086f46c" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>write_bjdata_ndarray</name></member>
+      <member refid="classdetail_1_1binary__writer_1a1aae361b7492825979cbb80245b9c0d6" prot="public" virt="non-virtual"><scope>detail::binary_writer</scope><name>write_bson</name></member>
+      <member refid="classdetail_1_1binary__writer_1a3da500027916d93a83e7922006ddc331" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>write_bson_array</name></member>
+      <member refid="classdetail_1_1binary__writer_1a15de15c0a19048ca8377b0d076b4a785" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>write_bson_binary</name></member>
+      <member refid="classdetail_1_1binary__writer_1a1981a99a95f67eb1d433077e736b0f74" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>write_bson_boolean</name></member>
+      <member refid="classdetail_1_1binary__writer_1a9bd4a3aae88527f267ffd607d89f4a57" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>write_bson_double</name></member>
+      <member refid="classdetail_1_1binary__writer_1a882debd723dd172f42e0690f84d4b94f" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>write_bson_element</name></member>
+      <member refid="classdetail_1_1binary__writer_1aec35b5420c48539db2959ef88ae296d5" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>write_bson_entry_header</name></member>
+      <member refid="classdetail_1_1binary__writer_1a1c1c00c936b40970ec1305dce7e266e3" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>write_bson_integer</name></member>
+      <member refid="classdetail_1_1binary__writer_1aaf86b30c0beb86fafdb0cad5573ce753" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>write_bson_null</name></member>
+      <member refid="classdetail_1_1binary__writer_1a93441bda8d804f4e93742f3cf3868da4" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>write_bson_object</name></member>
+      <member refid="classdetail_1_1binary__writer_1aec965617342a951a3b60f89fcf2e633d" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>write_bson_object_entry</name></member>
+      <member refid="classdetail_1_1binary__writer_1a5aa8c085600b442cbb13acea438a2ce1" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>write_bson_string</name></member>
+      <member refid="classdetail_1_1binary__writer_1ab58b6af7866fc56b9c4b326b4db62e12" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>write_bson_unsigned</name></member>
+      <member refid="classdetail_1_1binary__writer_1ae6ab36b61e8ad346e75d9f9abc983d4c" prot="public" virt="non-virtual"><scope>detail::binary_writer</scope><name>write_cbor</name></member>
+      <member refid="classdetail_1_1binary__writer_1ae17b8f4f14cdf533e19c170c1f67651a" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>write_compact_float</name></member>
+      <member refid="classdetail_1_1binary__writer_1adc3dbefa80134d3530a1b3f1c9629586" prot="public" virt="non-virtual"><scope>detail::binary_writer</scope><name>write_msgpack</name></member>
+      <member refid="classdetail_1_1binary__writer_1aab9bf30c969ca7694eed2bfd39d9274a" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>write_number</name></member>
+      <member refid="classdetail_1_1binary__writer_1a6df4a13e59faa87a72b0fbe8c5f838ba" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>write_number_with_ubjson_prefix</name></member>
+      <member refid="classdetail_1_1binary__writer_1a6df4a13e59faa87a72b0fbe8c5f838ba" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>write_number_with_ubjson_prefix</name></member>
+      <member refid="classdetail_1_1binary__writer_1a6df4a13e59faa87a72b0fbe8c5f838ba" prot="private" virt="non-virtual"><scope>detail::binary_writer</scope><name>write_number_with_ubjson_prefix</name></member>
+      <member refid="classdetail_1_1binary__writer_1a972bec9688cbc5673bb482bbe9543e2a" prot="public" virt="non-virtual"><scope>detail::binary_writer</scope><name>write_ubjson</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

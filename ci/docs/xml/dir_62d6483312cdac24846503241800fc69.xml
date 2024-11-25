@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="dir_62d6483312cdac24846503241800fc69" kind="dir">
+    <compoundname>D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native</compoundname>
+    <innerdir refid="dir_918b44362290b276b8d2243463b0cf2f">D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/"/>
+  </compounddef>
+</doxygen>

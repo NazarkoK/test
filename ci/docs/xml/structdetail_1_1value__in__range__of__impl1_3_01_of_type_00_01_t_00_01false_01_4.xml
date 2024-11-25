@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structdetail_1_1value__in__range__of__impl1_3_01_of_type_00_01_t_00_01false_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>detail::value_in_range_of_impl1&lt; OfType, T, false &gt;</compoundname>
+    <includes refid="json_8hpp" local="no">json.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename OfType</type>
+      </param>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structdetail_1_1value__in__range__of__impl1_3_01_of_type_00_01_t_00_01false_01_4_1ae69ac85419748ec55a886181121471a3" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static constexpr bool detail::value_in_range_of_impl1&lt; OfType, T, false &gt;::test</definition>
+        <argsstring>(T val)</argsstring>
+        <name>test</name>
+        <qualifiedname>detail::value_in_range_of_impl1&lt; OfType, T, false &gt;::test</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="4062" column="27" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="4062" bodyend="4065"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="4060" column="1" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="4061" bodyend="4066"/>
+    <listofallmembers>
+      <member refid="structdetail_1_1value__in__range__of__impl1_3_01_of_type_00_01_t_00_01false_01_4_1ae69ac85419748ec55a886181121471a3" prot="public" virt="non-virtual"><scope>detail::value_in_range_of_impl1&lt; OfType, T, false &gt;</scope><name>test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

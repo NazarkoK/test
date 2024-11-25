@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structdetail_1_1external__constructor_3_01value__t_1_1binary_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>detail::external_constructor&lt; value_t::binary &gt;</compoundname>
+    <includes refid="json_8hpp" local="no">json.hpp</includes>
+    <templateparamlist>
+    </templateparamlist>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structdetail_1_1external__constructor_3_01value__t_1_1binary_01_4_1a296ae85130e50ee47b95c721b0a34618" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename BasicJsonType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void detail::external_constructor&lt; value_t::binary &gt;::construct</definition>
+        <argsstring>(BasicJsonType &amp;j, const typename BasicJsonType::binary_t &amp;b)</argsstring>
+        <name>construct</name>
+        <qualifiedname>detail::external_constructor&lt; value_t::binary &gt;::construct</qualifiedname>
+        <param>
+          <type>BasicJsonType &amp;</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>const typename BasicJsonType::binary_t &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5400" column="17" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="5400" bodyend="5406"/>
+      </memberdef>
+      <memberdef kind="function" id="structdetail_1_1external__constructor_3_01value__t_1_1binary_01_4_1abfa5cdc79528c15e74f7ae5b9170a41f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename BasicJsonType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void detail::external_constructor&lt; value_t::binary &gt;::construct</definition>
+        <argsstring>(BasicJsonType &amp;j, typename BasicJsonType::binary_t &amp;&amp;b)</argsstring>
+        <name>construct</name>
+        <qualifiedname>detail::external_constructor&lt; value_t::binary &gt;::construct</qualifiedname>
+        <param>
+          <type>BasicJsonType &amp;</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>typename BasicJsonType::binary_t &amp;&amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5409" column="17" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="5409" bodyend="5415"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5397" column="1" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="5398" bodyend="5416"/>
+    <listofallmembers>
+      <member refid="structdetail_1_1external__constructor_3_01value__t_1_1binary_01_4_1a296ae85130e50ee47b95c721b0a34618" prot="public" virt="non-virtual"><scope>detail::external_constructor&lt; value_t::binary &gt;</scope><name>construct</name></member>
+      <member refid="structdetail_1_1external__constructor_3_01value__t_1_1binary_01_4_1abfa5cdc79528c15e74f7ae5b9170a41f" prot="public" virt="non-virtual"><scope>detail::external_constructor&lt; value_t::binary &gt;</scope><name>construct</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

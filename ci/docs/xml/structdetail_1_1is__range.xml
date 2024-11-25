@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structdetail_1_1is__range" kind="struct" language="C++" prot="public">
+    <compoundname>detail::is_range</compoundname>
+    <includes refid="json_8hpp" local="no">json.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="structdetail_1_1is__range_1aa9f09e007856cae9058250ae2678d685" prot="private" static="no">
+        <type>typename std::add_lvalue_reference&lt; T &gt;::type</type>
+        <definition>using detail::is_range&lt; T &gt;::t_ref =  typename std::add_lvalue_reference&lt;T&gt;::type</definition>
+        <argsstring></argsstring>
+        <name>t_ref</name>
+        <qualifiedname>detail::is_range::t_ref</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="3655" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="3655" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structdetail_1_1is__range_1a40f25e407f601af71b29ade4e32a2fd8" prot="private" static="no">
+        <type><ref refid="namespacedetail_1a0d2738c93c46d6a838ffe68933aabd95" kindref="member">detected_t</ref>&lt; result_of_begin, <ref refid="structdetail_1_1is__range_1aa9f09e007856cae9058250ae2678d685" kindref="member">t_ref</ref> &gt;</type>
+        <definition>using detail::is_range&lt; T &gt;::iterator =  detected_t&lt;result_of_begin, t_ref&gt;</definition>
+        <argsstring></argsstring>
+        <name>iterator</name>
+        <qualifiedname>detail::is_range::iterator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="3657" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="3657" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structdetail_1_1is__range_1a3c35010cd499456c7da66bf8c78ccb5b" prot="private" static="no">
+        <type><ref refid="namespacedetail_1a0d2738c93c46d6a838ffe68933aabd95" kindref="member">detected_t</ref>&lt; result_of_end, <ref refid="structdetail_1_1is__range_1aa9f09e007856cae9058250ae2678d685" kindref="member">t_ref</ref> &gt;</type>
+        <definition>using detail::is_range&lt; T &gt;::sentinel =  detected_t&lt;result_of_end, t_ref&gt;</definition>
+        <argsstring></argsstring>
+        <name>sentinel</name>
+        <qualifiedname>detail::is_range::sentinel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="3658" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="3658" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="structdetail_1_1is__range_1ade99f453e61d56394476506e1c563e2e" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>auto</type>
+        <definition>auto detail::is_range&lt; T &gt;::is_iterator_begin</definition>
+        <argsstring></argsstring>
+        <name>is_iterator_begin</name>
+        <qualifiedname>detail::is_range::is_iterator_begin</qualifiedname>
+        <initializer>=
+        <ref refid="structdetail_1_1is__iterator__traits" kindref="compound">is_iterator_traits</ref>&lt;<ref refid="structdetail_1_1iterator__traits" kindref="compound">iterator_traits</ref>&lt;<ref refid="structdetail_1_1is__range_1a40f25e407f601af71b29ade4e32a2fd8" kindref="member">iterator</ref>&gt;&gt;<ref refid="structdetail_1_1is__range_1ace5df29dc07df4c868b41ff7eb6b8d74" kindref="member">::value</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="3663" column="27" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="3663" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structdetail_1_1is__range_1ace5df29dc07df4c868b41ff7eb6b8d74" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool detail::is_range&lt; T &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <qualifiedname>detail::is_range::value</qualifiedname>
+        <initializer>= !std::is_same&lt;<ref refid="structdetail_1_1is__range_1a40f25e407f601af71b29ade4e32a2fd8" kindref="member">iterator</ref>, <ref refid="structdetail_1_1nonesuch" kindref="compound">nonesuch</ref>&gt;::value &amp;&amp; !std::is_same&lt;<ref refid="structdetail_1_1is__range_1a3c35010cd499456c7da66bf8c78ccb5b" kindref="member">sentinel</ref>, <ref refid="structdetail_1_1nonesuch" kindref="compound">nonesuch</ref>&gt;::value &amp;&amp; <ref refid="structdetail_1_1is__range_1ade99f453e61d56394476506e1c563e2e" kindref="member">is_iterator_begin</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="3667" column="27" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="3667" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="3652" column="1" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="3653" bodyend="3668"/>
+    <listofallmembers>
+      <member refid="structdetail_1_1is__range_1ade99f453e61d56394476506e1c563e2e" prot="private" virt="non-virtual"><scope>detail::is_range</scope><name>is_iterator_begin</name></member>
+      <member refid="structdetail_1_1is__range_1a40f25e407f601af71b29ade4e32a2fd8" prot="private" virt="non-virtual"><scope>detail::is_range</scope><name>iterator</name></member>
+      <member refid="structdetail_1_1is__range_1a3c35010cd499456c7da66bf8c78ccb5b" prot="private" virt="non-virtual"><scope>detail::is_range</scope><name>sentinel</name></member>
+      <member refid="structdetail_1_1is__range_1aa9f09e007856cae9058250ae2678d685" prot="private" virt="non-virtual"><scope>detail::is_range</scope><name>t_ref</name></member>
+      <member refid="structdetail_1_1is__range_1ace5df29dc07df4c868b41ff7eb6b8d74" prot="public" virt="non-virtual"><scope>detail::is_range</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

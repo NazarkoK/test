@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structdetail_1_1conjunction_3_01_b_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>detail::conjunction&lt; B &gt;</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">B</basecompoundref>
+    <includes refid="json_8hpp" local="no">json.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class B</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>B</label>
+      </node>
+      <node id="1">
+        <label>detail::conjunction&lt; B &gt;</label>
+        <link refid="structdetail_1_1conjunction_3_01_b_01_4"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>B</label>
+      </node>
+      <node id="1">
+        <label>detail::conjunction&lt; B &gt;</label>
+        <link refid="structdetail_1_1conjunction_3_01_b_01_4"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="3586" column="11" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="3586" bodyend="3586"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

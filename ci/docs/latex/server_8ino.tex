@@ -1,0 +1,471 @@
+\doxysection{D\+:/csad2425\+KI405\+Kachur\+Nazar11/src/server/server.ino File Reference}
+\hypertarget{server_8ino}{}\label{server_8ino}\index{D:/csad2425KI405KachurNazar11/src/server/server.ino@{D:/csad2425KI405KachurNazar11/src/server/server.ino}}
+
+
+Arduino implementation of a Tic-\/\+Tac-\/\+Toe game server with multiple modes.  
+
+
+{\ttfamily \#include $<$Arduino.\+h$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{server_8ino_a4fc01d736fe50cf5b977f755b675f11d}{setup}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the Arduino. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{server_8ino_afe461d27b9c48d5921c00d521181f12f}{loop}} ()
+\begin{DoxyCompactList}\small\item\em Main game loop. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{server_8ino_ab1f321a2f17fa8ba0f5ab4e2621fd6d6}{start\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Starts a new game and resets the board. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{server_8ino_a004af2a2d3719d59e9b53ff0f9b3f705}{set\+Game\+Mode}} (const String \&command)
+\begin{DoxyCompactList}\small\item\em Sets the game mode based on the input command. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{server_8ino_a69984c8b2c5189631a9bc19095b65c8e}{handle\+Manvs\+Man}} (String command)
+\begin{DoxyCompactList}\small\item\em Handles moves in Man vs Man mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{server_8ino_a804c508735731065fbe95e5673ce53a9}{handle\+Manvs\+AI}} (String command)
+\begin{DoxyCompactList}\small\item\em Handles moves in Man vs AI mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{server_8ino_a932c86fa64cdfa6643ea61aa0daa2f8d}{handle\+AIvs\+AI}} (String command)
+\begin{DoxyCompactList}\small\item\em Handles moves in AI vs AI mode. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{server_8ino_a2ae2982c3703a5cf9bc1c21994a2a7d8}{make\+Player\+Move}} (int position, char player)
+\begin{DoxyCompactList}\small\item\em Makes a move for a player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{server_8ino_a1ee4f01a4234013de92c85a0e8189511}{make\+AIMove}} (int ai\+Move\mbox{[}2\mbox{]}, char player)
+\begin{DoxyCompactList}\small\item\em Makes a move for the AI. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{server_8ino_abf334e196f0cbdeb8d1c95193e72132d}{is\+Position\+Valid}} (int position)
+\begin{DoxyCompactList}\small\item\em Checks if a board position is valid. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{server_8ino_a69940de2462accedf71b64ef4f27f65d}{check\+Game\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Checks the status of the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{server_8ino_a6728eac8015f483c7b84219300ae3ccf}{reset\+Board}} ()
+\begin{DoxyCompactList}\small\item\em Resets the game board to its initial state. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{server_8ino_a7d77f13f6262c327ac27711083d96b0f}{check\+Win}} (char player)
+\begin{DoxyCompactList}\small\item\em Checks if a player has won the game. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{server_8ino_a98badcf7748478b3d0a54a6f7b7a4719}{is\+Board\+Full}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the game board is full. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{server_8ino_a76988fb6291c2a780074256d5e65161a}{print\+Board\+Graphically}} ()
+\begin{DoxyCompactList}\small\item\em Prints the current state of the board in a graphical format to the Serial monitor. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{server_8ino_a3ff04dc7582a45a39f86068c89f7549f}{opponent}} (char player)
+\begin{DoxyCompactList}\small\item\em Gets the opponent\textquotesingle{}s symbol for a given player. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{server_8ino_a8b15a1f7360603993b8497434b5e0975}{minimax}} (char current\+Player, char ai\+Player, int depth)
+\begin{DoxyCompactList}\small\item\em Minimax algorithm to determine the best score for a given player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{server_8ino_a407eb7e07128278317088f5c15341f16}{best\+Move}} (char ai\+Player, int move\mbox{[}2\mbox{]})
+\begin{DoxyCompactList}\small\item\em Finds the best move for the AI using the Minimax algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{server_8ino_aa7a2b8ea2c784a4ad8b58a3262bb4f07}{BOARD\+\_\+\+SIZE}} = 3
+\begin{DoxyCompactList}\small\item\em Size of the Tic-\/\+Tac-\/\+Toe board. \end{DoxyCompactList}\item 
+const char \mbox{\hyperlink{server_8ino_af108c3cc3f91be537beac8bca6b0353c}{PLAYER\+\_\+X}} = \textquotesingle{}X\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Symbol representing player X. \end{DoxyCompactList}\item 
+const char \mbox{\hyperlink{server_8ino_a7766931d2312af8659a80ecec00a08c1}{PLAYER\+\_\+O}} = \textquotesingle{}O\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Symbol representing player O. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{server_8ino_a1f4fd0ae8686106cf2aed526f0ff54aa}{MODE\+\_\+\+MAN\+\_\+\+VS\+\_\+\+MAN}} = 1
+\begin{DoxyCompactList}\small\item\em Game mode\+: Man vs Man. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{server_8ino_a1c9bcb42cc7516544f99b42abf0a86a6}{MODE\+\_\+\+MAN\+\_\+\+VS\+\_\+\+AI}} = 2
+\begin{DoxyCompactList}\small\item\em Game mode\+: Man vs AI. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{server_8ino_a003cb3afd3f44eacc497f91458386493}{MODE\+\_\+\+AI\+\_\+\+VS\+\_\+\+AI}} = 3
+\begin{DoxyCompactList}\small\item\em Game mode\+: AI vs AI. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{server_8ino_adc98ed5437376065ba35dc01a91e3fa6}{board}} \mbox{[}\mbox{\hyperlink{server_8ino_aa7a2b8ea2c784a4ad8b58a3262bb4f07}{BOARD\+\_\+\+SIZE}}\mbox{]}\mbox{[}\mbox{\hyperlink{server_8ino_aa7a2b8ea2c784a4ad8b58a3262bb4f07}{BOARD\+\_\+\+SIZE}}\mbox{]} = \{ \{ \textquotesingle{}1\textquotesingle{}, \textquotesingle{}2\textquotesingle{}, \textquotesingle{}3\textquotesingle{} \}, \{ \textquotesingle{}4\textquotesingle{}, \textquotesingle{}5\textquotesingle{}, \textquotesingle{}6\textquotesingle{} \}, \{ \textquotesingle{}7\textquotesingle{}, \textquotesingle{}8\textquotesingle{}, \textquotesingle{}9\textquotesingle{} \} \}
+\begin{DoxyCompactList}\small\item\em The game board. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{server_8ino_a40368575115f29251db4d941582edaef}{is\+Game\+Started}} = false
+\begin{DoxyCompactList}\small\item\em Indicates whether the game has started. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{server_8ino_aa535a3201e6b21c12dc05f4fa9a3e7c2}{game\+Mode}} = 0
+\begin{DoxyCompactList}\small\item\em Current game mode. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{server_8ino_a9f6ae9f11f5974fb1504b22f0a004b42}{last\+Server\+Move}} = -\/1
+\begin{DoxyCompactList}\small\item\em Last move made by the server (for AI games). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{server_8ino_a970e4524261782959a63be471548f3ba}{player\+Count}} = 0
+\begin{DoxyCompactList}\small\item\em Number of moves made in the current game. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{server_8ino_af5fa6534c27e89c22a137f83404c6efe}{global\+Current\+Player}} = \mbox{\hyperlink{server_8ino_af108c3cc3f91be537beac8bca6b0353c}{PLAYER\+\_\+X}}
+\begin{DoxyCompactList}\small\item\em Current player in AI vs AI mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Arduino implementation of a Tic-\/\+Tac-\/\+Toe game server with multiple modes. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{server_8ino_a407eb7e07128278317088f5c15341f16}\index{server.ino@{server.ino}!bestMove@{bestMove}}
+\index{bestMove@{bestMove}!server.ino@{server.ino}}
+\doxysubsubsection{\texorpdfstring{bestMove()}{bestMove()}}
+{\footnotesize\ttfamily \label{server_8ino_a407eb7e07128278317088f5c15341f16} 
+void best\+Move (\begin{DoxyParamCaption}\item[{char}]{ai\+Player}{, }\item[{int}]{move}{\mbox{[}2\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+Finds the best move for the AI using the Minimax algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ai\+Player} & The AI player symbol. \\
+\hline
+{\em move} & An array to store the row and column indices of the best move. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{server_8ino_a69940de2462accedf71b64ef4f27f65d}\index{server.ino@{server.ino}!checkGameStatus@{checkGameStatus}}
+\index{checkGameStatus@{checkGameStatus}!server.ino@{server.ino}}
+\doxysubsubsection{\texorpdfstring{checkGameStatus()}{checkGameStatus()}}
+{\footnotesize\ttfamily \label{server_8ino_a69940de2462accedf71b64ef4f27f65d} 
+bool check\+Game\+Status (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Checks the status of the game. 
+
+\begin{DoxyReturn}{Returns}
+True if the game has ended, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{server_8ino_a7d77f13f6262c327ac27711083d96b0f}\index{server.ino@{server.ino}!checkWin@{checkWin}}
+\index{checkWin@{checkWin}!server.ino@{server.ino}}
+\doxysubsubsection{\texorpdfstring{checkWin()}{checkWin()}}
+{\footnotesize\ttfamily \label{server_8ino_a7d77f13f6262c327ac27711083d96b0f} 
+bool check\+Win (\begin{DoxyParamCaption}\item[{char}]{player}{}\end{DoxyParamCaption})}
+
+
+
+Checks if a player has won the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & The player symbol to check for a win. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the player has won, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{server_8ino_a932c86fa64cdfa6643ea61aa0daa2f8d}\index{server.ino@{server.ino}!handleAIvsAI@{handleAIvsAI}}
+\index{handleAIvsAI@{handleAIvsAI}!server.ino@{server.ino}}
+\doxysubsubsection{\texorpdfstring{handleAIvsAI()}{handleAIvsAI()}}
+{\footnotesize\ttfamily \label{server_8ino_a932c86fa64cdfa6643ea61aa0daa2f8d} 
+void handle\+AIvs\+AI (\begin{DoxyParamCaption}\item[{String}]{command}{}\end{DoxyParamCaption})}
+
+
+
+Handles moves in AI vs AI mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & The received command (unused in this mode). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{server_8ino_a804c508735731065fbe95e5673ce53a9}\index{server.ino@{server.ino}!handleManvsAI@{handleManvsAI}}
+\index{handleManvsAI@{handleManvsAI}!server.ino@{server.ino}}
+\doxysubsubsection{\texorpdfstring{handleManvsAI()}{handleManvsAI()}}
+{\footnotesize\ttfamily \label{server_8ino_a804c508735731065fbe95e5673ce53a9} 
+void handle\+Manvs\+AI (\begin{DoxyParamCaption}\item[{String}]{command}{}\end{DoxyParamCaption})}
+
+
+
+Handles moves in Man vs AI mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & The received move command. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{server_8ino_a69984c8b2c5189631a9bc19095b65c8e}\index{server.ino@{server.ino}!handleManvsMan@{handleManvsMan}}
+\index{handleManvsMan@{handleManvsMan}!server.ino@{server.ino}}
+\doxysubsubsection{\texorpdfstring{handleManvsMan()}{handleManvsMan()}}
+{\footnotesize\ttfamily \label{server_8ino_a69984c8b2c5189631a9bc19095b65c8e} 
+void handle\+Manvs\+Man (\begin{DoxyParamCaption}\item[{String}]{command}{}\end{DoxyParamCaption})}
+
+
+
+Handles moves in Man vs Man mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & The received move command. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{server_8ino_a98badcf7748478b3d0a54a6f7b7a4719}\index{server.ino@{server.ino}!isBoardFull@{isBoardFull}}
+\index{isBoardFull@{isBoardFull}!server.ino@{server.ino}}
+\doxysubsubsection{\texorpdfstring{isBoardFull()}{isBoardFull()}}
+{\footnotesize\ttfamily \label{server_8ino_a98badcf7748478b3d0a54a6f7b7a4719} 
+bool is\+Board\+Full (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Checks if the game board is full. 
+
+\begin{DoxyReturn}{Returns}
+True if the board is full, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{server_8ino_abf334e196f0cbdeb8d1c95193e72132d}\index{server.ino@{server.ino}!isPositionValid@{isPositionValid}}
+\index{isPositionValid@{isPositionValid}!server.ino@{server.ino}}
+\doxysubsubsection{\texorpdfstring{isPositionValid()}{isPositionValid()}}
+{\footnotesize\ttfamily \label{server_8ino_abf334e196f0cbdeb8d1c95193e72132d} 
+bool is\+Position\+Valid (\begin{DoxyParamCaption}\item[{int}]{position}{}\end{DoxyParamCaption})}
+
+
+
+Checks if a board position is valid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The board position to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the position is valid, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{server_8ino_afe461d27b9c48d5921c00d521181f12f}\index{server.ino@{server.ino}!loop@{loop}}
+\index{loop@{loop}!server.ino@{server.ino}}
+\doxysubsubsection{\texorpdfstring{loop()}{loop()}}
+{\footnotesize\ttfamily \label{server_8ino_afe461d27b9c48d5921c00d521181f12f} 
+void loop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Main game loop. 
+
+\Hypertarget{server_8ino_a1ee4f01a4234013de92c85a0e8189511}\index{server.ino@{server.ino}!makeAIMove@{makeAIMove}}
+\index{makeAIMove@{makeAIMove}!server.ino@{server.ino}}
+\doxysubsubsection{\texorpdfstring{makeAIMove()}{makeAIMove()}}
+{\footnotesize\ttfamily \label{server_8ino_a1ee4f01a4234013de92c85a0e8189511} 
+void make\+AIMove (\begin{DoxyParamCaption}\item[{int}]{ai\+Move}{\mbox{[}2\mbox{]}, }\item[{char}]{player}{}\end{DoxyParamCaption})}
+
+
+
+Makes a move for the AI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ai\+Move} & The calculated AI move as row and column indices. \\
+\hline
+{\em player} & The AI player symbol. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{server_8ino_a2ae2982c3703a5cf9bc1c21994a2a7d8}\index{server.ino@{server.ino}!makePlayerMove@{makePlayerMove}}
+\index{makePlayerMove@{makePlayerMove}!server.ino@{server.ino}}
+\doxysubsubsection{\texorpdfstring{makePlayerMove()}{makePlayerMove()}}
+{\footnotesize\ttfamily \label{server_8ino_a2ae2982c3703a5cf9bc1c21994a2a7d8} 
+bool make\+Player\+Move (\begin{DoxyParamCaption}\item[{int}]{position}{, }\item[{char}]{player}{}\end{DoxyParamCaption})}
+
+
+
+Makes a move for a player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The board position to mark. \\
+\hline
+{\em player} & The current player symbol. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the move is valid, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{server_8ino_a8b15a1f7360603993b8497434b5e0975}\index{server.ino@{server.ino}!minimax@{minimax}}
+\index{minimax@{minimax}!server.ino@{server.ino}}
+\doxysubsubsection{\texorpdfstring{minimax()}{minimax()}}
+{\footnotesize\ttfamily \label{server_8ino_a8b15a1f7360603993b8497434b5e0975} 
+int minimax (\begin{DoxyParamCaption}\item[{char}]{current\+Player}{, }\item[{char}]{ai\+Player}{, }\item[{int}]{depth}{}\end{DoxyParamCaption})}
+
+
+
+Minimax algorithm to determine the best score for a given player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Player} & The current player being evaluated. \\
+\hline
+{\em ai\+Player} & The AI player symbol. \\
+\hline
+{\em depth} & The depth of the recursive search. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The best score for the current player. 
+\end{DoxyReturn}
+\Hypertarget{server_8ino_a3ff04dc7582a45a39f86068c89f7549f}\index{server.ino@{server.ino}!opponent@{opponent}}
+\index{opponent@{opponent}!server.ino@{server.ino}}
+\doxysubsubsection{\texorpdfstring{opponent()}{opponent()}}
+{\footnotesize\ttfamily \label{server_8ino_a3ff04dc7582a45a39f86068c89f7549f} 
+char opponent (\begin{DoxyParamCaption}\item[{char}]{player}{}\end{DoxyParamCaption})}
+
+
+
+Gets the opponent\textquotesingle{}s symbol for a given player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & The player symbol (\textquotesingle{}X\textquotesingle{} or \textquotesingle{}O\textquotesingle{}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The opponent\textquotesingle{}s symbol. 
+\end{DoxyReturn}
+\Hypertarget{server_8ino_a76988fb6291c2a780074256d5e65161a}\index{server.ino@{server.ino}!printBoardGraphically@{printBoardGraphically}}
+\index{printBoardGraphically@{printBoardGraphically}!server.ino@{server.ino}}
+\doxysubsubsection{\texorpdfstring{printBoardGraphically()}{printBoardGraphically()}}
+{\footnotesize\ttfamily \label{server_8ino_a76988fb6291c2a780074256d5e65161a} 
+void print\+Board\+Graphically (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Prints the current state of the board in a graphical format to the Serial monitor. 
+
+\Hypertarget{server_8ino_a6728eac8015f483c7b84219300ae3ccf}\index{server.ino@{server.ino}!resetBoard@{resetBoard}}
+\index{resetBoard@{resetBoard}!server.ino@{server.ino}}
+\doxysubsubsection{\texorpdfstring{resetBoard()}{resetBoard()}}
+{\footnotesize\ttfamily \label{server_8ino_a6728eac8015f483c7b84219300ae3ccf} 
+void reset\+Board (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Resets the game board to its initial state. 
+
+\Hypertarget{server_8ino_a004af2a2d3719d59e9b53ff0f9b3f705}\index{server.ino@{server.ino}!setGameMode@{setGameMode}}
+\index{setGameMode@{setGameMode}!server.ino@{server.ino}}
+\doxysubsubsection{\texorpdfstring{setGameMode()}{setGameMode()}}
+{\footnotesize\ttfamily \label{server_8ino_a004af2a2d3719d59e9b53ff0f9b3f705} 
+void set\+Game\+Mode (\begin{DoxyParamCaption}\item[{const String \&}]{command}{}\end{DoxyParamCaption})}
+
+
+
+Sets the game mode based on the input command. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & The received command containing the mode. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{server_8ino_a4fc01d736fe50cf5b977f755b675f11d}\index{server.ino@{server.ino}!setup@{setup}}
+\index{setup@{setup}!server.ino@{server.ino}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily \label{server_8ino_a4fc01d736fe50cf5b977f755b675f11d} 
+void setup (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the Arduino. 
+
+\Hypertarget{server_8ino_ab1f321a2f17fa8ba0f5ab4e2621fd6d6}\index{server.ino@{server.ino}!startGame@{startGame}}
+\index{startGame@{startGame}!server.ino@{server.ino}}
+\doxysubsubsection{\texorpdfstring{startGame()}{startGame()}}
+{\footnotesize\ttfamily \label{server_8ino_ab1f321a2f17fa8ba0f5ab4e2621fd6d6} 
+void start\+Game (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Starts a new game and resets the board. 
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{server_8ino_adc98ed5437376065ba35dc01a91e3fa6}\index{server.ino@{server.ino}!board@{board}}
+\index{board@{board}!server.ino@{server.ino}}
+\doxysubsubsection{\texorpdfstring{board}{board}}
+{\footnotesize\ttfamily \label{server_8ino_adc98ed5437376065ba35dc01a91e3fa6} 
+char board\mbox{[}\mbox{\hyperlink{server_8ino_aa7a2b8ea2c784a4ad8b58a3262bb4f07}{BOARD\+\_\+\+SIZE}}\mbox{]}\mbox{[}\mbox{\hyperlink{server_8ino_aa7a2b8ea2c784a4ad8b58a3262bb4f07}{BOARD\+\_\+\+SIZE}}\mbox{]} = \{ \{ \textquotesingle{}1\textquotesingle{}, \textquotesingle{}2\textquotesingle{}, \textquotesingle{}3\textquotesingle{} \}, \{ \textquotesingle{}4\textquotesingle{}, \textquotesingle{}5\textquotesingle{}, \textquotesingle{}6\textquotesingle{} \}, \{ \textquotesingle{}7\textquotesingle{}, \textquotesingle{}8\textquotesingle{}, \textquotesingle{}9\textquotesingle{} \} \}}
+
+
+
+The game board. 
+
+\Hypertarget{server_8ino_aa7a2b8ea2c784a4ad8b58a3262bb4f07}\index{server.ino@{server.ino}!BOARD\_SIZE@{BOARD\_SIZE}}
+\index{BOARD\_SIZE@{BOARD\_SIZE}!server.ino@{server.ino}}
+\doxysubsubsection{\texorpdfstring{BOARD\_SIZE}{BOARD\_SIZE}}
+{\footnotesize\ttfamily \label{server_8ino_aa7a2b8ea2c784a4ad8b58a3262bb4f07} 
+const int BOARD\+\_\+\+SIZE = 3}
+
+
+
+Size of the Tic-\/\+Tac-\/\+Toe board. 
+
+\Hypertarget{server_8ino_aa535a3201e6b21c12dc05f4fa9a3e7c2}\index{server.ino@{server.ino}!gameMode@{gameMode}}
+\index{gameMode@{gameMode}!server.ino@{server.ino}}
+\doxysubsubsection{\texorpdfstring{gameMode}{gameMode}}
+{\footnotesize\ttfamily \label{server_8ino_aa535a3201e6b21c12dc05f4fa9a3e7c2} 
+int game\+Mode = 0}
+
+
+
+Current game mode. 
+
+\Hypertarget{server_8ino_af5fa6534c27e89c22a137f83404c6efe}\index{server.ino@{server.ino}!globalCurrentPlayer@{globalCurrentPlayer}}
+\index{globalCurrentPlayer@{globalCurrentPlayer}!server.ino@{server.ino}}
+\doxysubsubsection{\texorpdfstring{globalCurrentPlayer}{globalCurrentPlayer}}
+{\footnotesize\ttfamily \label{server_8ino_af5fa6534c27e89c22a137f83404c6efe} 
+char global\+Current\+Player = \mbox{\hyperlink{server_8ino_af108c3cc3f91be537beac8bca6b0353c}{PLAYER\+\_\+X}}}
+
+
+
+Current player in AI vs AI mode. 
+
+\Hypertarget{server_8ino_a40368575115f29251db4d941582edaef}\index{server.ino@{server.ino}!isGameStarted@{isGameStarted}}
+\index{isGameStarted@{isGameStarted}!server.ino@{server.ino}}
+\doxysubsubsection{\texorpdfstring{isGameStarted}{isGameStarted}}
+{\footnotesize\ttfamily \label{server_8ino_a40368575115f29251db4d941582edaef} 
+bool is\+Game\+Started = false}
+
+
+
+Indicates whether the game has started. 
+
+\Hypertarget{server_8ino_a9f6ae9f11f5974fb1504b22f0a004b42}\index{server.ino@{server.ino}!lastServerMove@{lastServerMove}}
+\index{lastServerMove@{lastServerMove}!server.ino@{server.ino}}
+\doxysubsubsection{\texorpdfstring{lastServerMove}{lastServerMove}}
+{\footnotesize\ttfamily \label{server_8ino_a9f6ae9f11f5974fb1504b22f0a004b42} 
+int last\+Server\+Move = -\/1}
+
+
+
+Last move made by the server (for AI games). 
+
+\Hypertarget{server_8ino_a003cb3afd3f44eacc497f91458386493}\index{server.ino@{server.ino}!MODE\_AI\_VS\_AI@{MODE\_AI\_VS\_AI}}
+\index{MODE\_AI\_VS\_AI@{MODE\_AI\_VS\_AI}!server.ino@{server.ino}}
+\doxysubsubsection{\texorpdfstring{MODE\_AI\_VS\_AI}{MODE\_AI\_VS\_AI}}
+{\footnotesize\ttfamily \label{server_8ino_a003cb3afd3f44eacc497f91458386493} 
+const int MODE\+\_\+\+AI\+\_\+\+VS\+\_\+\+AI = 3}
+
+
+
+Game mode\+: AI vs AI. 
+
+\Hypertarget{server_8ino_a1c9bcb42cc7516544f99b42abf0a86a6}\index{server.ino@{server.ino}!MODE\_MAN\_VS\_AI@{MODE\_MAN\_VS\_AI}}
+\index{MODE\_MAN\_VS\_AI@{MODE\_MAN\_VS\_AI}!server.ino@{server.ino}}
+\doxysubsubsection{\texorpdfstring{MODE\_MAN\_VS\_AI}{MODE\_MAN\_VS\_AI}}
+{\footnotesize\ttfamily \label{server_8ino_a1c9bcb42cc7516544f99b42abf0a86a6} 
+const int MODE\+\_\+\+MAN\+\_\+\+VS\+\_\+\+AI = 2}
+
+
+
+Game mode\+: Man vs AI. 
+
+\Hypertarget{server_8ino_a1f4fd0ae8686106cf2aed526f0ff54aa}\index{server.ino@{server.ino}!MODE\_MAN\_VS\_MAN@{MODE\_MAN\_VS\_MAN}}
+\index{MODE\_MAN\_VS\_MAN@{MODE\_MAN\_VS\_MAN}!server.ino@{server.ino}}
+\doxysubsubsection{\texorpdfstring{MODE\_MAN\_VS\_MAN}{MODE\_MAN\_VS\_MAN}}
+{\footnotesize\ttfamily \label{server_8ino_a1f4fd0ae8686106cf2aed526f0ff54aa} 
+const int MODE\+\_\+\+MAN\+\_\+\+VS\+\_\+\+MAN = 1}
+
+
+
+Game mode\+: Man vs Man. 
+
+\Hypertarget{server_8ino_a7766931d2312af8659a80ecec00a08c1}\index{server.ino@{server.ino}!PLAYER\_O@{PLAYER\_O}}
+\index{PLAYER\_O@{PLAYER\_O}!server.ino@{server.ino}}
+\doxysubsubsection{\texorpdfstring{PLAYER\_O}{PLAYER\_O}}
+{\footnotesize\ttfamily \label{server_8ino_a7766931d2312af8659a80ecec00a08c1} 
+const char PLAYER\+\_\+O = \textquotesingle{}O\textquotesingle{}}
+
+
+
+Symbol representing player O. 
+
+\Hypertarget{server_8ino_af108c3cc3f91be537beac8bca6b0353c}\index{server.ino@{server.ino}!PLAYER\_X@{PLAYER\_X}}
+\index{PLAYER\_X@{PLAYER\_X}!server.ino@{server.ino}}
+\doxysubsubsection{\texorpdfstring{PLAYER\_X}{PLAYER\_X}}
+{\footnotesize\ttfamily \label{server_8ino_af108c3cc3f91be537beac8bca6b0353c} 
+const char PLAYER\+\_\+X = \textquotesingle{}X\textquotesingle{}}
+
+
+
+Symbol representing player X. 
+
+\Hypertarget{server_8ino_a970e4524261782959a63be471548f3ba}\index{server.ino@{server.ino}!playerCount@{playerCount}}
+\index{playerCount@{playerCount}!server.ino@{server.ino}}
+\doxysubsubsection{\texorpdfstring{playerCount}{playerCount}}
+{\footnotesize\ttfamily \label{server_8ino_a970e4524261782959a63be471548f3ba} 
+int player\+Count = 0}
+
+
+
+Number of moves made in the current game. 
+

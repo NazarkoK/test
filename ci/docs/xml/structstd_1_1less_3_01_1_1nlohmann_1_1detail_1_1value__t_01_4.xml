@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structstd_1_1less_3_01_1_1nlohmann_1_1detail_1_1value__t_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>std::less&lt; ::nlohmann::detail::value_t &gt;</compoundname>
+    <includes refid="json_8hpp" local="no">json.hpp</includes>
+    <templateparamlist>
+    </templateparamlist>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structstd_1_1less_3_01_1_1nlohmann_1_1detail_1_1value__t_01_4_1acb798e1a5706e5e08b18ca182cd17027" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool std::less&lt; ::nlohmann::detail::value_t &gt;::operator()</definition>
+        <argsstring>(::nlohmann::detail::value_t lhs, ::nlohmann::detail::value_t rhs) const noexcept</argsstring>
+        <name>operator()</name>
+        <qualifiedname>std::less&lt; ::nlohmann::detail::value_t &gt;::operator()</qualifiedname>
+        <param>
+          <type>::nlohmann::detail::value_t</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>::nlohmann::detail::value_t</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>compare two value_t enum values </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="since"><para>version 3.0.0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="24357" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="24357" bodyend="24365"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="24351" column="1" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="24352" bodyend="24366"/>
+    <listofallmembers>
+      <member refid="structstd_1_1less_3_01_1_1nlohmann_1_1detail_1_1value__t_01_4_1acb798e1a5706e5e08b18ca182cd17027" prot="public" virt="non-virtual"><scope>std::less&lt; ::nlohmann::detail::value_t &gt;</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

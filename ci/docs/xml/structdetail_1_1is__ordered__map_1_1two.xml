@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structdetail_1_1is__ordered__map_1_1two" kind="struct" language="C++" prot="public">
+    <compoundname>detail::is_ordered_map::two</compoundname>
+    <includes refid="json_8hpp" local="no">json.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdetail_1_1is__ordered__map_1_1two_1a762e0d409e9c4f003df0638c04dfa3c8" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char detail::is_ordered_map&lt; T &gt;::two::x[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>x</name>
+        <qualifiedname>detail::is_ordered_map::two::x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="3966" column="14" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="3966" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="3964" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="3965" bodyend="3967"/>
+    <listofallmembers>
+      <member refid="structdetail_1_1is__ordered__map_1_1two_1a762e0d409e9c4f003df0638c04dfa3c8" prot="public" virt="non-virtual"><scope>detail::is_ordered_map::two</scope><name>x</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

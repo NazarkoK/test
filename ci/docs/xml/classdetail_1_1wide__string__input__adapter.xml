@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classdetail_1_1wide__string__input__adapter" kind="class" language="C++" prot="public">
+    <compoundname>detail::wide_string_input_adapter</compoundname>
+    <includes refid="json_8hpp" local="no">json.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename BaseInputAdapter</type>
+      </param>
+      <param>
+        <type>typename WideCharType</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classdetail_1_1wide__string__input__adapter_1ae213f84ba1b7e9db57ca8d6cdc8c241d" prot="public" static="no">
+        <type>char</type>
+        <definition>using detail::wide_string_input_adapter&lt; BaseInputAdapter, WideCharType &gt;::char_type =  char</definition>
+        <argsstring></argsstring>
+        <name>char_type</name>
+        <qualifiedname>detail::wide_string_input_adapter::char_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="6371" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="6371" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdetail_1_1wide__string__input__adapter_1a53dd4fecb20b1358832c93758fb37378" prot="private" static="no" mutable="no">
+        <type>BaseInputAdapter</type>
+        <definition>BaseInputAdapter detail::wide_string_input_adapter&lt; BaseInputAdapter, WideCharType &gt;::base_adapter</definition>
+        <argsstring></argsstring>
+        <name>base_adapter</name>
+        <qualifiedname>detail::wide_string_input_adapter::base_adapter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="6394" column="22" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="6394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdetail_1_1wide__string__input__adapter_1a378353ca4f8fa6ce681863db1a2ecd30" prot="private" static="no" mutable="no">
+        <type>std::array&lt; std::char_traits&lt; char &gt;::int_type, 4 &gt;</type>
+        <definition>std::array&lt;std::char_traits&lt;char&gt;::int_type, 4&gt; detail::wide_string_input_adapter&lt; BaseInputAdapter, WideCharType &gt;::utf8_bytes</definition>
+        <argsstring></argsstring>
+        <name>utf8_bytes</name>
+        <qualifiedname>detail::wide_string_input_adapter::utf8_bytes</qualifiedname>
+        <initializer>= {{0, 0, 0, 0}}</initializer>
+        <briefdescription>
+<para>a buffer for UTF-8 bytes </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="6403" column="17" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="6403" bodyend="6403"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdetail_1_1wide__string__input__adapter_1af234031ee14448d536022847ab6bc885" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t detail::wide_string_input_adapter&lt; BaseInputAdapter, WideCharType &gt;::utf8_bytes_index</definition>
+        <argsstring></argsstring>
+        <name>utf8_bytes_index</name>
+        <qualifiedname>detail::wide_string_input_adapter::utf8_bytes_index</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>index to the utf8_codes array for the next valid byte </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="6406" column="17" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="6406" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdetail_1_1wide__string__input__adapter_1a529076d03d62e56ec1ec12fe2da1e0c9" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t detail::wide_string_input_adapter&lt; BaseInputAdapter, WideCharType &gt;::utf8_bytes_filled</definition>
+        <argsstring></argsstring>
+        <name>utf8_bytes_filled</name>
+        <qualifiedname>detail::wide_string_input_adapter::utf8_bytes_filled</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>number of valid bytes in the utf8_codes array </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="6408" column="17" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="6408" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdetail_1_1wide__string__input__adapter_1a5deb0bdbced96a021ab968967a815773" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>detail::wide_string_input_adapter&lt; BaseInputAdapter, WideCharType &gt;::wide_string_input_adapter</definition>
+        <argsstring>(BaseInputAdapter base)</argsstring>
+        <name>wide_string_input_adapter</name>
+        <qualifiedname>detail::wide_string_input_adapter::wide_string_input_adapter</qualifiedname>
+        <param>
+          <type>BaseInputAdapter</type>
+          <declname>base</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="6373" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="6373" bodyend="6374"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1wide__string__input__adapter_1a1fe2333aaadd2251846311ea1c403c3e" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::char_traits&lt; char &gt;::int_type</type>
+        <definition>std::char_traits&lt; char &gt;::int_type detail::wide_string_input_adapter&lt; BaseInputAdapter, WideCharType &gt;::get_character</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>get_character</name>
+        <qualifiedname>detail::wide_string_input_adapter::get_character</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="6376" column="42" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="6376" bodyend="6391"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdetail_1_1wide__string__input__adapter_1afaebf5106d919139ca4b330d9ed40da0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>size_t</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void detail::wide_string_input_adapter&lt; BaseInputAdapter, WideCharType &gt;::fill_buffer</definition>
+        <argsstring>()</argsstring>
+        <name>fill_buffer</name>
+        <qualifiedname>detail::wide_string_input_adapter::fill_buffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="6397" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="6397" bodyend="6400"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="6368" column="1" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="6369" bodyend="6409"/>
+    <listofallmembers>
+      <member refid="classdetail_1_1wide__string__input__adapter_1a53dd4fecb20b1358832c93758fb37378" prot="private" virt="non-virtual"><scope>detail::wide_string_input_adapter</scope><name>base_adapter</name></member>
+      <member refid="classdetail_1_1wide__string__input__adapter_1ae213f84ba1b7e9db57ca8d6cdc8c241d" prot="public" virt="non-virtual"><scope>detail::wide_string_input_adapter</scope><name>char_type</name></member>
+      <member refid="classdetail_1_1wide__string__input__adapter_1afaebf5106d919139ca4b330d9ed40da0" prot="private" virt="non-virtual"><scope>detail::wide_string_input_adapter</scope><name>fill_buffer</name></member>
+      <member refid="classdetail_1_1wide__string__input__adapter_1a1fe2333aaadd2251846311ea1c403c3e" prot="public" virt="non-virtual"><scope>detail::wide_string_input_adapter</scope><name>get_character</name></member>
+      <member refid="classdetail_1_1wide__string__input__adapter_1a378353ca4f8fa6ce681863db1a2ecd30" prot="private" virt="non-virtual"><scope>detail::wide_string_input_adapter</scope><name>utf8_bytes</name></member>
+      <member refid="classdetail_1_1wide__string__input__adapter_1a529076d03d62e56ec1ec12fe2da1e0c9" prot="private" virt="non-virtual"><scope>detail::wide_string_input_adapter</scope><name>utf8_bytes_filled</name></member>
+      <member refid="classdetail_1_1wide__string__input__adapter_1af234031ee14448d536022847ab6bc885" prot="private" virt="non-virtual"><scope>detail::wide_string_input_adapter</scope><name>utf8_bytes_index</name></member>
+      <member refid="classdetail_1_1wide__string__input__adapter_1a5deb0bdbced96a021ab968967a815773" prot="public" virt="non-virtual"><scope>detail::wide_string_input_adapter</scope><name>wide_string_input_adapter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

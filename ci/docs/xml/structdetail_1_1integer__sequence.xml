@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structdetail_1_1integer__sequence" kind="struct" language="C++" prot="public">
+    <compoundname>detail::integer_sequence</compoundname>
+    <includes refid="json_8hpp" local="no">json.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>T...</type>
+        <declname>Ints</declname>
+        <defname>Ints</defname>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structdetail_1_1integer__sequence_1a37ef697ff49523bc0fe5e83afabd8a09" prot="public" static="no">
+        <type>T</type>
+        <definition>using detail::integer_sequence&lt; T, Ints &gt;::value_type =  T</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <qualifiedname>detail::integer_sequence::value_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="3108" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="3108" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structdetail_1_1integer__sequence_1ae4d9136f834057a4b68a115554eb9817" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>static constexpr std::size_t detail::integer_sequence&lt; T, Ints &gt;::size</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>size</name>
+        <qualifiedname>detail::integer_sequence::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="3109" column="34" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="3109" bodyend="3112"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="3106" column="1" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="3107" bodyend="3113"/>
+    <listofallmembers>
+      <member refid="structdetail_1_1integer__sequence_1ae4d9136f834057a4b68a115554eb9817" prot="public" virt="non-virtual"><scope>detail::integer_sequence</scope><name>size</name></member>
+      <member refid="structdetail_1_1integer__sequence_1a37ef697ff49523bc0fe5e83afabd8a09" prot="public" virt="non-virtual"><scope>detail::integer_sequence</scope><name>value_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

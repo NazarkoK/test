@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - develop
-      - feature/develop/task3
+      - feature/develop/task4
   pull_request:
     branches:
       - develop
@@ -15,15 +15,19 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4  
+      
       - name: Set up Visual Studio
         uses: microsoft/setup-msbuild@v2  
         with:
           vs-version: '16.0'
+      
       - name: Restore NuGet packages
         run: nuget restore src/client/client.sln
+      
       - name: Build solution
         run: |
           msbuild src/client/client.sln /p:Configuration=Release /p:Platform="x64" /p:OutputPath="src/client/build"
+      
       - name: Upload Windows binaries
         uses: actions/upload-artifact@v4
         with:
@@ -47,12 +51,12 @@ jobs:
       - name: Board firmware
         shell: pwsh
         run: |
-            .\ci\server-script.ps1
+            .\ci\documentation-script.ps1
   
       - name: Upload Windows binaries
         uses: actions/upload-artifact@v4
         with:
-          name: Test_Server
+          name: test_server
           path: bin/test_server/test_server.exe
 
       - name: Upload Arduino binaries
@@ -60,3 +64,24 @@ jobs:
         with:
           name: server-hex
           path: ./ci/build/server.ino.hex
+  build_documentation:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Run documentation script
+        shell: pwsh
+        run: |
+        .\ci\documentation-script.ps1
+      
+      - name: Upload Doxygen documentation
+        uses: actions/upload-artifact@v4
+        with:
+          name: doxy-html
+          path: ./ci/documentation/html
+      - name: Upload Doxyfile
+        uses: actions/upload-artifact@v4
+        with:
+          name: doxy-file
+          path: ./ci/documentation/Doxyfile

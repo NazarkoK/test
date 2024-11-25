@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structdetail_1_1dtoa__impl_1_1cached__power" kind="struct" language="C++" prot="public">
+    <compoundname>detail::dtoa_impl::cached_power</compoundname>
+    <includes refid="json_8hpp" local="no">json.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdetail_1_1dtoa__impl_1_1cached__power_1a1e1bc1d228d8e54dc830fe6ef719eecf" prot="public" static="no" mutable="no">
+        <type>std::uint64_t</type>
+        <definition>std::uint64_t detail::dtoa_impl::cached_power::f</definition>
+        <argsstring></argsstring>
+        <name>f</name>
+        <qualifiedname>detail::dtoa_impl::cached_power::f</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="17099" column="19" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="17099" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdetail_1_1dtoa__impl_1_1cached__power_1a96cc75e988a7e08e2de93db20024e7df" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int detail::dtoa_impl::cached_power::e</definition>
+        <argsstring></argsstring>
+        <name>e</name>
+        <qualifiedname>detail::dtoa_impl::cached_power::e</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="17100" column="9" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="17100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdetail_1_1dtoa__impl_1_1cached__power_1ae9c889d5fc4427f633ec23044e986755" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int detail::dtoa_impl::cached_power::k</definition>
+        <argsstring></argsstring>
+        <name>k</name>
+        <qualifiedname>detail::dtoa_impl::cached_power::k</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="17101" column="9" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="17101" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="17097" column="1" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="17098" bodyend="17102"/>
+    <listofallmembers>
+      <member refid="structdetail_1_1dtoa__impl_1_1cached__power_1a96cc75e988a7e08e2de93db20024e7df" prot="public" virt="non-virtual"><scope>detail::dtoa_impl::cached_power</scope><name>e</name></member>
+      <member refid="structdetail_1_1dtoa__impl_1_1cached__power_1a1e1bc1d228d8e54dc830fe6ef719eecf" prot="public" virt="non-virtual"><scope>detail::dtoa_impl::cached_power</scope><name>f</name></member>
+      <member refid="structdetail_1_1dtoa__impl_1_1cached__power_1ae9c889d5fc4427f633ec23044e986755" prot="public" virt="non-virtual"><scope>detail::dtoa_impl::cached_power</scope><name>k</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

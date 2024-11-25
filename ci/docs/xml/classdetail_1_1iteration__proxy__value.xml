@@ -1,0 +1,448 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classdetail_1_1iteration__proxy__value" kind="class" language="C++" prot="public">
+    <compoundname>detail::iteration_proxy_value</compoundname>
+    <includes refid="json_8hpp" local="no">json.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename IteratorType</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classdetail_1_1iteration__proxy__value_1a3365781ff806e15a1cd99e6d0987c68d" prot="public" static="no">
+        <type>std::ptrdiff_t</type>
+        <definition>using detail::iteration_proxy_value&lt; IteratorType &gt;::difference_type =  std::ptrdiff_t</definition>
+        <argsstring></argsstring>
+        <name>difference_type</name>
+        <qualifiedname>detail::iteration_proxy_value::difference_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5117" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="5117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdetail_1_1iteration__proxy__value_1a6d72d5deb611fb7c5c909328b37cd04e" prot="public" static="no">
+        <type><ref refid="classdetail_1_1iteration__proxy__value" kindref="compound">iteration_proxy_value</ref></type>
+        <definition>using detail::iteration_proxy_value&lt; IteratorType &gt;::value_type =  iteration_proxy_value</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <qualifiedname>detail::iteration_proxy_value::value_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5118" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="5118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdetail_1_1iteration__proxy__value_1ac19cd4b8224e83f1c72f48bde9f069be" prot="public" static="no">
+        <type><ref refid="classdetail_1_1iteration__proxy__value_1a6d72d5deb611fb7c5c909328b37cd04e" kindref="member">value_type</ref> *</type>
+        <definition>using detail::iteration_proxy_value&lt; IteratorType &gt;::pointer =  value_type *</definition>
+        <argsstring></argsstring>
+        <name>pointer</name>
+        <qualifiedname>detail::iteration_proxy_value::pointer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5119" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="5119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdetail_1_1iteration__proxy__value_1a42589c936453407a85968f970556e7cd" prot="public" static="no">
+        <type><ref refid="classdetail_1_1iteration__proxy__value_1a6d72d5deb611fb7c5c909328b37cd04e" kindref="member">value_type</ref> &amp;</type>
+        <definition>using detail::iteration_proxy_value&lt; IteratorType &gt;::reference =  value_type &amp;</definition>
+        <argsstring></argsstring>
+        <name>reference</name>
+        <qualifiedname>detail::iteration_proxy_value::reference</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5120" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="5120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdetail_1_1iteration__proxy__value_1ada4177e3926d326dd4f6a3e0b5ae9bfb" prot="public" static="no">
+        <type>std::input_iterator_tag</type>
+        <definition>using detail::iteration_proxy_value&lt; IteratorType &gt;::iterator_category =  std::input_iterator_tag</definition>
+        <argsstring></argsstring>
+        <name>iterator_category</name>
+        <qualifiedname>detail::iteration_proxy_value::iterator_category</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5121" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="5121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdetail_1_1iteration__proxy__value_1ae24efb92078513900c5576c780f67438" prot="public" static="no">
+        <type>typename std::remove_cv&lt; typename std::remove_reference&lt; decltype(std::declval&lt; IteratorType &gt;().<ref refid="classdetail_1_1iteration__proxy__value_1ad12633bc0d3ac7a651381b174a7914ee" kindref="member">key</ref>()) &gt;::type &gt;::type</type>
+        <definition>using detail::iteration_proxy_value&lt; IteratorType &gt;::string_type =  typename std::remove_cv&lt; typename std::remove_reference&lt;decltype( std::declval&lt;IteratorType&gt;().key() ) &gt;::type &gt;::type</definition>
+        <argsstring></argsstring>
+        <name>string_type</name>
+        <qualifiedname>detail::iteration_proxy_value::string_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5122" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="5122" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdetail_1_1iteration__proxy__value_1af1232c7e9d45319bbb20cec7e1d0603f" prot="private" static="no" mutable="no">
+        <type>IteratorType</type>
+        <definition>IteratorType detail::iteration_proxy_value&lt; IteratorType &gt;::anchor</definition>
+        <argsstring></argsstring>
+        <name>anchor</name>
+        <qualifiedname>detail::iteration_proxy_value::anchor</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>the iterator </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5126" column="18" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="5126" bodyend="5126"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdetail_1_1iteration__proxy__value_1a7b6227d75cc0762288f880b161ededcc" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t detail::iteration_proxy_value&lt; IteratorType &gt;::array_index</definition>
+        <argsstring></argsstring>
+        <name>array_index</name>
+        <qualifiedname>detail::iteration_proxy_value::array_index</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>an index for arrays (used to create key names) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5128" column="17" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="5128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdetail_1_1iteration__proxy__value_1a785db462502daaf223523a57bfde9c00" prot="private" static="no" mutable="yes">
+        <type>std::size_t</type>
+        <definition>std::size_t detail::iteration_proxy_value&lt; IteratorType &gt;::array_index_last</definition>
+        <argsstring></argsstring>
+        <name>array_index_last</name>
+        <qualifiedname>detail::iteration_proxy_value::array_index_last</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>last stringified array index </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5130" column="25" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="5130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdetail_1_1iteration__proxy__value_1adf1c4348b68bfc8023a74120ac476a75" prot="private" static="no" mutable="yes">
+        <type><ref refid="classdetail_1_1iteration__proxy__value_1ae24efb92078513900c5576c780f67438" kindref="member">string_type</ref></type>
+        <definition>string_type detail::iteration_proxy_value&lt; IteratorType &gt;::array_index_str</definition>
+        <argsstring></argsstring>
+        <name>array_index_str</name>
+        <qualifiedname>detail::iteration_proxy_value::array_index_str</qualifiedname>
+        <initializer>= &quot;0&quot;</initializer>
+        <briefdescription>
+<para>a string representation of the array index </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5132" column="25" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="5132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdetail_1_1iteration__proxy__value_1a5236087d3cfc2d7cefb42629739bc23a" prot="private" static="no" mutable="no">
+        <type><ref refid="classdetail_1_1iteration__proxy__value_1ae24efb92078513900c5576c780f67438" kindref="member">string_type</ref></type>
+        <definition>string_type detail::iteration_proxy_value&lt; IteratorType &gt;::empty_str</definition>
+        <argsstring></argsstring>
+        <name>empty_str</name>
+        <qualifiedname>detail::iteration_proxy_value::empty_str</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>an empty string (to return a reference for primitive values) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5134" column="17" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="5134" bodyend="5134"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdetail_1_1iteration__proxy__value_1a5b580524bbd63f3cf538b96ca156a666" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>detail::iteration_proxy_value&lt; IteratorType &gt;::iteration_proxy_value</definition>
+        <argsstring>()=default</argsstring>
+        <name>iteration_proxy_value</name>
+        <qualifiedname>detail::iteration_proxy_value::iteration_proxy_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5137" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iteration__proxy__value_1a527328f3b7fd0335c7bb16fb1b3ec12b" prot="public" static="no" const="no" explicit="yes" inline="yes" noexcept="yes" noexceptexpression="std::is_nothrow_move_constructible&lt; IteratorType &gt;::value &amp;&amp;std::is_nothrow_default_constructible&lt; string_type &gt;::value" virt="non-virtual">
+        <type></type>
+        <definition>detail::iteration_proxy_value&lt; IteratorType &gt;::iteration_proxy_value</definition>
+        <argsstring>(IteratorType it, std::size_t array_index_=0)</argsstring>
+        <name>iteration_proxy_value</name>
+        <qualifiedname>detail::iteration_proxy_value::iteration_proxy_value</qualifiedname>
+        <param>
+          <type>IteratorType</type>
+          <declname>it</declname>
+        </param>
+        <param>
+          <type>std::size_t</type>
+          <declname>array_index_</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5138" column="14" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="5138" bodyend="5143"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iteration__proxy__value_1a0c41d6f7810d152718a9a3e316f74d1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>detail::iteration_proxy_value&lt; IteratorType &gt;::iteration_proxy_value</definition>
+        <argsstring>(iteration_proxy_value const &amp;)=default</argsstring>
+        <name>iteration_proxy_value</name>
+        <qualifiedname>detail::iteration_proxy_value::iteration_proxy_value</qualifiedname>
+        <param>
+          <type><ref refid="classdetail_1_1iteration__proxy__value" kindref="compound">iteration_proxy_value</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5145" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iteration__proxy__value_1ad68cadcbba3dc7144f4a5071e1cae3f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdetail_1_1iteration__proxy__value" kindref="compound">iteration_proxy_value</ref> &amp;</type>
+        <definition>iteration_proxy_value &amp; detail::iteration_proxy_value&lt; IteratorType &gt;::operator=</definition>
+        <argsstring>(iteration_proxy_value const &amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>detail::iteration_proxy_value::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classdetail_1_1iteration__proxy__value" kindref="compound">iteration_proxy_value</ref> const &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5146" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iteration__proxy__value_1a9d77923fa65e59bd4934d1990a4cc6eb" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" noexceptexpression="std::is_nothrow_move_constructible&lt; IteratorType &gt;::value &amp;&amp;std::is_nothrow_move_constructible&lt; string_type &gt;::value" virt="non-virtual">
+        <type></type>
+        <definition>detail::iteration_proxy_value&lt; IteratorType &gt;::iteration_proxy_value</definition>
+        <argsstring>(iteration_proxy_value &amp;&amp;) =default</argsstring>
+        <name>iteration_proxy_value</name>
+        <qualifiedname>detail::iteration_proxy_value::iteration_proxy_value</qualifiedname>
+        <param>
+          <type><ref refid="classdetail_1_1iteration__proxy__value" kindref="compound">iteration_proxy_value</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5148" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iteration__proxy__value_1adff567f158dbae5ef4d7f8c7e57ef4cc" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" noexceptexpression="std::is_nothrow_move_assignable&lt; IteratorType &gt;::value &amp;&amp;std::is_nothrow_move_assignable&lt; string_type &gt;::value" virt="non-virtual">
+        <type><ref refid="classdetail_1_1iteration__proxy__value" kindref="compound">iteration_proxy_value</ref> &amp;</type>
+        <definition>iteration_proxy_value &amp; detail::iteration_proxy_value&lt; IteratorType &gt;::operator=</definition>
+        <argsstring>(iteration_proxy_value &amp;&amp;) =default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>detail::iteration_proxy_value::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classdetail_1_1iteration__proxy__value" kindref="compound">iteration_proxy_value</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5151" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iteration__proxy__value_1ab9d86d12bc52504f6c1f51dea49a3187" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>detail::iteration_proxy_value&lt; IteratorType &gt;::~iteration_proxy_value</definition>
+        <argsstring>()=default</argsstring>
+        <name>~iteration_proxy_value</name>
+        <qualifiedname>detail::iteration_proxy_value::~iteration_proxy_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5154" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iteration__proxy__value_1a54d22aec1f615a38697466817d7cc819" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classdetail_1_1iteration__proxy__value" kindref="compound">iteration_proxy_value</ref> &amp;</type>
+        <definition>const iteration_proxy_value &amp; detail::iteration_proxy_value&lt; IteratorType &gt;::operator*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator*</name>
+        <qualifiedname>detail::iteration_proxy_value::operator*</qualifiedname>
+        <briefdescription>
+<para>dereference operator (needed for range-based for) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5157" column="33" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="5157" bodyend="5160"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iteration__proxy__value_1a52dffef3e0c58a6bcd5b8b9e6fcf4552" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdetail_1_1iteration__proxy__value" kindref="compound">iteration_proxy_value</ref> &amp;</type>
+        <definition>iteration_proxy_value &amp; detail::iteration_proxy_value&lt; IteratorType &gt;::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <qualifiedname>detail::iteration_proxy_value::operator++</qualifiedname>
+        <briefdescription>
+<para>increment operator (needed for range-based for) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5163" column="27" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="5163" bodyend="5169"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iteration__proxy__value_1a060a2100b3803588aa8693140d507fd8" prot="public" static="no" const="no" explicit="no" inline="yes" refqual="lvalue" virt="non-virtual">
+        <type><ref refid="classdetail_1_1iteration__proxy__value" kindref="compound">iteration_proxy_value</ref></type>
+        <definition>iteration_proxy_value detail::iteration_proxy_value&lt; IteratorType &gt;::operator++</definition>
+        <argsstring>(int) &amp;</argsstring>
+        <name>operator++</name>
+        <qualifiedname>detail::iteration_proxy_value::operator++</qualifiedname>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5171" column="27" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="5171" bodyend="5177"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iteration__proxy__value_1a139d22be442a277268cfb78bb4eef95d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool detail::iteration_proxy_value&lt; IteratorType &gt;::operator==</definition>
+        <argsstring>(const iteration_proxy_value &amp;o) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>detail::iteration_proxy_value::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="classdetail_1_1iteration__proxy__value" kindref="compound">iteration_proxy_value</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+<para>equality operator (needed for InputIterator) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5180" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="5180" bodyend="5183"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iteration__proxy__value_1a23745b98de19578adc4efb509e59be28" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool detail::iteration_proxy_value&lt; IteratorType &gt;::operator!=</definition>
+        <argsstring>(const iteration_proxy_value &amp;o) const</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>detail::iteration_proxy_value::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="classdetail_1_1iteration__proxy__value" kindref="compound">iteration_proxy_value</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+<para>inequality operator (needed for range-based for) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5186" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="5186" bodyend="5189"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iteration__proxy__value_1ad12633bc0d3ac7a651381b174a7914ee" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classdetail_1_1iteration__proxy__value_1ae24efb92078513900c5576c780f67438" kindref="member">string_type</ref> &amp;</type>
+        <definition>const string_type &amp; detail::iteration_proxy_value&lt; IteratorType &gt;::key</definition>
+        <argsstring>() const</argsstring>
+        <name>key</name>
+        <qualifiedname>detail::iteration_proxy_value::key</qualifiedname>
+        <briefdescription>
+<para>return key of the iterator </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5192" column="23" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="5192" bodyend="5225"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iteration__proxy__value_1aac08993af9f4f0bf3d058b4beae36a45" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>IteratorType::reference</type>
+        <definition>IteratorType::reference detail::iteration_proxy_value&lt; IteratorType &gt;::value</definition>
+        <argsstring>() const</argsstring>
+        <name>value</name>
+        <qualifiedname>detail::iteration_proxy_value::value</qualifiedname>
+        <briefdescription>
+<para>return value of the iterator </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5228" column="38" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="5228" bodyend="5231"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5114" column="11" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="12814" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="classdetail_1_1iteration__proxy__value_1af1232c7e9d45319bbb20cec7e1d0603f" prot="private" virt="non-virtual"><scope>detail::iteration_proxy_value</scope><name>anchor</name></member>
+      <member refid="classdetail_1_1iteration__proxy__value_1a7b6227d75cc0762288f880b161ededcc" prot="private" virt="non-virtual"><scope>detail::iteration_proxy_value</scope><name>array_index</name></member>
+      <member refid="classdetail_1_1iteration__proxy__value_1a785db462502daaf223523a57bfde9c00" prot="private" virt="non-virtual"><scope>detail::iteration_proxy_value</scope><name>array_index_last</name></member>
+      <member refid="classdetail_1_1iteration__proxy__value_1adf1c4348b68bfc8023a74120ac476a75" prot="private" virt="non-virtual"><scope>detail::iteration_proxy_value</scope><name>array_index_str</name></member>
+      <member refid="classdetail_1_1iteration__proxy__value_1a3365781ff806e15a1cd99e6d0987c68d" prot="public" virt="non-virtual"><scope>detail::iteration_proxy_value</scope><name>difference_type</name></member>
+      <member refid="classdetail_1_1iteration__proxy__value_1a5236087d3cfc2d7cefb42629739bc23a" prot="private" virt="non-virtual"><scope>detail::iteration_proxy_value</scope><name>empty_str</name></member>
+      <member refid="classdetail_1_1iteration__proxy__value_1a5b580524bbd63f3cf538b96ca156a666" prot="public" virt="non-virtual"><scope>detail::iteration_proxy_value</scope><name>iteration_proxy_value</name></member>
+      <member refid="classdetail_1_1iteration__proxy__value_1a527328f3b7fd0335c7bb16fb1b3ec12b" prot="public" virt="non-virtual"><scope>detail::iteration_proxy_value</scope><name>iteration_proxy_value</name></member>
+      <member refid="classdetail_1_1iteration__proxy__value_1a0c41d6f7810d152718a9a3e316f74d1f" prot="public" virt="non-virtual"><scope>detail::iteration_proxy_value</scope><name>iteration_proxy_value</name></member>
+      <member refid="classdetail_1_1iteration__proxy__value_1a9d77923fa65e59bd4934d1990a4cc6eb" prot="public" virt="non-virtual"><scope>detail::iteration_proxy_value</scope><name>iteration_proxy_value</name></member>
+      <member refid="classdetail_1_1iteration__proxy__value_1ada4177e3926d326dd4f6a3e0b5ae9bfb" prot="public" virt="non-virtual"><scope>detail::iteration_proxy_value</scope><name>iterator_category</name></member>
+      <member refid="classdetail_1_1iteration__proxy__value_1ad12633bc0d3ac7a651381b174a7914ee" prot="public" virt="non-virtual"><scope>detail::iteration_proxy_value</scope><name>key</name></member>
+      <member refid="classdetail_1_1iteration__proxy__value_1a23745b98de19578adc4efb509e59be28" prot="public" virt="non-virtual"><scope>detail::iteration_proxy_value</scope><name>operator!=</name></member>
+      <member refid="classdetail_1_1iteration__proxy__value_1a54d22aec1f615a38697466817d7cc819" prot="public" virt="non-virtual"><scope>detail::iteration_proxy_value</scope><name>operator*</name></member>
+      <member refid="classdetail_1_1iteration__proxy__value_1a52dffef3e0c58a6bcd5b8b9e6fcf4552" prot="public" virt="non-virtual"><scope>detail::iteration_proxy_value</scope><name>operator++</name></member>
+      <member refid="classdetail_1_1iteration__proxy__value_1a060a2100b3803588aa8693140d507fd8" prot="public" virt="non-virtual"><scope>detail::iteration_proxy_value</scope><name>operator++</name></member>
+      <member refid="classdetail_1_1iteration__proxy__value_1ad68cadcbba3dc7144f4a5071e1cae3f9" prot="public" virt="non-virtual"><scope>detail::iteration_proxy_value</scope><name>operator=</name></member>
+      <member refid="classdetail_1_1iteration__proxy__value_1adff567f158dbae5ef4d7f8c7e57ef4cc" prot="public" virt="non-virtual"><scope>detail::iteration_proxy_value</scope><name>operator=</name></member>
+      <member refid="classdetail_1_1iteration__proxy__value_1a139d22be442a277268cfb78bb4eef95d" prot="public" virt="non-virtual"><scope>detail::iteration_proxy_value</scope><name>operator==</name></member>
+      <member refid="classdetail_1_1iteration__proxy__value_1ac19cd4b8224e83f1c72f48bde9f069be" prot="public" virt="non-virtual"><scope>detail::iteration_proxy_value</scope><name>pointer</name></member>
+      <member refid="classdetail_1_1iteration__proxy__value_1a42589c936453407a85968f970556e7cd" prot="public" virt="non-virtual"><scope>detail::iteration_proxy_value</scope><name>reference</name></member>
+      <member refid="classdetail_1_1iteration__proxy__value_1ae24efb92078513900c5576c780f67438" prot="public" virt="non-virtual"><scope>detail::iteration_proxy_value</scope><name>string_type</name></member>
+      <member refid="classdetail_1_1iteration__proxy__value_1aac08993af9f4f0bf3d058b4beae36a45" prot="public" virt="non-virtual"><scope>detail::iteration_proxy_value</scope><name>value</name></member>
+      <member refid="classdetail_1_1iteration__proxy__value_1a6d72d5deb611fb7c5c909328b37cd04e" prot="public" virt="non-virtual"><scope>detail::iteration_proxy_value</scope><name>value_type</name></member>
+      <member refid="classdetail_1_1iteration__proxy__value_1ab9d86d12bc52504f6c1f51dea49a3187" prot="public" virt="non-virtual"><scope>detail::iteration_proxy_value</scope><name>~iteration_proxy_value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

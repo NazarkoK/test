@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classdetail_1_1input__stream__adapter" kind="class" language="C++" prot="public">
+    <compoundname>detail::input_stream_adapter</compoundname>
+    <includes refid="json_8hpp" local="no">json.hpp</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classdetail_1_1input__stream__adapter_1a796d902229ac65b6eec543cba4aff704" prot="public" static="no">
+        <type>char</type>
+        <definition>using detail::input_stream_adapter::char_type =  char</definition>
+        <argsstring></argsstring>
+        <name>char_type</name>
+        <qualifiedname>detail::input_stream_adapter::char_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="6156" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="6156" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdetail_1_1input__stream__adapter_1a24fdf94df68145abb59a0ada85fb692b" prot="private" static="no" mutable="no">
+        <type>std::istream *</type>
+        <definition>std::istream* detail::input_stream_adapter::is</definition>
+        <argsstring></argsstring>
+        <name>is</name>
+        <qualifiedname>detail::input_stream_adapter::is</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>the associated input stream </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="6200" column="18" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="6200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdetail_1_1input__stream__adapter_1a8d4a4b398f26963b08d0c021dc77c1ba" prot="private" static="no" mutable="no">
+        <type>std::streambuf *</type>
+        <definition>std::streambuf* detail::input_stream_adapter::sb</definition>
+        <argsstring></argsstring>
+        <name>sb</name>
+        <qualifiedname>detail::input_stream_adapter::sb</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="6201" column="20" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="6201" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdetail_1_1input__stream__adapter_1a34432c48c7b20feff29afee0e3cbbbc0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>detail::input_stream_adapter::~input_stream_adapter</definition>
+        <argsstring>()</argsstring>
+        <name>~input_stream_adapter</name>
+        <qualifiedname>detail::input_stream_adapter::~input_stream_adapter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="6158" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="6158" bodyend="6166"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1input__stream__adapter_1af54f59dab29bafc1a6816cd9076ed302" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>detail::input_stream_adapter::input_stream_adapter</definition>
+        <argsstring>(std::istream &amp;i)</argsstring>
+        <name>input_stream_adapter</name>
+        <qualifiedname>detail::input_stream_adapter::input_stream_adapter</qualifiedname>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="6168" column="14" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="6168" bodyend="6170"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1input__stream__adapter_1a7b698294f93654dd480578a8a6e4028a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>detail::input_stream_adapter::input_stream_adapter</definition>
+        <argsstring>(const input_stream_adapter &amp;)=delete</argsstring>
+        <name>input_stream_adapter</name>
+        <qualifiedname>detail::input_stream_adapter::input_stream_adapter</qualifiedname>
+        <param>
+          <type>const <ref refid="classdetail_1_1input__stream__adapter" kindref="compound">input_stream_adapter</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="6173" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1input__stream__adapter_1ac3b8c933b96a8386034a57b6fb075e3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdetail_1_1input__stream__adapter" kindref="compound">input_stream_adapter</ref> &amp;</type>
+        <definition>input_stream_adapter &amp; detail::input_stream_adapter::operator=</definition>
+        <argsstring>(input_stream_adapter &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>detail::input_stream_adapter::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classdetail_1_1input__stream__adapter" kindref="compound">input_stream_adapter</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="6174" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1input__stream__adapter_1a08289400b7eb4700fbaa1281b5f4f0e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdetail_1_1input__stream__adapter" kindref="compound">input_stream_adapter</ref> &amp;</type>
+        <definition>input_stream_adapter &amp; detail::input_stream_adapter::operator=</definition>
+        <argsstring>(input_stream_adapter &amp;&amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>detail::input_stream_adapter::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classdetail_1_1input__stream__adapter" kindref="compound">input_stream_adapter</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="6175" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1input__stream__adapter_1a3176362cd962c1e530abe0a8e82b765b" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>detail::input_stream_adapter::input_stream_adapter</definition>
+        <argsstring>(input_stream_adapter &amp;&amp;rhs) noexcept</argsstring>
+        <name>input_stream_adapter</name>
+        <qualifiedname>detail::input_stream_adapter::input_stream_adapter</qualifiedname>
+        <param>
+          <type><ref refid="classdetail_1_1input__stream__adapter" kindref="compound">input_stream_adapter</ref> &amp;&amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="6177" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="6177" bodyend="6182"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1input__stream__adapter_1a54e117ab89b2c2a09428e0205956ebc7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::char_traits&lt; char &gt;::int_type</type>
+        <definition>std::char_traits&lt; char &gt;::int_type detail::input_stream_adapter::get_character</definition>
+        <argsstring>()</argsstring>
+        <name>get_character</name>
+        <qualifiedname>detail::input_stream_adapter::get_character</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="6187" column="33" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="6187" bodyend="6196"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Input adapter for a (caching) istream. Ignores a UFT Byte Order Mark at beginning of input. Does not support changing the underlying std::streambuf in mid-input. Maintains underlying std::istream and std::streambuf to support subsequent use of standard std::istream operations to process any input characters following those used in parsing the JSON input. Clears the std::istream flags; any input errors (e.g., EOF) will be detected by the first subsequent call for input from the std::istream. </para>
+    </detaileddescription>
+    <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="6153" column="1" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="6154" bodyend="6202"/>
+    <listofallmembers>
+      <member refid="classdetail_1_1input__stream__adapter_1a796d902229ac65b6eec543cba4aff704" prot="public" virt="non-virtual"><scope>detail::input_stream_adapter</scope><name>char_type</name></member>
+      <member refid="classdetail_1_1input__stream__adapter_1a54e117ab89b2c2a09428e0205956ebc7" prot="public" virt="non-virtual"><scope>detail::input_stream_adapter</scope><name>get_character</name></member>
+      <member refid="classdetail_1_1input__stream__adapter_1af54f59dab29bafc1a6816cd9076ed302" prot="public" virt="non-virtual"><scope>detail::input_stream_adapter</scope><name>input_stream_adapter</name></member>
+      <member refid="classdetail_1_1input__stream__adapter_1a7b698294f93654dd480578a8a6e4028a" prot="public" virt="non-virtual"><scope>detail::input_stream_adapter</scope><name>input_stream_adapter</name></member>
+      <member refid="classdetail_1_1input__stream__adapter_1a3176362cd962c1e530abe0a8e82b765b" prot="public" virt="non-virtual"><scope>detail::input_stream_adapter</scope><name>input_stream_adapter</name></member>
+      <member refid="classdetail_1_1input__stream__adapter_1a24fdf94df68145abb59a0ada85fb692b" prot="private" virt="non-virtual"><scope>detail::input_stream_adapter</scope><name>is</name></member>
+      <member refid="classdetail_1_1input__stream__adapter_1ac3b8c933b96a8386034a57b6fb075e3b" prot="public" virt="non-virtual"><scope>detail::input_stream_adapter</scope><name>operator=</name></member>
+      <member refid="classdetail_1_1input__stream__adapter_1a08289400b7eb4700fbaa1281b5f4f0e8" prot="public" virt="non-virtual"><scope>detail::input_stream_adapter</scope><name>operator=</name></member>
+      <member refid="classdetail_1_1input__stream__adapter_1a8d4a4b398f26963b08d0c021dc77c1ba" prot="private" virt="non-virtual"><scope>detail::input_stream_adapter</scope><name>sb</name></member>
+      <member refid="classdetail_1_1input__stream__adapter_1a34432c48c7b20feff29afee0e3cbbbc0" prot="public" virt="non-virtual"><scope>detail::input_stream_adapter</scope><name>~input_stream_adapter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

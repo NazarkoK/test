@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structjson__pointer_1_1string__t__helper_3_01_n_l_o_h_m_a_n_n___b_a_s_i_c___j_s_o_n___t_p_l_01_4" kind="struct" language="C++" prot="private">
+    <compoundname>json_pointer::string_t_helper&lt; NLOHMANN_BASIC_JSON_TPL &gt;</compoundname>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structjson__pointer_1_1string__t__helper_3_01_n_l_o_h_m_a_n_n___b_a_s_i_c___j_s_o_n___t_p_l_01_4_1a15694a2e8cbb26d2f8b292334ade1728" prot="public" static="no">
+        <type>StringType</type>
+        <definition>using json_pointer&lt; RefStringType &gt;::string_t_helper&lt; NLOHMANN_BASIC_JSON_TPL &gt;::type =  StringType</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>json_pointer::string_t_helper&lt; NLOHMANN_BASIC_JSON_TPL &gt;::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="13734" column="9" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="13734" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="13732" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="13733" bodyend="13735"/>
+    <listofallmembers>
+      <member refid="structjson__pointer_1_1string__t__helper_3_01_n_l_o_h_m_a_n_n___b_a_s_i_c___j_s_o_n___t_p_l_01_4_1a15694a2e8cbb26d2f8b292334ade1728" prot="public" virt="non-virtual"><scope>json_pointer::string_t_helper&lt; NLOHMANN_BASIC_JSON_TPL &gt;</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

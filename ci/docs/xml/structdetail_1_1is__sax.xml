@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structdetail_1_1is__sax" kind="struct" language="C++" prot="public">
+    <compoundname>detail::is_sax</compoundname>
+    <includes refid="json_8hpp" local="no">json.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename SAX</type>
+      </param>
+      <param>
+        <type>typename BasicJsonType</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="structdetail_1_1is__sax_1afb7abfa330599dcd8c973147fd159013" prot="private" static="no">
+        <type>typename BasicJsonType::number_integer_t</type>
+        <definition>using detail::is_sax&lt; SAX, BasicJsonType &gt;::number_integer_t =  typename BasicJsonType::number_integer_t</definition>
+        <argsstring></argsstring>
+        <name>number_integer_t</name>
+        <qualifiedname>detail::is_sax::number_integer_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="9020" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="9020" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structdetail_1_1is__sax_1a92e623f8d29c3829b375dcd9de6aa250" prot="private" static="no">
+        <type>typename BasicJsonType::number_unsigned_t</type>
+        <definition>using detail::is_sax&lt; SAX, BasicJsonType &gt;::number_unsigned_t =  typename BasicJsonType::number_unsigned_t</definition>
+        <argsstring></argsstring>
+        <name>number_unsigned_t</name>
+        <qualifiedname>detail::is_sax::number_unsigned_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="9021" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="9021" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structdetail_1_1is__sax_1a6334bf77669092052df2e22575cc557b" prot="private" static="no">
+        <type>typename BasicJsonType::number_float_t</type>
+        <definition>using detail::is_sax&lt; SAX, BasicJsonType &gt;::number_float_t =  typename BasicJsonType::number_float_t</definition>
+        <argsstring></argsstring>
+        <name>number_float_t</name>
+        <qualifiedname>detail::is_sax::number_float_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="9022" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="9022" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structdetail_1_1is__sax_1a6ace332ecbbc3a5ab867698dcd50c80c" prot="private" static="no">
+        <type>typename BasicJsonType::string_t</type>
+        <definition>using detail::is_sax&lt; SAX, BasicJsonType &gt;::string_t =  typename BasicJsonType::string_t</definition>
+        <argsstring></argsstring>
+        <name>string_t</name>
+        <qualifiedname>detail::is_sax::string_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="9023" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="9023" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structdetail_1_1is__sax_1a21d50735b2280841a9e45fac70c826d8" prot="private" static="no">
+        <type>typename BasicJsonType::binary_t</type>
+        <definition>using detail::is_sax&lt; SAX, BasicJsonType &gt;::binary_t =  typename BasicJsonType::binary_t</definition>
+        <argsstring></argsstring>
+        <name>binary_t</name>
+        <qualifiedname>detail::is_sax::binary_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="9024" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="9024" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structdetail_1_1is__sax_1a22918ebaeeb0500d9f7d8cbe8199afec" prot="private" static="no">
+        <type>typename BasicJsonType::exception</type>
+        <definition>using detail::is_sax&lt; SAX, BasicJsonType &gt;::exception_t =  typename BasicJsonType::exception</definition>
+        <argsstring></argsstring>
+        <name>exception_t</name>
+        <qualifiedname>detail::is_sax::exception_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="9025" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="9025" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structdetail_1_1is__sax_1ac49bc86ccb62baef11179728a34cfe9c" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool detail::is_sax&lt; SAX, BasicJsonType &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <qualifiedname>detail::is_sax::value</qualifiedname>
+        <initializer>=
+        <ref refid="namespacedetail_1a41e28f61731099e2ab777c3d001906dd" kindref="member">is_detected_exact</ref>&lt;bool, <ref refid="namespacedetail_1a5b70509a3237fb6c17325fe13b60a432" kindref="member">null_function_t</ref>, SAX&gt;::value &amp;&amp;
+        <ref refid="namespacedetail_1a41e28f61731099e2ab777c3d001906dd" kindref="member">is_detected_exact</ref>&lt;bool, <ref refid="namespacedetail_1a41a296d4ad71e52c418897482e25f7c1" kindref="member">boolean_function_t</ref>, SAX&gt;::value &amp;&amp;
+        <ref refid="namespacedetail_1a41e28f61731099e2ab777c3d001906dd" kindref="member">is_detected_exact</ref>&lt;bool, <ref refid="namespacedetail_1aa14a479ae64550ef493509b0fe7d0510" kindref="member">number_integer_function_t</ref>, SAX, <ref refid="structdetail_1_1is__sax_1afb7abfa330599dcd8c973147fd159013" kindref="member">number_integer_t</ref>&gt;::value &amp;&amp;
+        <ref refid="namespacedetail_1a41e28f61731099e2ab777c3d001906dd" kindref="member">is_detected_exact</ref>&lt;bool, <ref refid="namespacedetail_1afb7322c45e118ef4ccd32b9dbe47d149" kindref="member">number_unsigned_function_t</ref>, SAX, <ref refid="structdetail_1_1is__sax_1a92e623f8d29c3829b375dcd9de6aa250" kindref="member">number_unsigned_t</ref>&gt;::value &amp;&amp;
+        <ref refid="namespacedetail_1a41e28f61731099e2ab777c3d001906dd" kindref="member">is_detected_exact</ref>&lt;bool, <ref refid="namespacedetail_1a6e54c416496a8a7357fe3196a56d0138" kindref="member">number_float_function_t</ref>, SAX, <ref refid="structdetail_1_1is__sax_1a6334bf77669092052df2e22575cc557b" kindref="member">number_float_t</ref>, <ref refid="structdetail_1_1is__sax_1a6ace332ecbbc3a5ab867698dcd50c80c" kindref="member">string_t</ref>&gt;::value &amp;&amp;
+        <ref refid="namespacedetail_1a41e28f61731099e2ab777c3d001906dd" kindref="member">is_detected_exact</ref>&lt;bool, <ref refid="namespacedetail_1af88f47fa408322ba2ae25763dabc21ae" kindref="member">string_function_t</ref>, SAX, <ref refid="structdetail_1_1is__sax_1a6ace332ecbbc3a5ab867698dcd50c80c" kindref="member">string_t</ref>&gt;::value &amp;&amp;
+        <ref refid="namespacedetail_1a41e28f61731099e2ab777c3d001906dd" kindref="member">is_detected_exact</ref>&lt;bool, <ref refid="namespacedetail_1a1a2c7ed535c65bf687c7e2fedc1e62c3" kindref="member">binary_function_t</ref>, SAX, <ref refid="structdetail_1_1is__sax_1a21d50735b2280841a9e45fac70c826d8" kindref="member">binary_t</ref>&gt;::value &amp;&amp;
+        <ref refid="namespacedetail_1a41e28f61731099e2ab777c3d001906dd" kindref="member">is_detected_exact</ref>&lt;bool, <ref refid="namespacedetail_1a6bee0ac3eb5112078e5cf4ac9492e9bd" kindref="member">start_object_function_t</ref>, SAX&gt;::value &amp;&amp;
+        <ref refid="namespacedetail_1a41e28f61731099e2ab777c3d001906dd" kindref="member">is_detected_exact</ref>&lt;bool, <ref refid="namespacedetail_1a566da3d2466aee239ede8bb92ce7e1c7" kindref="member">key_function_t</ref>, SAX, <ref refid="structdetail_1_1is__sax_1a6ace332ecbbc3a5ab867698dcd50c80c" kindref="member">string_t</ref>&gt;::value &amp;&amp;
+        <ref refid="namespacedetail_1a41e28f61731099e2ab777c3d001906dd" kindref="member">is_detected_exact</ref>&lt;bool, <ref refid="namespacedetail_1a254799216b1b66a082f3509de18e0ed7" kindref="member">end_object_function_t</ref>, SAX&gt;::value &amp;&amp;
+        <ref refid="namespacedetail_1a41e28f61731099e2ab777c3d001906dd" kindref="member">is_detected_exact</ref>&lt;bool, <ref refid="namespacedetail_1a7078516eae61aec9d9a6c16d63cba1ae" kindref="member">start_array_function_t</ref>, SAX&gt;::value &amp;&amp;
+        <ref refid="namespacedetail_1a41e28f61731099e2ab777c3d001906dd" kindref="member">is_detected_exact</ref>&lt;bool, <ref refid="namespacedetail_1adbbe723ac6b60fd3c11eef5c6ca82fe4" kindref="member">end_array_function_t</ref>, SAX&gt;::value &amp;&amp;
+        <ref refid="namespacedetail_1a41e28f61731099e2ab777c3d001906dd" kindref="member">is_detected_exact</ref>&lt;bool, <ref refid="namespacedetail_1aa75770185e99810c40de344d3bb10853" kindref="member">parse_error_function_t</ref>, SAX, <ref refid="structdetail_1_1is__sax_1a22918ebaeeb0500d9f7d8cbe8199afec" kindref="member">exception_t</ref>&gt;::value</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="9028" column="27" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="9028" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="9014" column="1" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="9015" bodyend="9042"/>
+    <listofallmembers>
+      <member refid="structdetail_1_1is__sax_1a21d50735b2280841a9e45fac70c826d8" prot="private" virt="non-virtual"><scope>detail::is_sax</scope><name>binary_t</name></member>
+      <member refid="structdetail_1_1is__sax_1a22918ebaeeb0500d9f7d8cbe8199afec" prot="private" virt="non-virtual"><scope>detail::is_sax</scope><name>exception_t</name></member>
+      <member refid="structdetail_1_1is__sax_1a6334bf77669092052df2e22575cc557b" prot="private" virt="non-virtual"><scope>detail::is_sax</scope><name>number_float_t</name></member>
+      <member refid="structdetail_1_1is__sax_1afb7abfa330599dcd8c973147fd159013" prot="private" virt="non-virtual"><scope>detail::is_sax</scope><name>number_integer_t</name></member>
+      <member refid="structdetail_1_1is__sax_1a92e623f8d29c3829b375dcd9de6aa250" prot="private" virt="non-virtual"><scope>detail::is_sax</scope><name>number_unsigned_t</name></member>
+      <member refid="structdetail_1_1is__sax_1a6ace332ecbbc3a5ab867698dcd50c80c" prot="private" virt="non-virtual"><scope>detail::is_sax</scope><name>string_t</name></member>
+      <member refid="structdetail_1_1is__sax_1ac49bc86ccb62baef11179728a34cfe9c" prot="public" virt="non-virtual"><scope>detail::is_sax</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

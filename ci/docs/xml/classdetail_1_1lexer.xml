@@ -1,0 +1,1088 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classdetail_1_1lexer" kind="class" language="C++" prot="public">
+    <compoundname>detail::lexer</compoundname>
+    <basecompoundref refid="classdetail_1_1lexer__base" prot="public" virt="non-virtual">detail::lexer_base&lt; BasicJsonType &gt;</basecompoundref>
+    <includes refid="json_8hpp" local="no">json.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename BasicJsonType</type>
+      </param>
+      <param>
+        <type>typename InputAdapterType</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classdetail_1_1lexer_1a6363c73fbc1f540b78436e5d8f5fc4aa" prot="private" static="no">
+        <type>typename BasicJsonType::number_integer_t</type>
+        <definition>using detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::number_integer_t =  typename BasicJsonType::number_integer_t</definition>
+        <argsstring></argsstring>
+        <name>number_integer_t</name>
+        <qualifiedname>detail::lexer::number_integer_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="7414" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="7414" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdetail_1_1lexer_1a485291568b67ed42da79a6770ab175bd" prot="private" static="no">
+        <type>typename BasicJsonType::number_unsigned_t</type>
+        <definition>using detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::number_unsigned_t =  typename BasicJsonType::number_unsigned_t</definition>
+        <argsstring></argsstring>
+        <name>number_unsigned_t</name>
+        <qualifiedname>detail::lexer::number_unsigned_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="7415" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="7415" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdetail_1_1lexer_1a416235693b134eddca9f5f4b31a4cf9f" prot="private" static="no">
+        <type>typename BasicJsonType::number_float_t</type>
+        <definition>using detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::number_float_t =  typename BasicJsonType::number_float_t</definition>
+        <argsstring></argsstring>
+        <name>number_float_t</name>
+        <qualifiedname>detail::lexer::number_float_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="7416" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="7416" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdetail_1_1lexer_1a46da6c8d9de1c68f26fde92c9f3d058f" prot="private" static="no">
+        <type>typename BasicJsonType::string_t</type>
+        <definition>using detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::string_t =  typename BasicJsonType::string_t</definition>
+        <argsstring></argsstring>
+        <name>string_t</name>
+        <qualifiedname>detail::lexer::string_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="7417" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="7417" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdetail_1_1lexer_1aa3fb5e6c89617d56dd992115c4210b58" prot="private" static="no">
+        <type>typename InputAdapterType::char_type</type>
+        <definition>using detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::char_type =  typename InputAdapterType::char_type</definition>
+        <argsstring></argsstring>
+        <name>char_type</name>
+        <qualifiedname>detail::lexer::char_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="7418" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="7418" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdetail_1_1lexer_1aac5ed09bd3726caa96245ecff14ceef1" prot="private" static="no">
+        <type>typename std::char_traits&lt; <ref refid="classdetail_1_1lexer_1aa3fb5e6c89617d56dd992115c4210b58" kindref="member">char_type</ref> &gt;::int_type</type>
+        <definition>using detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::char_int_type =  typename std::char_traits&lt;char_type&gt;::int_type</definition>
+        <argsstring></argsstring>
+        <name>char_int_type</name>
+        <qualifiedname>detail::lexer::char_int_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="7419" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="7419" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classdetail_1_1lexer_1a74052693c02be1a1e245295b62e5fcb6" prot="public" static="no">
+        <type>typename <ref refid="classdetail_1_1lexer__base" kindref="compound">lexer_base</ref>&lt; BasicJsonType &gt;::token_type</type>
+        <definition>using detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::token_type =  typename lexer_base&lt;BasicJsonType&gt;::token_type</definition>
+        <argsstring></argsstring>
+        <name>token_type</name>
+        <qualifiedname>detail::lexer::token_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="7422" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="7422" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdetail_1_1lexer_1aa4bc44e36ca96cf9ed2d6705e7ec9cab" prot="private" static="no" mutable="no">
+        <type>InputAdapterType</type>
+        <definition>InputAdapterType detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::ia</definition>
+        <argsstring></argsstring>
+        <name>ia</name>
+        <qualifiedname>detail::lexer::ia</qualifiedname>
+        <briefdescription>
+<para>input adapter </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="8900" column="22" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="8900" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdetail_1_1lexer_1a2be57fd034e07a83acdfa65c68d28d9c" prot="private" static="no" mutable="no">
+        <type>const bool</type>
+        <definition>const bool detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::ignore_comments</definition>
+        <argsstring></argsstring>
+        <name>ignore_comments</name>
+        <qualifiedname>detail::lexer::ignore_comments</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>whether comments should be ignored (true) or signaled as errors (false) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="8903" column="16" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="8903" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdetail_1_1lexer_1a3b20c55a8266c1b4e43b396f00427e61" prot="private" static="no" mutable="no">
+        <type><ref refid="classdetail_1_1lexer_1aac5ed09bd3726caa96245ecff14ceef1" kindref="member">char_int_type</ref></type>
+        <definition>char_int_type detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::current</definition>
+        <argsstring></argsstring>
+        <name>current</name>
+        <qualifiedname>detail::lexer::current</qualifiedname>
+        <initializer>= std::char_traits&lt;<ref refid="classdetail_1_1lexer_1aa3fb5e6c89617d56dd992115c4210b58" kindref="member">char_type</ref>&gt;::eof()</initializer>
+        <briefdescription>
+<para>the current character </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="8906" column="19" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="8906" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdetail_1_1lexer_1a943e132f61f26a85de9075b457ba56a3" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::next_unget</definition>
+        <argsstring></argsstring>
+        <name>next_unget</name>
+        <qualifiedname>detail::lexer::next_unget</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>whether the next <ref refid="classdetail_1_1lexer_1a558196cb9fc24015d009969c9df8707b" kindref="member">get()</ref> call should just return current </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="8909" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="8909" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdetail_1_1lexer_1ad605226f572dd81c3f092650ee745225" prot="private" static="no" mutable="no">
+        <type><ref refid="structdetail_1_1position__t" kindref="compound">position_t</ref></type>
+        <definition>position_t detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <qualifiedname>detail::lexer::position</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>the start position of the current token </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="8912" column="16" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="8912" bodyend="8912"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdetail_1_1lexer_1accedabd8ddcdb183ea2c0fed73875f38" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classdetail_1_1lexer_1aa3fb5e6c89617d56dd992115c4210b58" kindref="member">char_type</ref> &gt;</type>
+        <definition>std::vector&lt;char_type&gt; detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::token_string</definition>
+        <argsstring></argsstring>
+        <name>token_string</name>
+        <qualifiedname>detail::lexer::token_string</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>raw input token string (for error messages) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="8915" column="17" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="8915" bodyend="8915"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdetail_1_1lexer_1a0a7d915c2d152fcf654550191d95130d" prot="private" static="no" mutable="no">
+        <type><ref refid="classdetail_1_1lexer_1a46da6c8d9de1c68f26fde92c9f3d058f" kindref="member">string_t</ref></type>
+        <definition>string_t detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::token_buffer</definition>
+        <argsstring></argsstring>
+        <name>token_buffer</name>
+        <qualifiedname>detail::lexer::token_buffer</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>buffer for variable-length tokens (numbers, strings) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="8918" column="14" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="8918" bodyend="8918"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdetail_1_1lexer_1a8187f7263527e07e23e6fae88f1369ee" prot="private" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::error_message</definition>
+        <argsstring></argsstring>
+        <name>error_message</name>
+        <qualifiedname>detail::lexer::error_message</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+<para>a description of occurred lexer errors </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="8921" column="16" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="8921" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdetail_1_1lexer_1a1b67ca6ec5761fbaad6cd888c3484fea" prot="private" static="no" mutable="no">
+        <type><ref refid="classdetail_1_1lexer_1a6363c73fbc1f540b78436e5d8f5fc4aa" kindref="member">number_integer_t</ref></type>
+        <definition>number_integer_t detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::value_integer</definition>
+        <argsstring></argsstring>
+        <name>value_integer</name>
+        <qualifiedname>detail::lexer::value_integer</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="8924" column="22" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="8924" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdetail_1_1lexer_1a59c8cd99163764d4aa72f78d57643331" prot="private" static="no" mutable="no">
+        <type><ref refid="classdetail_1_1lexer_1a485291568b67ed42da79a6770ab175bd" kindref="member">number_unsigned_t</ref></type>
+        <definition>number_unsigned_t detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::value_unsigned</definition>
+        <argsstring></argsstring>
+        <name>value_unsigned</name>
+        <qualifiedname>detail::lexer::value_unsigned</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="8925" column="23" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="8925" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdetail_1_1lexer_1aac46a612aaa762aeb29f83012cee768b" prot="private" static="no" mutable="no">
+        <type><ref refid="classdetail_1_1lexer_1a416235693b134eddca9f5f4b31a4cf9f" kindref="member">number_float_t</ref></type>
+        <definition>number_float_t detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::value_float</definition>
+        <argsstring></argsstring>
+        <name>value_float</name>
+        <qualifiedname>detail::lexer::value_float</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="8926" column="20" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="8926" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdetail_1_1lexer_1a58b33ff095052c2463255f1e121db74e" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classdetail_1_1lexer_1aac5ed09bd3726caa96245ecff14ceef1" kindref="member">char_int_type</ref></type>
+        <definition>const char_int_type detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::decimal_point_char</definition>
+        <argsstring></argsstring>
+        <name>decimal_point_char</name>
+        <qualifiedname>detail::lexer::decimal_point_char</qualifiedname>
+        <initializer>= &apos;.&apos;</initializer>
+        <briefdescription>
+<para>the decimal point </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="8929" column="25" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="8929" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdetail_1_1lexer_1a384af885c37d58c963b902008c279fd6" prot="public" static="no" const="no" explicit="yes" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::lexer</definition>
+        <argsstring>(InputAdapterType &amp;&amp;adapter, bool ignore_comments_=false) noexcept</argsstring>
+        <name>lexer</name>
+        <qualifiedname>detail::lexer::lexer</qualifiedname>
+        <param>
+          <type>InputAdapterType &amp;&amp;</type>
+          <declname>adapter</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ignore_comments_</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="7424" column="14" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="7424" bodyend="7428"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1lexer_1a963dce44c9d66c9a7c9d3206e1cff2ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::lexer</definition>
+        <argsstring>(const lexer &amp;)=delete</argsstring>
+        <name>lexer</name>
+        <qualifiedname>detail::lexer::lexer</qualifiedname>
+        <param>
+          <type>const <ref refid="classdetail_1_1lexer" kindref="compound">lexer</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="7431" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1lexer_1a79ce2eb7f127977f1d2499a1f10aa262" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::lexer</definition>
+        <argsstring>(lexer &amp;&amp;)=default</argsstring>
+        <name>lexer</name>
+        <qualifiedname>detail::lexer::lexer</qualifiedname>
+        <param>
+          <type><ref refid="classdetail_1_1lexer" kindref="compound">lexer</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="7432" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1lexer_1aa64ea2cdf34301e5d1280de82750cd83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdetail_1_1lexer" kindref="compound">lexer</ref> &amp;</type>
+        <definition>lexer &amp; detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::operator=</definition>
+        <argsstring>(lexer &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>detail::lexer::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classdetail_1_1lexer" kindref="compound">lexer</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="7433" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1lexer_1a8436bd7b1296151e8555c6f2b7bd2b2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdetail_1_1lexer" kindref="compound">lexer</ref> &amp;</type>
+        <definition>lexer &amp; detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::operator=</definition>
+        <argsstring>(lexer &amp;&amp;)=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>detail::lexer::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classdetail_1_1lexer" kindref="compound">lexer</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="7434" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1lexer_1a7be0e5d9114bf5b6a2d253c732693a97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::~lexer</definition>
+        <argsstring>()=default</argsstring>
+        <name>~lexer</name>
+        <qualifiedname>detail::lexer::~lexer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="7435" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1lexer_1a4227de7d0382fb4d3e18b119f0cc87d7" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classdetail_1_1lexer_1a6363c73fbc1f540b78436e5d8f5fc4aa" kindref="member">number_integer_t</ref></type>
+        <definition>number_integer_t detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::get_number_integer</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>get_number_integer</name>
+        <qualifiedname>detail::lexer::get_number_integer</qualifiedname>
+        <briefdescription>
+<para>return integer value </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="8713" column="32" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="8713" bodyend="8716"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1lexer_1a65495d5d60a279adb009efa728708441" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classdetail_1_1lexer_1a485291568b67ed42da79a6770ab175bd" kindref="member">number_unsigned_t</ref></type>
+        <definition>number_unsigned_t detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::get_number_unsigned</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>get_number_unsigned</name>
+        <qualifiedname>detail::lexer::get_number_unsigned</qualifiedname>
+        <briefdescription>
+<para>return unsigned integer value </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="8719" column="33" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="8719" bodyend="8722"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1lexer_1af2e903d32a7e3705c66539ea1e30ce59" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classdetail_1_1lexer_1a416235693b134eddca9f5f4b31a4cf9f" kindref="member">number_float_t</ref></type>
+        <definition>number_float_t detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::get_number_float</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>get_number_float</name>
+        <qualifiedname>detail::lexer::get_number_float</qualifiedname>
+        <briefdescription>
+<para>return floating-point value </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="8725" column="30" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="8725" bodyend="8728"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1lexer_1aae63a63a83ae7e7bd5dc1a83669ba281" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdetail_1_1lexer_1a46da6c8d9de1c68f26fde92c9f3d058f" kindref="member">string_t</ref> &amp;</type>
+        <definition>string_t &amp; detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::get_string</definition>
+        <argsstring>()</argsstring>
+        <name>get_string</name>
+        <qualifiedname>detail::lexer::get_string</qualifiedname>
+        <briefdescription>
+<para>return current string value (implicitly resets the token; useful only once) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="8731" column="14" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="8731" bodyend="8734"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1lexer_1a569266654a88a2dc6f0e9a587067fc9d" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="structdetail_1_1position__t" kindref="compound">position_t</ref></type>
+        <definition>position_t detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::get_position</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>get_position</name>
+        <qualifiedname>detail::lexer::get_position</qualifiedname>
+        <briefdescription>
+<para>return position of last read token </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="8741" column="26" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="8741" bodyend="8744"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1lexer_1a41481d87dc1bcaaf532f529fbc0e690b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::get_token_string</definition>
+        <argsstring>() const</argsstring>
+        <name>get_token_string</name>
+        <qualifiedname>detail::lexer::get_token_string</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return the last read token (for errors only). Will never contain EOF (an arbitrary value that is not a valid char value, often -1), because 255 may legitimately occur. May contain NUL, which should be escaped. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="8749" column="17" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="8749" bodyend="8770"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1lexer_1a412c108d8b931630d54e42fbbf764fc4" prot="public" static="no" constexpr="yes" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="json_8hpp_1a5f2aaec3b681d0a72f7d6e90b70cdcd1" kindref="member">JSON_HEDLEY_RETURNS_NON_NULL</ref> constexpr const char *</type>
+        <definition>JSON_HEDLEY_RETURNS_NON_NULL constexpr const char * detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::get_error_message</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>get_error_message</name>
+        <qualifiedname>detail::lexer::get_error_message</qualifiedname>
+        <briefdescription>
+<para>return syntax error message </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="8774" column="26" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="8774" bodyend="8777"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1lexer_1a04ae0c7807a761f4162ff42290be5490" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::skip_bom</definition>
+        <argsstring>()</argsstring>
+        <name>skip_bom</name>
+        <qualifiedname>detail::lexer::skip_bom</qualifiedname>
+        <briefdescription>
+<para>skip the UTF-8 byte order mark </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true iff there is no BOM or the correct BOM has been skipped </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="8787" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="8787" bodyend="8799"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1lexer_1a230468eb9130a7173e0636fc1fc5606b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::skip_whitespace</definition>
+        <argsstring>()</argsstring>
+        <name>skip_whitespace</name>
+        <qualifiedname>detail::lexer::skip_whitespace</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="8801" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="8801" bodyend="8808"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1lexer_1a6497d12a0c35b355b3e22da69d6819f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdetail_1_1lexer_1a74052693c02be1a1e245295b62e5fcb6" kindref="member">token_type</ref></type>
+        <definition>token_type detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::scan</definition>
+        <argsstring>()</argsstring>
+        <name>scan</name>
+        <qualifiedname>detail::lexer::scan</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="8810" column="16" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="8810" bodyend="8896"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classdetail_1_1lexer_1aff70739b089f47c46623fe68426648e0" prot="private" static="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="json_8hpp_1af5c84b7d1a43361bdc14cc6941078000" kindref="member">JSON_HEDLEY_PURE</ref> char</type>
+        <definition>static JSON_HEDLEY_PURE char detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::get_decimal_point</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>get_decimal_point</name>
+        <qualifiedname>detail::lexer::get_decimal_point</qualifiedname>
+        <briefdescription>
+<para>return the locale-dependent decimal point </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="7444" column="17" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="7444" bodyend="7449"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1lexer_1a56bab6981f9c24f2195b192cdafbce11" prot="private" static="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::strtof</definition>
+        <argsstring>(float &amp;f, const char *str, char **endptr) noexcept</argsstring>
+        <name>strtof</name>
+        <qualifiedname>detail::lexer::strtof</qualifiedname>
+        <param>
+          <type>float &amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>endptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="8213" column="17" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="8213" bodyend="8216"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1lexer_1a6e0525d3112881f32670c01a86aacab1" prot="private" static="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::strtof</definition>
+        <argsstring>(double &amp;f, const char *str, char **endptr) noexcept</argsstring>
+        <name>strtof</name>
+        <qualifiedname>detail::lexer::strtof</qualifiedname>
+        <param>
+          <type>double &amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>endptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="8219" column="17" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="8219" bodyend="8222"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1lexer_1ac8bce8181fe3c3055cbbb088c1c40019" prot="private" static="yes" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::strtof</definition>
+        <argsstring>(long double &amp;f, const char *str, char **endptr) noexcept</argsstring>
+        <name>strtof</name>
+        <qualifiedname>detail::lexer::strtof</qualifiedname>
+        <param>
+          <type>long double &amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>endptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="8225" column="17" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="8225" bodyend="8228"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdetail_1_1lexer_1a10530239775d94248e99f235a3d144b3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::get_codepoint</definition>
+        <argsstring>()</argsstring>
+        <name>get_codepoint</name>
+        <qualifiedname>detail::lexer::get_codepoint</qualifiedname>
+        <briefdescription>
+<para>get codepoint from 4 hex characters following <computeroutput>\u</computeroutput> </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For input &quot;\u c1 c2 c3 c4&quot; the codepoint is: (c1 * 0x1000) + (c2 * 0x0100) + (c3 * 0x0010) + c4 = (c1 &lt;&lt; 12) + (c2 &lt;&lt; 8) + (c3 &lt;&lt; 4) + (c4 &lt;&lt; 0)</para>
+<para>Furthermore, the possible characters &apos;0&apos;..&apos;9&apos;, &apos;A&apos;..&apos;F&apos;, and &apos;a&apos;..&apos;f&apos; must be converted to the integers 0x0..0x9, 0xA..0xF, 0xA..0xF, resp. The conversion is done by subtracting the offset (0x30, 0x37, and 0x57) between the ASCII value of the character and the desired integer value.</para>
+<para><simplesect kind="return"><para>codepoint (0x0000..0xFFFF) or -1 in case of an error (e.g. EOF or non-hex character) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="7470" column="9" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="7470" bodyend="7501"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1lexer_1a505c0c6842a668fc4e9f07dca49b91e9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::next_byte_in_range</definition>
+        <argsstring>(std::initializer_list&lt; char_int_type &gt; ranges)</argsstring>
+        <name>next_byte_in_range</name>
+        <qualifiedname>detail::lexer::next_byte_in_range</qualifiedname>
+        <param>
+          <type>std::initializer_list&lt; <ref refid="classdetail_1_1lexer_1aac5ed09bd3726caa96245ecff14ceef1" kindref="member">char_int_type</ref> &gt;</type>
+          <declname>ranges</declname>
+        </param>
+        <briefdescription>
+<para>check if the next byte(s) are inside a given range </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds the current byte and, for each passed range, reads a new byte and checks if it is inside the range. If a violation was detected, set up an error message and return false. Otherwise, return true.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ranges</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>list of integers; interpreted as list of pairs of inclusive lower and upper bound, respectively</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>The passed list <emphasis>ranges</emphasis> must have 2, 4, or 6 elements; that is, 1, 2, or 3 pairs. This precondition is enforced by an assertion.</para>
+</simplesect>
+<simplesect kind="return"><para>true if and only if no range violation was detected </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="7518" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="7518" bodyend="7538"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1lexer_1a13c79af5cade626e08f321ead26b83f9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdetail_1_1lexer_1a74052693c02be1a1e245295b62e5fcb6" kindref="member">token_type</ref></type>
+        <definition>token_type detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::scan_string</definition>
+        <argsstring>()</argsstring>
+        <name>scan_string</name>
+        <qualifiedname>detail::lexer::scan_string</qualifiedname>
+        <briefdescription>
+<para>scan a string literal </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function scans a string according to Sect. 7 of RFC 8259. While scanning, bytes are escaped and copied into buffer token_buffer. Then the function returns successfully, token_buffer is <emphasis>not</emphasis> null-terminated (as it may contain \0 bytes), and token_buffer.size() is the number of bytes in the string.</para>
+<para><simplesect kind="return"><para>token_type::value_string if string could be successfully scanned, token_type::parse_error otherwise</para>
+</simplesect>
+<simplesect kind="note"><para>In case of errors, variable error_message contains a textual description. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="7555" column="16" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="7555" bodyend="8139"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1lexer_1a7182c4e7a87e32686cc06be2c31cbc5f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::scan_comment</definition>
+        <argsstring>()</argsstring>
+        <name>scan_comment</name>
+        <qualifiedname>detail::lexer::scan_comment</qualifiedname>
+        <briefdescription>
+<para>scan a comment </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>whether comment could be scanned successfully </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="8145" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="8145" bodyend="8210"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1lexer_1aab65133db39717a496764cb97fcf3f46" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdetail_1_1lexer_1a74052693c02be1a1e245295b62e5fcb6" kindref="member">token_type</ref></type>
+        <definition>token_type detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::scan_number</definition>
+        <argsstring>()</argsstring>
+        <name>scan_number</name>
+        <qualifiedname>detail::lexer::scan_number</qualifiedname>
+        <briefdescription>
+<para>scan a number literal </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function scans a string according to Sect. 6 of RFC 8259.</para>
+<para>The function is realized with a deterministic finite state machine derived from the grammar described in RFC 8259. Starting in state &quot;init&quot;, the input is read and used to determined the next state. Only state &quot;done&quot; accepts the number. State &quot;error&quot; is a trap state to model errors. In the table below, &quot;anything&quot; means any character but the ones listed before.</para>
+<para><table rows="10" cols="8"><row>
+<entry thead="yes"><para>state   </para>
+</entry><entry thead="yes"><para>0   </para>
+</entry><entry thead="yes"><para>1-9   </para>
+</entry><entry thead="yes"><para>e E   </para>
+</entry><entry thead="yes"><para>+   </para>
+</entry><entry thead="yes"><para>-   </para>
+</entry><entry thead="yes"><para>.   </para>
+</entry><entry thead="yes"><para>anything    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>init   </para>
+</entry><entry thead="no"><para>zero   </para>
+</entry><entry thead="no"><para>any1   </para>
+</entry><entry thead="no"><para>[error]   </para>
+</entry><entry thead="no"><para>[error]   </para>
+</entry><entry thead="no"><para>minus   </para>
+</entry><entry thead="no"><para>[error]   </para>
+</entry><entry thead="no"><para>[error]    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>minus   </para>
+</entry><entry thead="no"><para>zero   </para>
+</entry><entry thead="no"><para>any1   </para>
+</entry><entry thead="no"><para>[error]   </para>
+</entry><entry thead="no"><para>[error]   </para>
+</entry><entry thead="no"><para>[error]   </para>
+</entry><entry thead="no"><para>[error]   </para>
+</entry><entry thead="no"><para>[error]    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>zero   </para>
+</entry><entry thead="no"><para>done   </para>
+</entry><entry thead="no"><para>done   </para>
+</entry><entry thead="no"><para>exponent   </para>
+</entry><entry thead="no"><para>done   </para>
+</entry><entry thead="no"><para>done   </para>
+</entry><entry thead="no"><para>decimal1   </para>
+</entry><entry thead="no"><para>done    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>any1   </para>
+</entry><entry thead="no"><para>any1   </para>
+</entry><entry thead="no"><para>any1   </para>
+</entry><entry thead="no"><para>exponent   </para>
+</entry><entry thead="no"><para>done   </para>
+</entry><entry thead="no"><para>done   </para>
+</entry><entry thead="no"><para>decimal1   </para>
+</entry><entry thead="no"><para>done    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>decimal1   </para>
+</entry><entry thead="no"><para>decimal2   </para>
+</entry><entry thead="no"><para>decimal2   </para>
+</entry><entry thead="no"><para>[error]   </para>
+</entry><entry thead="no"><para>[error]   </para>
+</entry><entry thead="no"><para>[error]   </para>
+</entry><entry thead="no"><para>[error]   </para>
+</entry><entry thead="no"><para>[error]    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>decimal2   </para>
+</entry><entry thead="no"><para>decimal2   </para>
+</entry><entry thead="no"><para>decimal2   </para>
+</entry><entry thead="no"><para>exponent   </para>
+</entry><entry thead="no"><para>done   </para>
+</entry><entry thead="no"><para>done   </para>
+</entry><entry thead="no"><para>done   </para>
+</entry><entry thead="no"><para>done    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>exponent   </para>
+</entry><entry thead="no"><para>any2   </para>
+</entry><entry thead="no"><para>any2   </para>
+</entry><entry thead="no"><para>[error]   </para>
+</entry><entry thead="no"><para>sign   </para>
+</entry><entry thead="no"><para>sign   </para>
+</entry><entry thead="no"><para>[error]   </para>
+</entry><entry thead="no"><para>[error]    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>sign   </para>
+</entry><entry thead="no"><para>any2   </para>
+</entry><entry thead="no"><para>any2   </para>
+</entry><entry thead="no"><para>[error]   </para>
+</entry><entry thead="no"><para>[error]   </para>
+</entry><entry thead="no"><para>[error]   </para>
+</entry><entry thead="no"><para>[error]   </para>
+</entry><entry thead="no"><para>[error]    </para>
+</entry></row>
+<row>
+<entry thead="no"><para>any2   </para>
+</entry><entry thead="no"><para>any2   </para>
+</entry><entry thead="no"><para>any2   </para>
+</entry><entry thead="no"><para>done   </para>
+</entry><entry thead="no"><para>done   </para>
+</entry><entry thead="no"><para>done   </para>
+</entry><entry thead="no"><para>done   </para>
+</entry><entry thead="no"><para>done   </para>
+</entry></row>
+</table>
+</para>
+<para>The state machine is realized with one label per state (prefixed with &quot;scan_number_&quot;) and <computeroutput>goto</computeroutput> statements between them. The state machine contains cycles, but any cycle can be left when EOF is read. Therefore, the function is guaranteed to terminate.</para>
+<para>During scanning, the read bytes are stored in token_buffer. This string is then converted to a signed integer, an unsigned integer, or a floating-point number.</para>
+<para><simplesect kind="return"><para>token_type::value_unsigned, token_type::value_integer, or token_type::value_float if number could be successfully scanned, token_type::parse_error otherwise</para>
+</simplesect>
+<simplesect kind="note"><para>The scanner is independent of the current locale. Internally, the locale&apos;s decimal point is used instead of <computeroutput>.</computeroutput> to work with the locale-dependent converters. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="8270" column="16" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="8270" bodyend="8593"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1lexer_1abefd991e3a77297b30698495531f01df" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdetail_1_1lexer_1a74052693c02be1a1e245295b62e5fcb6" kindref="member">token_type</ref></type>
+        <definition>token_type detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::scan_literal</definition>
+        <argsstring>(const char_type *literal_text, const std::size_t length, token_type return_type)</argsstring>
+        <name>scan_literal</name>
+        <qualifiedname>detail::lexer::scan_literal</qualifiedname>
+        <param>
+          <type>const <ref refid="classdetail_1_1lexer_1aa3fb5e6c89617d56dd992115c4210b58" kindref="member">char_type</ref> *</type>
+          <declname>literal_text</declname>
+        </param>
+        <param>
+          <type>const std::size_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type><ref refid="classdetail_1_1lexer_1a74052693c02be1a1e245295b62e5fcb6" kindref="member">token_type</ref></type>
+          <declname>return_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">literal_text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the literal text to expect </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the length of the passed literal text </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">return_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the token type to return on success </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="8601" column="16" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="8601" bodyend="8614"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1lexer_1a049f7268496ebdbb16573a5ef1bc96b7" prot="private" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::reset</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>reset</name>
+        <qualifiedname>detail::lexer::reset</qualifiedname>
+        <briefdescription>
+<para>reset token_buffer; current character is beginning of token </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="8621" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="8621" bodyend="8626"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1lexer_1a558196cb9fc24015d009969c9df8707b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdetail_1_1lexer_1aac5ed09bd3726caa96245ecff14ceef1" kindref="member">char_int_type</ref></type>
+        <definition>char_int_type detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::get</definition>
+        <argsstring>()</argsstring>
+        <name>get</name>
+        <qualifiedname>detail::lexer::get</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="8638" column="19" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="8638" bodyend="8665"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1lexer_1af15c2d2e743728d99bb6d749a03e5555" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::unget</definition>
+        <argsstring>()</argsstring>
+        <name>unget</name>
+        <qualifiedname>detail::lexer::unget</qualifiedname>
+        <briefdescription>
+<para>unget current character (read it again on next get) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>We implement unget by setting variable next_unget to true. The input is not changed - we just simulate ungetting by modifying chars_read_total, chars_read_current_line, and token_string. The next call to <ref refid="classdetail_1_1lexer_1a558196cb9fc24015d009969c9df8707b" kindref="member">get()</ref> will behave as if the unget character is read again. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="8675" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="8675" bodyend="8699"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1lexer_1ad59cacf0fdfe48d78b218e49da85797b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void detail::lexer&lt; BasicJsonType, InputAdapterType &gt;::add</definition>
+        <argsstring>(char_int_type c)</argsstring>
+        <name>add</name>
+        <qualifiedname>detail::lexer::add</qualifiedname>
+        <param>
+          <type><ref refid="classdetail_1_1lexer_1aac5ed09bd3726caa96245ecff14ceef1" kindref="member">char_int_type</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>add a character to token_buffer </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="8702" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="8702" bodyend="8705"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>lexical analysis </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class organizes the lexical analysis during JSON deserialization. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>detail::lexer&lt; BasicJsonType, InputAdapterType &gt;</label>
+        <link refid="classdetail_1_1lexer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>detail::lexer_base&lt; BasicJsonType &gt;</label>
+        <link refid="classdetail_1_1lexer__base"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>detail::lexer&lt; BasicJsonType, InputAdapterType &gt;</label>
+        <link refid="classdetail_1_1lexer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>detail::lexer_base&lt; BasicJsonType &gt;</label>
+        <link refid="classdetail_1_1lexer__base"/>
+      </node>
+      <node id="3">
+        <label>detail::position_t</label>
+        <link refid="structdetail_1_1position__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="7412" column="1" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="7413" bodyend="8930"/>
+    <listofallmembers>
+      <member refid="classdetail_1_1lexer_1ad59cacf0fdfe48d78b218e49da85797b" prot="private" virt="non-virtual"><scope>detail::lexer</scope><name>add</name></member>
+      <member refid="classdetail_1_1lexer_1aac5ed09bd3726caa96245ecff14ceef1" prot="private" virt="non-virtual"><scope>detail::lexer</scope><name>char_int_type</name></member>
+      <member refid="classdetail_1_1lexer_1aa3fb5e6c89617d56dd992115c4210b58" prot="private" virt="non-virtual"><scope>detail::lexer</scope><name>char_type</name></member>
+      <member refid="classdetail_1_1lexer_1a3b20c55a8266c1b4e43b396f00427e61" prot="private" virt="non-virtual"><scope>detail::lexer</scope><name>current</name></member>
+      <member refid="classdetail_1_1lexer_1a58b33ff095052c2463255f1e121db74e" prot="private" virt="non-virtual"><scope>detail::lexer</scope><name>decimal_point_char</name></member>
+      <member refid="classdetail_1_1lexer_1a8187f7263527e07e23e6fae88f1369ee" prot="private" virt="non-virtual"><scope>detail::lexer</scope><name>error_message</name></member>
+      <member refid="classdetail_1_1lexer_1a558196cb9fc24015d009969c9df8707b" prot="private" virt="non-virtual"><scope>detail::lexer</scope><name>get</name></member>
+      <member refid="classdetail_1_1lexer_1a10530239775d94248e99f235a3d144b3" prot="private" virt="non-virtual"><scope>detail::lexer</scope><name>get_codepoint</name></member>
+      <member refid="classdetail_1_1lexer_1aff70739b089f47c46623fe68426648e0" prot="private" virt="non-virtual"><scope>detail::lexer</scope><name>get_decimal_point</name></member>
+      <member refid="classdetail_1_1lexer_1a412c108d8b931630d54e42fbbf764fc4" prot="public" virt="non-virtual"><scope>detail::lexer</scope><name>get_error_message</name></member>
+      <member refid="classdetail_1_1lexer_1af2e903d32a7e3705c66539ea1e30ce59" prot="public" virt="non-virtual"><scope>detail::lexer</scope><name>get_number_float</name></member>
+      <member refid="classdetail_1_1lexer_1a4227de7d0382fb4d3e18b119f0cc87d7" prot="public" virt="non-virtual"><scope>detail::lexer</scope><name>get_number_integer</name></member>
+      <member refid="classdetail_1_1lexer_1a65495d5d60a279adb009efa728708441" prot="public" virt="non-virtual"><scope>detail::lexer</scope><name>get_number_unsigned</name></member>
+      <member refid="classdetail_1_1lexer_1a569266654a88a2dc6f0e9a587067fc9d" prot="public" virt="non-virtual"><scope>detail::lexer</scope><name>get_position</name></member>
+      <member refid="classdetail_1_1lexer_1aae63a63a83ae7e7bd5dc1a83669ba281" prot="public" virt="non-virtual"><scope>detail::lexer</scope><name>get_string</name></member>
+      <member refid="classdetail_1_1lexer_1a41481d87dc1bcaaf532f529fbc0e690b" prot="public" virt="non-virtual"><scope>detail::lexer</scope><name>get_token_string</name></member>
+      <member refid="classdetail_1_1lexer_1aa4bc44e36ca96cf9ed2d6705e7ec9cab" prot="private" virt="non-virtual"><scope>detail::lexer</scope><name>ia</name></member>
+      <member refid="classdetail_1_1lexer_1a2be57fd034e07a83acdfa65c68d28d9c" prot="private" virt="non-virtual"><scope>detail::lexer</scope><name>ignore_comments</name></member>
+      <member refid="classdetail_1_1lexer_1a384af885c37d58c963b902008c279fd6" prot="public" virt="non-virtual"><scope>detail::lexer</scope><name>lexer</name></member>
+      <member refid="classdetail_1_1lexer_1a963dce44c9d66c9a7c9d3206e1cff2ed" prot="public" virt="non-virtual"><scope>detail::lexer</scope><name>lexer</name></member>
+      <member refid="classdetail_1_1lexer_1a79ce2eb7f127977f1d2499a1f10aa262" prot="public" virt="non-virtual"><scope>detail::lexer</scope><name>lexer</name></member>
+      <member refid="classdetail_1_1lexer_1a505c0c6842a668fc4e9f07dca49b91e9" prot="private" virt="non-virtual"><scope>detail::lexer</scope><name>next_byte_in_range</name></member>
+      <member refid="classdetail_1_1lexer_1a943e132f61f26a85de9075b457ba56a3" prot="private" virt="non-virtual"><scope>detail::lexer</scope><name>next_unget</name></member>
+      <member refid="classdetail_1_1lexer_1a416235693b134eddca9f5f4b31a4cf9f" prot="private" virt="non-virtual"><scope>detail::lexer</scope><name>number_float_t</name></member>
+      <member refid="classdetail_1_1lexer_1a6363c73fbc1f540b78436e5d8f5fc4aa" prot="private" virt="non-virtual"><scope>detail::lexer</scope><name>number_integer_t</name></member>
+      <member refid="classdetail_1_1lexer_1a485291568b67ed42da79a6770ab175bd" prot="private" virt="non-virtual"><scope>detail::lexer</scope><name>number_unsigned_t</name></member>
+      <member refid="classdetail_1_1lexer_1aa64ea2cdf34301e5d1280de82750cd83" prot="public" virt="non-virtual"><scope>detail::lexer</scope><name>operator=</name></member>
+      <member refid="classdetail_1_1lexer_1a8436bd7b1296151e8555c6f2b7bd2b2a" prot="public" virt="non-virtual"><scope>detail::lexer</scope><name>operator=</name></member>
+      <member refid="classdetail_1_1lexer_1ad605226f572dd81c3f092650ee745225" prot="private" virt="non-virtual"><scope>detail::lexer</scope><name>position</name></member>
+      <member refid="classdetail_1_1lexer_1a049f7268496ebdbb16573a5ef1bc96b7" prot="private" virt="non-virtual"><scope>detail::lexer</scope><name>reset</name></member>
+      <member refid="classdetail_1_1lexer_1a6497d12a0c35b355b3e22da69d6819f9" prot="public" virt="non-virtual"><scope>detail::lexer</scope><name>scan</name></member>
+      <member refid="classdetail_1_1lexer_1a7182c4e7a87e32686cc06be2c31cbc5f" prot="private" virt="non-virtual"><scope>detail::lexer</scope><name>scan_comment</name></member>
+      <member refid="classdetail_1_1lexer_1abefd991e3a77297b30698495531f01df" prot="private" virt="non-virtual"><scope>detail::lexer</scope><name>scan_literal</name></member>
+      <member refid="classdetail_1_1lexer_1aab65133db39717a496764cb97fcf3f46" prot="private" virt="non-virtual"><scope>detail::lexer</scope><name>scan_number</name></member>
+      <member refid="classdetail_1_1lexer_1a13c79af5cade626e08f321ead26b83f9" prot="private" virt="non-virtual"><scope>detail::lexer</scope><name>scan_string</name></member>
+      <member refid="classdetail_1_1lexer_1a04ae0c7807a761f4162ff42290be5490" prot="public" virt="non-virtual"><scope>detail::lexer</scope><name>skip_bom</name></member>
+      <member refid="classdetail_1_1lexer_1a230468eb9130a7173e0636fc1fc5606b" prot="public" virt="non-virtual"><scope>detail::lexer</scope><name>skip_whitespace</name></member>
+      <member refid="classdetail_1_1lexer_1a46da6c8d9de1c68f26fde92c9f3d058f" prot="private" virt="non-virtual"><scope>detail::lexer</scope><name>string_t</name></member>
+      <member refid="classdetail_1_1lexer_1a56bab6981f9c24f2195b192cdafbce11" prot="private" virt="non-virtual"><scope>detail::lexer</scope><name>strtof</name></member>
+      <member refid="classdetail_1_1lexer_1a6e0525d3112881f32670c01a86aacab1" prot="private" virt="non-virtual"><scope>detail::lexer</scope><name>strtof</name></member>
+      <member refid="classdetail_1_1lexer_1ac8bce8181fe3c3055cbbb088c1c40019" prot="private" virt="non-virtual"><scope>detail::lexer</scope><name>strtof</name></member>
+      <member refid="classdetail_1_1lexer_1a0a7d915c2d152fcf654550191d95130d" prot="private" virt="non-virtual"><scope>detail::lexer</scope><name>token_buffer</name></member>
+      <member refid="classdetail_1_1lexer_1accedabd8ddcdb183ea2c0fed73875f38" prot="private" virt="non-virtual"><scope>detail::lexer</scope><name>token_string</name></member>
+      <member refid="classdetail_1_1lexer_1a74052693c02be1a1e245295b62e5fcb6" prot="public" virt="non-virtual"><scope>detail::lexer</scope><name>token_type</name></member>
+      <member refid="classdetail_1_1lexer__base_1aadef66e89ad828e5f69479c85887fa6d" prot="public" virt="non-virtual"><scope>detail::lexer</scope><name>token_type_name</name></member>
+      <member refid="classdetail_1_1lexer_1af15c2d2e743728d99bb6d749a03e5555" prot="private" virt="non-virtual"><scope>detail::lexer</scope><name>unget</name></member>
+      <member refid="classdetail_1_1lexer_1aac46a612aaa762aeb29f83012cee768b" prot="private" virt="non-virtual"><scope>detail::lexer</scope><name>value_float</name></member>
+      <member refid="classdetail_1_1lexer_1a1b67ca6ec5761fbaad6cd888c3484fea" prot="private" virt="non-virtual"><scope>detail::lexer</scope><name>value_integer</name></member>
+      <member refid="classdetail_1_1lexer_1a59c8cd99163764d4aa72f78d57643331" prot="private" virt="non-virtual"><scope>detail::lexer</scope><name>value_unsigned</name></member>
+      <member refid="classdetail_1_1lexer_1a7be0e5d9114bf5b6a2d253c732693a97" prot="public" virt="non-virtual"><scope>detail::lexer</scope><name>~lexer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

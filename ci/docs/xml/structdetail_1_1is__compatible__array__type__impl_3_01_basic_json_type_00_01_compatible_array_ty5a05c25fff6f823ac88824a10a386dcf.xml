@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structdetail_1_1is__compatible__array__type__impl_3_01_basic_json_type_00_01_compatible_array_ty5a05c25fff6f823ac88824a10a386dcf" kind="struct" language="C++" prot="public">
+    <compoundname>detail::is_compatible_array_type_impl&lt; BasicJsonType, CompatibleArrayType, enable_if_t&lt; is_detected&lt; iterator_t, CompatibleArrayType &gt;::value &amp;&amp;is_iterator_traits&lt; iterator_traits&lt; detected_t&lt; iterator_t, CompatibleArrayType &gt; &gt; &gt;::value &amp;&amp;!std::is_same&lt; CompatibleArrayType, detected_t&lt; range_value_t, CompatibleArrayType &gt; &gt;::value &gt; &gt;</compoundname>
+    <includes refid="json_8hpp" local="no">json.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename BasicJsonType</type>
+      </param>
+      <param>
+        <type>typename CompatibleArrayType</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structdetail_1_1is__compatible__array__type__impl_3_01_basic_json_type_00_01_compatible_array_ty5a05c25fff6f823ac88824a10a386dcf_1a27868f9549d1832673978f75b47c7049" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool detail::is_compatible_array_type_impl&lt; BasicJsonType, CompatibleArrayType, enable_if_t&lt; is_detected&lt; iterator_t, CompatibleArrayType &gt;::value &amp;&amp;is_iterator_traits&lt; iterator_traits&lt; detected_t&lt; iterator_t, CompatibleArrayType &gt; &gt; &gt;::value &amp;&amp;!std::is_same&lt; CompatibleArrayType, detected_t&lt; range_value_t, CompatibleArrayType &gt; &gt;::value &gt; &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <qualifiedname>detail::is_compatible_array_type_impl&lt; BasicJsonType, CompatibleArrayType, enable_if_t&lt; is_detected&lt; iterator_t, CompatibleArrayType &gt;::value &amp;&amp;is_iterator_traits&lt; iterator_traits&lt; detected_t&lt; iterator_t, CompatibleArrayType &gt; &gt; &gt;::value &amp;&amp;!std::is_same&lt; CompatibleArrayType, detected_t&lt; range_value_t, CompatibleArrayType &gt; &gt;::value &gt; &gt;::value</qualifiedname>
+        <initializer>=
+        <ref refid="structdetail_1_1is__constructible" kindref="compound">is_constructible</ref>&lt;BasicJsonType,
+        <ref refid="namespacedetail_1a81c6c656243412df4c9b1641121c5388" kindref="member">range_value_t</ref>&lt;CompatibleArrayType&gt;&gt;::value</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="3780" column="27" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="3780" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="3771" column="1" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="3779" bodyend="3783"/>
+    <listofallmembers>
+      <member refid="structdetail_1_1is__compatible__array__type__impl_3_01_basic_json_type_00_01_compatible_array_ty5a05c25fff6f823ac88824a10a386dcf_1a27868f9549d1832673978f75b47c7049" prot="public" virt="non-virtual"><scope>detail::is_compatible_array_type_impl&lt; BasicJsonType, CompatibleArrayType, enable_if_t&lt; is_detected&lt; iterator_t, CompatibleArrayType &gt;::value &amp;&amp;is_iterator_traits&lt; iterator_traits&lt; detected_t&lt; iterator_t, CompatibleArrayType &gt; &gt; &gt;::value &amp;&amp;!std::is_same&lt; CompatibleArrayType, detected_t&lt; range_value_t, CompatibleArrayType &gt; &gt;::value &gt; &gt;</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

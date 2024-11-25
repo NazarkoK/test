@@ -1,0 +1,1052 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="classdetail_1_1iter__impl" kind="class" language="C++" prot="public">
+    <compoundname>detail::iter_impl</compoundname>
+    <includes refid="json_8hpp" local="no">json.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename <ref refid="classdetail_1_1iter__impl_1ae3454e97904c65bf079e33cda4116b12" kindref="member">BasicJsonType</ref></type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classdetail_1_1iter__impl_1ac21fe851cf594824029bbd2a5570c9c8" prot="private" static="no">
+        <type><ref refid="classdetail_1_1iter__impl" kindref="compound">iter_impl</ref>&lt; typename std::conditional&lt; std::is_const&lt; <ref refid="classdetail_1_1iter__impl_1ae3454e97904c65bf079e33cda4116b12" kindref="member">BasicJsonType</ref> &gt;<ref refid="classdetail_1_1iter__impl_1a96557c87bc9b3adf6aa0b1a6b6209525" kindref="member">::value</ref>, typename std::remove_const&lt; <ref refid="classdetail_1_1iter__impl_1ae3454e97904c65bf079e33cda4116b12" kindref="member">BasicJsonType</ref> &gt;::type, const <ref refid="classdetail_1_1iter__impl_1ae3454e97904c65bf079e33cda4116b12" kindref="member">BasicJsonType</ref> &gt;::type &gt;</type>
+        <definition>using detail::iter_impl&lt; BasicJsonType &gt;::other_iter_impl =  iter_impl&lt;typename std::conditional&lt;std::is_const&lt;BasicJsonType&gt;::value, typename std::remove_const&lt;BasicJsonType&gt;::type, const BasicJsonType&gt;::type&gt;</definition>
+        <argsstring></argsstring>
+        <name>other_iter_impl</name>
+        <qualifiedname>detail::iter_impl::other_iter_impl</qualifiedname>
+        <briefdescription>
+<para>the iterator with BasicJsonType of different const-ness </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="12836" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="12836" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdetail_1_1iter__impl_1a9eab8bed5aa8f072253dfa5d3c27b1a1" prot="private" static="no">
+        <type>typename BasicJsonType::object_t</type>
+        <definition>using detail::iter_impl&lt; BasicJsonType &gt;::object_t =  typename BasicJsonType::object_t</definition>
+        <argsstring></argsstring>
+        <name>object_t</name>
+        <qualifiedname>detail::iter_impl::object_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="12843" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="12843" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdetail_1_1iter__impl_1a9b829baef72b1f061a545caffc557994" prot="private" static="no">
+        <type>typename BasicJsonType::array_t</type>
+        <definition>using detail::iter_impl&lt; BasicJsonType &gt;::array_t =  typename BasicJsonType::array_t</definition>
+        <argsstring></argsstring>
+        <name>array_t</name>
+        <qualifiedname>detail::iter_impl::array_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="12844" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="12844" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classdetail_1_1iter__impl_1a8fa317aaddc3dc7c58264e52e295c43e" prot="public" static="no">
+        <type>std::bidirectional_iterator_tag</type>
+        <definition>using detail::iter_impl&lt; BasicJsonType &gt;::iterator_category =  std::bidirectional_iterator_tag</definition>
+        <argsstring></argsstring>
+        <name>iterator_category</name>
+        <qualifiedname>detail::iter_impl::iterator_category</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The std::iterator class template (used as a base class to provide typedefs) is deprecated in C++17. The C++ Standard has never required user-defined iterators to derive from std::iterator. A user-defined iterator should provide publicly accessible typedefs named iterator_category, value_type, difference_type, pointer, and reference. Note that value_type is required to be non-const, even for constant iterators. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="12859" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="12859" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdetail_1_1iter__impl_1ab6c453d3fea1df38fa45fd4f97ea42df" prot="public" static="no">
+        <type>typename BasicJsonType::value_type</type>
+        <definition>using detail::iter_impl&lt; BasicJsonType &gt;::value_type =  typename BasicJsonType::value_type</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <qualifiedname>detail::iter_impl::value_type</qualifiedname>
+        <briefdescription>
+<para>the type of the values when the iterator is dereferenced </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="12862" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="12862" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdetail_1_1iter__impl_1a6d51e1372282929d1c240223aa973c6e" prot="public" static="no">
+        <type>typename BasicJsonType::difference_type</type>
+        <definition>using detail::iter_impl&lt; BasicJsonType &gt;::difference_type =  typename BasicJsonType::difference_type</definition>
+        <argsstring></argsstring>
+        <name>difference_type</name>
+        <qualifiedname>detail::iter_impl::difference_type</qualifiedname>
+        <briefdescription>
+<para>a type to represent differences between iterators </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="12864" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="12864" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdetail_1_1iter__impl_1a5f32f4fdd48a9b92ecb156af6421b1b8" prot="public" static="no">
+        <type>typename std::conditional&lt; std::is_const&lt; <ref refid="classdetail_1_1iter__impl_1ae3454e97904c65bf079e33cda4116b12" kindref="member">BasicJsonType</ref> &gt;<ref refid="classdetail_1_1iter__impl_1a96557c87bc9b3adf6aa0b1a6b6209525" kindref="member">::value</ref>, typename BasicJsonType::const_pointer, typename BasicJsonType::pointer &gt;::type</type>
+        <definition>using detail::iter_impl&lt; BasicJsonType &gt;::pointer =  typename std::conditional&lt;std::is_const&lt;BasicJsonType&gt;::value,
+          typename BasicJsonType::const_pointer,
+          typename BasicJsonType::pointer&gt;::type</definition>
+        <argsstring></argsstring>
+        <name>pointer</name>
+        <qualifiedname>detail::iter_impl::pointer</qualifiedname>
+        <briefdescription>
+<para>defines a pointer to the type iterated over (value_type) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="12866" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="12866" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classdetail_1_1iter__impl_1ac0cfb3a9727e77580cb1beada093ee81" prot="public" static="no">
+        <type>typename std::conditional&lt; std::is_const&lt; <ref refid="classdetail_1_1iter__impl_1ae3454e97904c65bf079e33cda4116b12" kindref="member">BasicJsonType</ref> &gt;<ref refid="classdetail_1_1iter__impl_1a96557c87bc9b3adf6aa0b1a6b6209525" kindref="member">::value</ref>, typename BasicJsonType::const_reference, typename BasicJsonType::reference &gt;::type</type>
+        <definition>using detail::iter_impl&lt; BasicJsonType &gt;::reference = 
+        typename std::conditional&lt;std::is_const&lt;BasicJsonType&gt;::value,
+        typename BasicJsonType::const_reference,
+        typename BasicJsonType::reference&gt;::type</definition>
+        <argsstring></argsstring>
+        <name>reference</name>
+        <qualifiedname>detail::iter_impl::reference</qualifiedname>
+        <briefdescription>
+<para>defines a reference to the type iterated over (value_type) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="12870" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="12870" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdetail_1_1iter__impl_1a760a53c5c654183b0ca88ff3fd46de1f" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend detail::iter_impl&lt; BasicJsonType &gt;::other_iter_impl</definition>
+        <argsstring></argsstring>
+        <name>other_iter_impl</name>
+        <qualifiedname>detail::iter_impl::other_iter_impl</qualifiedname>
+        <briefdescription>
+<para>allow <ref refid="classbasic__json" kindref="compound">basic_json</ref> to access private members </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="12838" column="12" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="12838" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdetail_1_1iter__impl_1ae3454e97904c65bf079e33cda4116b12" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend detail::iter_impl&lt; BasicJsonType &gt;::BasicJsonType</definition>
+        <argsstring></argsstring>
+        <name>BasicJsonType</name>
+        <qualifiedname>detail::iter_impl::BasicJsonType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="12839" column="12" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="12839" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdetail_1_1iter__impl_1a42b4badb78ca44bb03c95cb1820da526" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend detail::iter_impl&lt; BasicJsonType &gt;::iteration_proxy&lt; iter_impl &gt;</definition>
+        <argsstring></argsstring>
+        <name>iteration_proxy&lt; iter_impl &gt;</name>
+        <qualifiedname>detail::iter_impl::iteration_proxy&lt; iter_impl &gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="12840" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="12840" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdetail_1_1iter__impl_1a956fbe3ebf9f8a3adf36373fca1aded7" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend detail::iter_impl&lt; BasicJsonType &gt;::iteration_proxy_value&lt; iter_impl &gt;</definition>
+        <argsstring></argsstring>
+        <name>iteration_proxy_value&lt; iter_impl &gt;</name>
+        <qualifiedname>detail::iter_impl::iteration_proxy_value&lt; iter_impl &gt;</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="12841" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="12841" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdetail_1_1iter__impl_1ae146c1c7a0b8a46e353b1bbe181f7743" prot="public" static="no" mutable="no">
+        <type><ref refid="json_8hpp_1a2cf645f34610e7f7d6e09ab88a2ab917" kindref="member">JSON_PRIVATE_UNLESS_TESTED</ref></type>
+        <definition>JSON_PRIVATE_UNLESS_TESTED detail::iter_impl&lt; BasicJsonType &gt;::__pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <qualifiedname>detail::iter_impl::__pad0__</qualifiedname>
+        <bitfield> void set_begin() noexcept { JSON_ASSERT(m_object != nullptr)</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="12978" column="3" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="12985" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdetail_1_1iter__impl_1a392b5af6ea3449fe31ab7aafa5db4774" prot="public" static="no" mutable="no">
+        <type><ref refid="json_8hpp_1a2cf645f34610e7f7d6e09ab88a2ab917" kindref="member">JSON_PRIVATE_UNLESS_TESTED</ref></type>
+        <definition>JSON_PRIVATE_UNLESS_TESTED detail::iter_impl&lt; BasicJsonType &gt;::__pad1__</definition>
+        <argsstring></argsstring>
+        <name>__pad1__</name>
+        <qualifiedname>detail::iter_impl::__pad1__</qualifiedname>
+        <bitfield> pointer m_object = nullptr</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="13529" column="3" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="13531" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdetail_1_1iter__impl_1a79b7b8c6b778d9f7e76b086b45d9ea2e" prot="public" static="no" mutable="no">
+        <type><ref refid="structdetail_1_1internal__iterator" kindref="compound">internal_iterator</ref>&lt; typename std::remove_const&lt; <ref refid="classdetail_1_1iter__impl_1ae3454e97904c65bf079e33cda4116b12" kindref="member">BasicJsonType</ref> &gt;::type &gt;</type>
+        <definition>internal_iterator&lt;typename std::remove_const&lt;BasicJsonType&gt;::type&gt; detail::iter_impl&lt; BasicJsonType &gt;::m_it</definition>
+        <argsstring></argsstring>
+        <name>m_it</name>
+        <qualifiedname>detail::iter_impl::m_it</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+<para>the actual iterator of the associated instance </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="13533" column="24" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="13533" bodyend="13533"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdetail_1_1iter__impl_1ac628b24caf15abd25a3d4d1ad0c3fe0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>detail::iter_impl&lt; BasicJsonType &gt;::iter_impl</definition>
+        <argsstring>()=default</argsstring>
+        <name>iter_impl</name>
+        <qualifiedname>detail::iter_impl::iter_impl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="12875" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iter__impl_1a037bc5575c7368ba5b3fab3d0390d5d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>detail::iter_impl&lt; BasicJsonType &gt;::~iter_impl</definition>
+        <argsstring>()=default</argsstring>
+        <name>~iter_impl</name>
+        <qualifiedname>detail::iter_impl::~iter_impl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="12876" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iter__impl_1a8b8e30542bd3aa542201448ea8fd7089" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>detail::iter_impl&lt; BasicJsonType &gt;::iter_impl</definition>
+        <argsstring>(iter_impl &amp;&amp;) noexcept=default</argsstring>
+        <name>iter_impl</name>
+        <qualifiedname>detail::iter_impl::iter_impl</qualifiedname>
+        <param>
+          <type><ref refid="classdetail_1_1iter__impl" kindref="compound">iter_impl</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="12877" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iter__impl_1a3e705d46278a4048c26f297b1b433393" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classdetail_1_1iter__impl" kindref="compound">iter_impl</ref> &amp;</type>
+        <definition>iter_impl &amp; detail::iter_impl&lt; BasicJsonType &gt;::operator=</definition>
+        <argsstring>(iter_impl &amp;&amp;) noexcept=default</argsstring>
+        <name>operator=</name>
+        <qualifiedname>detail::iter_impl::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classdetail_1_1iter__impl" kindref="compound">iter_impl</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="12878" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iter__impl_1a21ce449bdce08e15eaf8333322a81039" prot="public" static="no" const="no" explicit="yes" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>detail::iter_impl&lt; BasicJsonType &gt;::iter_impl</definition>
+        <argsstring>(pointer object) noexcept</argsstring>
+        <name>iter_impl</name>
+        <qualifiedname>detail::iter_impl::iter_impl</qualifiedname>
+        <param>
+          <type><ref refid="classdetail_1_1iter__impl_1a5f32f4fdd48a9b92ecb156af6421b1b8" kindref="member">pointer</ref></type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+<para>constructor for a given JSON instance </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a JSON object for this iterator </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>object != nullptr </para>
+</simplesect>
+<simplesect kind="post"><para>The iterator is initialized; i.e. <computeroutput>m_object != nullptr</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="12886" column="14" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="12886" bodyend="12918"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iter__impl_1af8d8847a82d9dab28bd4650ed13a7c90" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>detail::iter_impl&lt; BasicJsonType &gt;::iter_impl</definition>
+        <argsstring>(const iter_impl&lt; const BasicJsonType &gt; &amp;other) noexcept</argsstring>
+        <name>iter_impl</name>
+        <qualifiedname>detail::iter_impl::iter_impl</qualifiedname>
+        <param>
+          <type>const <ref refid="classdetail_1_1iter__impl" kindref="compound">iter_impl</ref>&lt; const <ref refid="classdetail_1_1iter__impl_1ae3454e97904c65bf079e33cda4116b12" kindref="member">BasicJsonType</ref> &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>const copy constructor </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The conventional copy constructor and copy assignment are implicitly defined. Combined with the following converting constructor and assignment, they support: (1) copy from iterator to iterator, (2) copy from const iterator to const iterator, and (3) conversion from iterator to const iterator. However conversion from const iterator to iterator is not defined.</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>const iterator to copy from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This copy constructor had to be defined explicitly to circumvent a bug occurring on msvc v19.0 compiler (VS 2015) debug build. For more information refer to: <ulink url="https://github.com/nlohmann/json/issues/1608">https://github.com/nlohmann/json/issues/1608</ulink> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="12936" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="12936" bodyend="12938"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iter__impl_1ae347fdf39e75d13ce488335ef1529b27" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classdetail_1_1iter__impl" kindref="compound">iter_impl</ref> &amp;</type>
+        <definition>iter_impl &amp; detail::iter_impl&lt; BasicJsonType &gt;::operator=</definition>
+        <argsstring>(const iter_impl&lt; const BasicJsonType &gt; &amp;other) noexcept</argsstring>
+        <name>operator=</name>
+        <qualifiedname>detail::iter_impl::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classdetail_1_1iter__impl" kindref="compound">iter_impl</ref>&lt; const <ref refid="classdetail_1_1iter__impl_1ae3454e97904c65bf079e33cda4116b12" kindref="member">BasicJsonType</ref> &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>converting assignment </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>const iterator to copy from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>const/non-const iterator </para>
+</simplesect>
+<simplesect kind="note"><para>It is not checked whether <emphasis>other</emphasis> is initialized. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="12946" column="15" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="12946" bodyend="12954"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iter__impl_1a26079f33eb8a16683577cf3782558f26" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>detail::iter_impl&lt; BasicJsonType &gt;::iter_impl</definition>
+        <argsstring>(const iter_impl&lt; typename std::remove_const&lt; BasicJsonType &gt;::type &gt; &amp;other) noexcept</argsstring>
+        <name>iter_impl</name>
+        <qualifiedname>detail::iter_impl::iter_impl</qualifiedname>
+        <param>
+          <type>const <ref refid="classdetail_1_1iter__impl" kindref="compound">iter_impl</ref>&lt; typename std::remove_const&lt; <ref refid="classdetail_1_1iter__impl_1ae3454e97904c65bf079e33cda4116b12" kindref="member">BasicJsonType</ref> &gt;::type &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>converting constructor </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>non-const iterator to copy from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>It is not checked whether <emphasis>other</emphasis> is initialized. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="12961" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="12961" bodyend="12963"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iter__impl_1a228140be2554afd5dfe54d4194780b7c" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classdetail_1_1iter__impl" kindref="compound">iter_impl</ref> &amp;</type>
+        <definition>iter_impl &amp; detail::iter_impl&lt; BasicJsonType &gt;::operator=</definition>
+        <argsstring>(const iter_impl&lt; typename std::remove_const&lt; BasicJsonType &gt;::type &gt; &amp;other) noexcept</argsstring>
+        <name>operator=</name>
+        <qualifiedname>detail::iter_impl::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classdetail_1_1iter__impl" kindref="compound">iter_impl</ref>&lt; typename std::remove_const&lt; <ref refid="classdetail_1_1iter__impl_1ae3454e97904c65bf079e33cda4116b12" kindref="member">BasicJsonType</ref> &gt;::type &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>converting assignment </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>non-const iterator to copy from </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>const/non-const iterator </para>
+</simplesect>
+<simplesect kind="note"><para>It is not checked whether <emphasis>other</emphasis> is initialized. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="12971" column="15" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="12971" bodyend="12976"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iter__impl_1ac65ea2181b1b8d97fb014dee0e6d49e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>detail::iter_impl&lt; BasicJsonType &gt;::switch</definition>
+        <argsstring>(m_object-&gt;m_type)</argsstring>
+        <name>switch</name>
+        <qualifiedname>detail::iter_impl::switch</qualifiedname>
+        <param>
+          <type>m_object-&gt;</type>
+          <declname>m_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="12987" column="9" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="12987" bodyend="13020"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iter__impl_1afc94db3b8f35616347c25fae68e09509" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void detail::iter_impl&lt; BasicJsonType &gt;::set_end</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>set_end</name>
+        <qualifiedname>detail::iter_impl::set_end</qualifiedname>
+        <briefdescription>
+<para>set the iterator past the last value </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>The iterator is initialized; i.e. <computeroutput>m_object != nullptr</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="13027" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="13027" bodyend="13059"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iter__impl_1abbef7d5bdb2c45980a34e907610c32b2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdetail_1_1iter__impl_1ac0cfb3a9727e77580cb1beada093ee81" kindref="member">reference</ref></type>
+        <definition>reference detail::iter_impl&lt; BasicJsonType &gt;::operator*</definition>
+        <argsstring>() const</argsstring>
+        <name>operator*</name>
+        <qualifiedname>detail::iter_impl::operator*</qualifiedname>
+        <briefdescription>
+<para>return a reference to the value pointed to by the iterator </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>The iterator is initialized; i.e. <computeroutput>m_object != nullptr</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="13066" column="15" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="13066" bodyend="13104"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iter__impl_1a72314a87e67ba523f1be2f014f4eab56" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdetail_1_1iter__impl_1a5f32f4fdd48a9b92ecb156af6421b1b8" kindref="member">pointer</ref></type>
+        <definition>pointer detail::iter_impl&lt; BasicJsonType &gt;::operator-&gt;</definition>
+        <argsstring>() const</argsstring>
+        <name>operator-&gt;</name>
+        <qualifiedname>detail::iter_impl::operator-&gt;</qualifiedname>
+        <briefdescription>
+<para>dereference the iterator </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>The iterator is initialized; i.e. <computeroutput>m_object != nullptr</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="13110" column="13" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="13110" bodyend="13146"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iter__impl_1a5a1af6b2cd3611778b697bb7d7107f0d" prot="public" static="no" const="no" explicit="no" inline="yes" refqual="lvalue" virt="non-virtual">
+        <type><ref refid="classdetail_1_1iter__impl" kindref="compound">iter_impl</ref></type>
+        <definition>iter_impl detail::iter_impl&lt; BasicJsonType &gt;::operator++</definition>
+        <argsstring>(int) &amp;</argsstring>
+        <name>operator++</name>
+        <qualifiedname>detail::iter_impl::operator++</qualifiedname>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+<para>post-increment (it++) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>The iterator is initialized; i.e. <computeroutput>m_object != nullptr</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="13152" column="15" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="13152" bodyend="13157"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iter__impl_1ab0288ec335f563769a09fba1123c076c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdetail_1_1iter__impl" kindref="compound">iter_impl</ref> &amp;</type>
+        <definition>iter_impl &amp; detail::iter_impl&lt; BasicJsonType &gt;::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <qualifiedname>detail::iter_impl::operator++</qualifiedname>
+        <briefdescription>
+<para>pre-increment (++it) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>The iterator is initialized; i.e. <computeroutput>m_object != nullptr</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="13163" column="15" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="13163" bodyend="13197"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iter__impl_1ae8c229d46359424bf850f1ecb5587a70" prot="public" static="no" const="no" explicit="no" inline="yes" refqual="lvalue" virt="non-virtual">
+        <type><ref refid="classdetail_1_1iter__impl" kindref="compound">iter_impl</ref></type>
+        <definition>iter_impl detail::iter_impl&lt; BasicJsonType &gt;::operator--</definition>
+        <argsstring>(int) &amp;</argsstring>
+        <name>operator--</name>
+        <qualifiedname>detail::iter_impl::operator--</qualifiedname>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+<para>post-decrement (it<ndash/>) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>The iterator is initialized; i.e. <computeroutput>m_object != nullptr</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="13203" column="15" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="13203" bodyend="13208"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iter__impl_1a3b7d07348aaaaf3eda9bd98b7d80415f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdetail_1_1iter__impl" kindref="compound">iter_impl</ref> &amp;</type>
+        <definition>iter_impl &amp; detail::iter_impl&lt; BasicJsonType &gt;::operator--</definition>
+        <argsstring>()</argsstring>
+        <name>operator--</name>
+        <qualifiedname>detail::iter_impl::operator--</qualifiedname>
+        <briefdescription>
+<para>pre-decrement (<ndash/>it) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>The iterator is initialized; i.e. <computeroutput>m_object != nullptr</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="13214" column="15" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="13214" bodyend="13248"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iter__impl_1a57b4e1eee4a3cdb3c0683cf64979da8d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename IterImpl</type>
+          </param>
+          <param>
+            <type><ref refid="namespacedetail_1a469b9c0b78404c24509a221801bc4c26" kindref="member">detail::enable_if_t</ref>&lt;(std::is_same&lt; IterImpl, <ref refid="classdetail_1_1iter__impl" kindref="compound">iter_impl</ref> &gt;<ref refid="classdetail_1_1iter__impl_1a96557c87bc9b3adf6aa0b1a6b6209525" kindref="member">::value</ref>||std::is_same&lt; IterImpl, <ref refid="classdetail_1_1iter__impl_1ac21fe851cf594824029bbd2a5570c9c8" kindref="member">other_iter_impl</ref> &gt;<ref refid="classdetail_1_1iter__impl_1a96557c87bc9b3adf6aa0b1a6b6209525" kindref="member">::value</ref>), std::nullptr_t &gt;</type>
+            <defval>nullptr</defval>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool detail::iter_impl&lt; BasicJsonType &gt;::operator==</definition>
+        <argsstring>(const IterImpl &amp;other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>detail::iter_impl::operator==</qualifiedname>
+        <param>
+          <type>const IterImpl &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>comparison: equal </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>The iterator is initialized; i.e. <computeroutput>m_object != nullptr</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="13255" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="13255" bodyend="13284"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iter__impl_1ae52db5f16f00edc13c848fe99e4c521b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename IterImpl</type>
+          </param>
+          <param>
+            <type><ref refid="namespacedetail_1a469b9c0b78404c24509a221801bc4c26" kindref="member">detail::enable_if_t</ref>&lt;(std::is_same&lt; IterImpl, <ref refid="classdetail_1_1iter__impl" kindref="compound">iter_impl</ref> &gt;<ref refid="classdetail_1_1iter__impl_1a96557c87bc9b3adf6aa0b1a6b6209525" kindref="member">::value</ref>||std::is_same&lt; IterImpl, <ref refid="classdetail_1_1iter__impl_1ac21fe851cf594824029bbd2a5570c9c8" kindref="member">other_iter_impl</ref> &gt;<ref refid="classdetail_1_1iter__impl_1a96557c87bc9b3adf6aa0b1a6b6209525" kindref="member">::value</ref>), std::nullptr_t &gt;</type>
+            <defval>nullptr</defval>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool detail::iter_impl&lt; BasicJsonType &gt;::operator!=</definition>
+        <argsstring>(const IterImpl &amp;other) const</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>detail::iter_impl::operator!=</qualifiedname>
+        <param>
+          <type>const IterImpl &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>comparison: not equal </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>The iterator is initialized; i.e. <computeroutput>m_object != nullptr</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="13291" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="13291" bodyend="13294"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iter__impl_1a339df296df7f5d014d5c7cedf40497da" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool detail::iter_impl&lt; BasicJsonType &gt;::operator&lt;</definition>
+        <argsstring>(const iter_impl &amp;other) const</argsstring>
+        <name>operator&lt;</name>
+        <qualifiedname>detail::iter_impl::operator&lt;</qualifiedname>
+        <param>
+          <type>const <ref refid="classdetail_1_1iter__impl" kindref="compound">iter_impl</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>comparison: smaller </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>The iterator is initialized; i.e. <computeroutput>m_object != nullptr</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="13300" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="13300" bodyend="13329"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iter__impl_1a343806ffb02d7ce5266492128dfd5f9b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool detail::iter_impl&lt; BasicJsonType &gt;::operator&lt;=</definition>
+        <argsstring>(const iter_impl &amp;other) const</argsstring>
+        <name>operator&lt;=</name>
+        <qualifiedname>detail::iter_impl::operator&lt;=</qualifiedname>
+        <param>
+          <type>const <ref refid="classdetail_1_1iter__impl" kindref="compound">iter_impl</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>comparison: less than or equal </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>The iterator is initialized; i.e. <computeroutput>m_object != nullptr</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="13335" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="13335" bodyend="13338"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iter__impl_1a9b066d888f2f0ad0cd601594661a8e8b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool detail::iter_impl&lt; BasicJsonType &gt;::operator&gt;</definition>
+        <argsstring>(const iter_impl &amp;other) const</argsstring>
+        <name>operator&gt;</name>
+        <qualifiedname>detail::iter_impl::operator&gt;</qualifiedname>
+        <param>
+          <type>const <ref refid="classdetail_1_1iter__impl" kindref="compound">iter_impl</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>comparison: greater than </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>The iterator is initialized; i.e. <computeroutput>m_object != nullptr</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="13344" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="13344" bodyend="13347"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iter__impl_1a25a3a8e85eb37727487f210f5304a48e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool detail::iter_impl&lt; BasicJsonType &gt;::operator&gt;=</definition>
+        <argsstring>(const iter_impl &amp;other) const</argsstring>
+        <name>operator&gt;=</name>
+        <qualifiedname>detail::iter_impl::operator&gt;=</qualifiedname>
+        <param>
+          <type>const <ref refid="classdetail_1_1iter__impl" kindref="compound">iter_impl</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>comparison: greater than or equal </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>The iterator is initialized; i.e. <computeroutput>m_object != nullptr</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="13353" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="13353" bodyend="13356"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iter__impl_1a5e2dd333526ae85044fe78f65aac9b52" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdetail_1_1iter__impl" kindref="compound">iter_impl</ref> &amp;</type>
+        <definition>iter_impl &amp; detail::iter_impl&lt; BasicJsonType &gt;::operator+=</definition>
+        <argsstring>(difference_type i)</argsstring>
+        <name>operator+=</name>
+        <qualifiedname>detail::iter_impl::operator+=</qualifiedname>
+        <param>
+          <type><ref refid="classdetail_1_1iter__impl_1a6d51e1372282929d1c240223aa973c6e" kindref="member">difference_type</ref></type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>add to iterator </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>The iterator is initialized; i.e. <computeroutput>m_object != nullptr</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="13362" column="15" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="13362" bodyend="13393"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iter__impl_1a3b48ed5856ca2011e8463d868fda3d0b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdetail_1_1iter__impl" kindref="compound">iter_impl</ref> &amp;</type>
+        <definition>iter_impl &amp; detail::iter_impl&lt; BasicJsonType &gt;::operator-=</definition>
+        <argsstring>(difference_type i)</argsstring>
+        <name>operator-=</name>
+        <qualifiedname>detail::iter_impl::operator-=</qualifiedname>
+        <param>
+          <type><ref refid="classdetail_1_1iter__impl_1a6d51e1372282929d1c240223aa973c6e" kindref="member">difference_type</ref></type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>subtract from iterator </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>The iterator is initialized; i.e. <computeroutput>m_object != nullptr</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="13399" column="15" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="13399" bodyend="13402"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iter__impl_1a03abdffc86382e7c2a7c462c217d120e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdetail_1_1iter__impl" kindref="compound">iter_impl</ref></type>
+        <definition>iter_impl detail::iter_impl&lt; BasicJsonType &gt;::operator+</definition>
+        <argsstring>(difference_type i) const</argsstring>
+        <name>operator+</name>
+        <qualifiedname>detail::iter_impl::operator+</qualifiedname>
+        <param>
+          <type><ref refid="classdetail_1_1iter__impl_1a6d51e1372282929d1c240223aa973c6e" kindref="member">difference_type</ref></type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>add to iterator </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>The iterator is initialized; i.e. <computeroutput>m_object != nullptr</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="13408" column="15" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="13408" bodyend="13413"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iter__impl_1abfcadba7a9796c3f5a5e123efef349ec" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdetail_1_1iter__impl" kindref="compound">iter_impl</ref></type>
+        <definition>iter_impl detail::iter_impl&lt; BasicJsonType &gt;::operator-</definition>
+        <argsstring>(difference_type i) const</argsstring>
+        <name>operator-</name>
+        <qualifiedname>detail::iter_impl::operator-</qualifiedname>
+        <param>
+          <type><ref refid="classdetail_1_1iter__impl_1a6d51e1372282929d1c240223aa973c6e" kindref="member">difference_type</ref></type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>subtract from iterator </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>The iterator is initialized; i.e. <computeroutput>m_object != nullptr</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="13430" column="15" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="13430" bodyend="13435"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iter__impl_1a848837b8db99998c90d7bd71492d0dee" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdetail_1_1iter__impl_1a6d51e1372282929d1c240223aa973c6e" kindref="member">difference_type</ref></type>
+        <definition>difference_type detail::iter_impl&lt; BasicJsonType &gt;::operator-</definition>
+        <argsstring>(const iter_impl &amp;other) const</argsstring>
+        <name>operator-</name>
+        <qualifiedname>detail::iter_impl::operator-</qualifiedname>
+        <param>
+          <type>const <ref refid="classdetail_1_1iter__impl" kindref="compound">iter_impl</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>return difference </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>The iterator is initialized; i.e. <computeroutput>m_object != nullptr</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="13441" column="21" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="13441" bodyend="13464"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iter__impl_1a5e557e30103e2af36cd8173c88eb586c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdetail_1_1iter__impl_1ac0cfb3a9727e77580cb1beada093ee81" kindref="member">reference</ref></type>
+        <definition>reference detail::iter_impl&lt; BasicJsonType &gt;::operator[]</definition>
+        <argsstring>(difference_type n) const</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>detail::iter_impl::operator[]</qualifiedname>
+        <param>
+          <type><ref refid="classdetail_1_1iter__impl_1a6d51e1372282929d1c240223aa973c6e" kindref="member">difference_type</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>access to successor </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>The iterator is initialized; i.e. <computeroutput>m_object != nullptr</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="13470" column="15" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="13470" bodyend="13502"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iter__impl_1a4064b295014b32f3cabd86f94264fc74" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const object_t::key_type &amp;</type>
+        <definition>const object_t::key_type &amp; detail::iter_impl&lt; BasicJsonType &gt;::key</definition>
+        <argsstring>() const</argsstring>
+        <name>key</name>
+        <qualifiedname>detail::iter_impl::key</qualifiedname>
+        <briefdescription>
+<para>return the key of an object iterator </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>The iterator is initialized; i.e. <computeroutput>m_object != nullptr</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="13508" column="39" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="13508" bodyend="13518"/>
+      </memberdef>
+      <memberdef kind="function" id="classdetail_1_1iter__impl_1a96557c87bc9b3adf6aa0b1a6b6209525" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdetail_1_1iter__impl_1ac0cfb3a9727e77580cb1beada093ee81" kindref="member">reference</ref></type>
+        <definition>reference detail::iter_impl&lt; BasicJsonType &gt;::value</definition>
+        <argsstring>() const</argsstring>
+        <name>value</name>
+        <qualifiedname>detail::iter_impl::value</qualifiedname>
+        <briefdescription>
+<para>return the value of an iterator </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>The iterator is initialized; i.e. <computeroutput>m_object != nullptr</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="13524" column="15" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="13524" bodyend="13527"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classdetail_1_1iter__impl_1a94108d1a7563e103534f23eb5c1ee175" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdetail_1_1iter__impl" kindref="compound">iter_impl</ref></type>
+        <definition>iter_impl operator+</definition>
+        <argsstring>(difference_type i, const iter_impl &amp;it)</argsstring>
+        <name>operator+</name>
+        <qualifiedname>detail::iter_impl::operator+</qualifiedname>
+        <param>
+          <type><ref refid="classdetail_1_1iter__impl_1a6d51e1372282929d1c240223aa973c6e" kindref="member">difference_type</ref></type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classdetail_1_1iter__impl" kindref="compound">iter_impl</ref> &amp;</type>
+          <declname>it</declname>
+        </param>
+        <briefdescription>
+<para>addition of distance and iterator </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="pre"><para>The iterator is initialized; i.e. <computeroutput>m_object != nullptr</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="13419" column="22" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="13419" bodyend="13424"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>a template for a bidirectional iterator for the <ref refid="classbasic__json" kindref="compound">basic_json</ref> class This class implements a both iterators (iterator and const_iterator) for the <ref refid="classbasic__json" kindref="compound">basic_json</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>An iterator is called <emphasis>initialized</emphasis> when a pointer to a JSON value has been set (e.g., by a constructor or a copy assignment). If the iterator is default-constructed, it is <emphasis>uninitialized</emphasis> and most methods are undefined. The library uses assertions to detect calls on uninitialized iterators.** @requirement The class satisfies the following concept requirements:<itemizedlist>
+<listitem><para><ulink url="https://en.cppreference.com/w/cpp/named_req/BidirectionalIterator">BidirectionalIterator</ulink>: The iterator that can be moved can be moved in both directions (i.e. incremented and decremented). </para>
+</listitem></itemizedlist>
+</para>
+</simplesect>
+<simplesect kind="since"><para>version 1.0.0, simplified in version 2.0.9, change to bidirectional iterators in version 3.0.0 (see <ulink url="https://github.com/nlohmann/json/issues/593">https://github.com/nlohmann/json/issues/593</ulink>) </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>detail::internal_iterator&lt; typename std::remove_const&lt; BasicJsonType &gt;::type &gt;</label>
+        <link refid="structdetail_1_1internal__iterator"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>primitive_iterator</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>detail::iter_impl&lt; BasicJsonType &gt;</label>
+        <link refid="classdetail_1_1iter__impl"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_it</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>detail::primitive_iterator_t</label>
+        <link refid="classdetail_1_1primitive__iterator__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="12833" column="1" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="12834" bodyend="13534"/>
+    <listofallmembers>
+      <member refid="classdetail_1_1iter__impl_1ae146c1c7a0b8a46e353b1bbe181f7743" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>__pad0__</name></member>
+      <member refid="classdetail_1_1iter__impl_1a392b5af6ea3449fe31ab7aafa5db4774" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>__pad1__</name></member>
+      <member refid="classdetail_1_1iter__impl_1a9b829baef72b1f061a545caffc557994" prot="private" virt="non-virtual"><scope>detail::iter_impl</scope><name>array_t</name></member>
+      <member refid="classdetail_1_1iter__impl_1ae3454e97904c65bf079e33cda4116b12" prot="private" virt="non-virtual"><scope>detail::iter_impl</scope><name>BasicJsonType</name></member>
+      <member refid="classdetail_1_1iter__impl_1a6d51e1372282929d1c240223aa973c6e" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>difference_type</name></member>
+      <member refid="classdetail_1_1iter__impl_1ac628b24caf15abd25a3d4d1ad0c3fe0a" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>iter_impl</name></member>
+      <member refid="classdetail_1_1iter__impl_1a8b8e30542bd3aa542201448ea8fd7089" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>iter_impl</name></member>
+      <member refid="classdetail_1_1iter__impl_1a21ce449bdce08e15eaf8333322a81039" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>iter_impl</name></member>
+      <member refid="classdetail_1_1iter__impl_1af8d8847a82d9dab28bd4650ed13a7c90" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>iter_impl</name></member>
+      <member refid="classdetail_1_1iter__impl_1a26079f33eb8a16683577cf3782558f26" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>iter_impl</name></member>
+      <member refid="classdetail_1_1iter__impl_1a42b4badb78ca44bb03c95cb1820da526" prot="private" virt="non-virtual"><scope>detail::iter_impl</scope><name>iteration_proxy&lt; iter_impl &gt;</name></member>
+      <member refid="classdetail_1_1iter__impl_1a956fbe3ebf9f8a3adf36373fca1aded7" prot="private" virt="non-virtual"><scope>detail::iter_impl</scope><name>iteration_proxy_value&lt; iter_impl &gt;</name></member>
+      <member refid="classdetail_1_1iter__impl_1a8fa317aaddc3dc7c58264e52e295c43e" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>iterator_category</name></member>
+      <member refid="classdetail_1_1iter__impl_1a4064b295014b32f3cabd86f94264fc74" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>key</name></member>
+      <member refid="classdetail_1_1iter__impl_1a79b7b8c6b778d9f7e76b086b45d9ea2e" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>m_it</name></member>
+      <member refid="classdetail_1_1iter__impl_1a9eab8bed5aa8f072253dfa5d3c27b1a1" prot="private" virt="non-virtual"><scope>detail::iter_impl</scope><name>object_t</name></member>
+      <member refid="classdetail_1_1iter__impl_1ae52db5f16f00edc13c848fe99e4c521b" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>operator!=</name></member>
+      <member refid="classdetail_1_1iter__impl_1abbef7d5bdb2c45980a34e907610c32b2" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>operator*</name></member>
+      <member refid="classdetail_1_1iter__impl_1a03abdffc86382e7c2a7c462c217d120e" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>operator+</name></member>
+      <member refid="classdetail_1_1iter__impl_1a94108d1a7563e103534f23eb5c1ee175" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>operator+</name></member>
+      <member refid="classdetail_1_1iter__impl_1a5a1af6b2cd3611778b697bb7d7107f0d" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>operator++</name></member>
+      <member refid="classdetail_1_1iter__impl_1ab0288ec335f563769a09fba1123c076c" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>operator++</name></member>
+      <member refid="classdetail_1_1iter__impl_1a5e2dd333526ae85044fe78f65aac9b52" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>operator+=</name></member>
+      <member refid="classdetail_1_1iter__impl_1abfcadba7a9796c3f5a5e123efef349ec" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>operator-</name></member>
+      <member refid="classdetail_1_1iter__impl_1a848837b8db99998c90d7bd71492d0dee" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>operator-</name></member>
+      <member refid="classdetail_1_1iter__impl_1ae8c229d46359424bf850f1ecb5587a70" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>operator--</name></member>
+      <member refid="classdetail_1_1iter__impl_1a3b7d07348aaaaf3eda9bd98b7d80415f" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>operator--</name></member>
+      <member refid="classdetail_1_1iter__impl_1a3b48ed5856ca2011e8463d868fda3d0b" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>operator-=</name></member>
+      <member refid="classdetail_1_1iter__impl_1a72314a87e67ba523f1be2f014f4eab56" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>operator-&gt;</name></member>
+      <member refid="classdetail_1_1iter__impl_1a339df296df7f5d014d5c7cedf40497da" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>operator&lt;</name></member>
+      <member refid="classdetail_1_1iter__impl_1a343806ffb02d7ce5266492128dfd5f9b" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>operator&lt;=</name></member>
+      <member refid="classdetail_1_1iter__impl_1a3e705d46278a4048c26f297b1b433393" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>operator=</name></member>
+      <member refid="classdetail_1_1iter__impl_1ae347fdf39e75d13ce488335ef1529b27" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>operator=</name></member>
+      <member refid="classdetail_1_1iter__impl_1a228140be2554afd5dfe54d4194780b7c" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>operator=</name></member>
+      <member refid="classdetail_1_1iter__impl_1a57b4e1eee4a3cdb3c0683cf64979da8d" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>operator==</name></member>
+      <member refid="classdetail_1_1iter__impl_1a9b066d888f2f0ad0cd601594661a8e8b" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>operator&gt;</name></member>
+      <member refid="classdetail_1_1iter__impl_1a25a3a8e85eb37727487f210f5304a48e" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>operator&gt;=</name></member>
+      <member refid="classdetail_1_1iter__impl_1a5e557e30103e2af36cd8173c88eb586c" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>operator[]</name></member>
+      <member refid="classdetail_1_1iter__impl_1ac21fe851cf594824029bbd2a5570c9c8" prot="private" virt="non-virtual"><scope>detail::iter_impl</scope><name>other_iter_impl</name></member>
+      <member refid="classdetail_1_1iter__impl_1a760a53c5c654183b0ca88ff3fd46de1f" prot="private" virt="non-virtual"><scope>detail::iter_impl</scope><name>other_iter_impl</name></member>
+      <member refid="classdetail_1_1iter__impl_1a5f32f4fdd48a9b92ecb156af6421b1b8" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>pointer</name></member>
+      <member refid="classdetail_1_1iter__impl_1ac0cfb3a9727e77580cb1beada093ee81" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>reference</name></member>
+      <member refid="classdetail_1_1iter__impl_1afc94db3b8f35616347c25fae68e09509" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>set_end</name></member>
+      <member refid="classdetail_1_1iter__impl_1ac65ea2181b1b8d97fb014dee0e6d49e7" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>switch</name></member>
+      <member refid="classdetail_1_1iter__impl_1a96557c87bc9b3adf6aa0b1a6b6209525" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>value</name></member>
+      <member refid="classdetail_1_1iter__impl_1ab6c453d3fea1df38fa45fd4f97ea42df" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>value_type</name></member>
+      <member refid="classdetail_1_1iter__impl_1a037bc5575c7368ba5b3fab3d0390d5d8" prot="public" virt="non-virtual"><scope>detail::iter_impl</scope><name>~iter_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

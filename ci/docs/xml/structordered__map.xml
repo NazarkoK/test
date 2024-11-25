@@ -1,0 +1,826 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structordered__map" kind="struct" language="C++" prot="public">
+    <compoundname>ordered_map</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::vector&lt; std::pair&lt; const Key, T &gt;, std::allocator&lt; std::pair&lt; const Key, T &gt; &gt; &gt;</basecompoundref>
+    <includes refid="json_8hpp" local="no">json.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class Key</type>
+      </param>
+      <param>
+        <type>class T</type>
+      </param>
+      <param>
+        <type>class IgnoredLess</type>
+        <defval>std::less&lt;Key&gt;</defval>
+      </param>
+      <param>
+        <type>class Allocator</type>
+        <defval>std::allocator&lt;std::pair&lt;const Key, T&gt;&gt;</defval>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structordered__map_1abe63d891859a3d0b156933d5b44ac85f" prot="public" static="no">
+        <type>Key</type>
+        <definition>using ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::key_type =  Key</definition>
+        <argsstring></argsstring>
+        <name>key_type</name>
+        <qualifiedname>ordered_map::key_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="18911" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="18911" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structordered__map_1a50a68289ec9c8554e5bbb7d0a2128c33" prot="public" static="no">
+        <type>T</type>
+        <definition>using ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::mapped_type =  T</definition>
+        <argsstring></argsstring>
+        <name>mapped_type</name>
+        <qualifiedname>ordered_map::mapped_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="18912" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="18912" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structordered__map_1a18acd5b0134d2e378160031996ed3ddc" prot="public" static="no">
+        <type>std::vector&lt; std::pair&lt; const Key, T &gt;, Allocator &gt;</type>
+        <definition>using ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::Container =  std::vector&lt;std::pair&lt;const Key, T&gt;, Allocator&gt;</definition>
+        <argsstring></argsstring>
+        <name>Container</name>
+        <qualifiedname>ordered_map::Container</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="18913" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="18913" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structordered__map_1a57c27034b40422a4b37ab8f4f60b9f14" prot="public" static="no">
+        <type>typename Container::iterator</type>
+        <definition>using ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::iterator =  typename Container::iterator</definition>
+        <argsstring></argsstring>
+        <name>iterator</name>
+        <qualifiedname>ordered_map::iterator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="18914" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="18914" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structordered__map_1aeb48abad4ceb24e60002c6220d8b18b4" prot="public" static="no">
+        <type>typename Container::const_iterator</type>
+        <definition>using ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::const_iterator =  typename Container::const_iterator</definition>
+        <argsstring></argsstring>
+        <name>const_iterator</name>
+        <qualifiedname>ordered_map::const_iterator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="18915" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="18915" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structordered__map_1a832acce07db0bec6c73675b35ad399c2" prot="public" static="no">
+        <type>typename Container::size_type</type>
+        <definition>using ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::size_type =  typename Container::size_type</definition>
+        <argsstring></argsstring>
+        <name>size_type</name>
+        <qualifiedname>ordered_map::size_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="18916" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="18916" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structordered__map_1a49a3a4f4eb960dcbcc15fd2692f18a91" prot="public" static="no">
+        <type>typename Container::value_type</type>
+        <definition>using ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::value_type =  typename Container::value_type</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <qualifiedname>ordered_map::value_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="18917" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="18917" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structordered__map_1a4bbf207217197f997a9f3da8f149368b" prot="public" static="no">
+        <type>std::equal_to&lt; Key &gt;</type>
+        <definition>using ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::key_compare =  std::equal_to&lt;Key&gt;</definition>
+        <argsstring></argsstring>
+        <name>key_compare</name>
+        <qualifiedname>ordered_map::key_compare</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="18921" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="18921" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structordered__map_1a5d64ca358ee69b09b53645baefe317cf" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename InputIt</type>
+          </param>
+        </templateparamlist>
+        <type>typename std::enable_if&lt; std::is_convertible&lt; typename std::iterator_traits&lt; InputIt &gt;::iterator_category, std::input_iterator_tag &gt;::value &gt;::type</type>
+        <definition>using ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::require_input_iter =  typename std::enable_if&lt;std::is_convertible&lt;typename std::iterator_traits&lt;InputIt&gt;::iterator_category,
+            std::input_iterator_tag&gt;::value&gt;::type</definition>
+        <argsstring></argsstring>
+        <name>require_input_iter</name>
+        <qualifiedname>ordered_map::require_input_iter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="19223" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="19223" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="structordered__map_1ac743dcd50e67a69a69a422769df1d820" prot="private" static="no" mutable="no">
+        <type><ref refid="json_8hpp_1a9daee0ea9922680180cf794c47fa0672" kindref="member">JSON_NO_UNIQUE_ADDRESS</ref> <ref refid="structordered__map_1a4bbf207217197f997a9f3da8f149368b" kindref="member">key_compare</ref></type>
+        <definition>JSON_NO_UNIQUE_ADDRESS key_compare ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::m_compare</definition>
+        <argsstring></argsstring>
+        <name>m_compare</name>
+        <qualifiedname>ordered_map::m_compare</qualifiedname>
+        <initializer>= <ref refid="structordered__map_1a4bbf207217197f997a9f3da8f149368b" kindref="member">key_compare</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="19236" column="40" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="19236" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structordered__map_1a8c8eed38b72bca336d07eac3a9ffbd1f" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" noexceptexpression="noexcept(Container())" virt="non-virtual">
+        <type></type>
+        <definition>ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::ordered_map</definition>
+        <argsstring>()</argsstring>
+        <name>ordered_map</name>
+        <qualifiedname>ordered_map::ordered_map</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="18926" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="18926" bodyend="18926"/>
+      </memberdef>
+      <memberdef kind="function" id="structordered__map_1a50b6eea717a66fb6241bbd2e0246849f" prot="public" static="no" const="no" explicit="yes" inline="yes" noexcept="yes" noexceptexpression="noexcept(Container(alloc))" virt="non-virtual">
+        <type></type>
+        <definition>ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::ordered_map</definition>
+        <argsstring>(const Allocator &amp;alloc)</argsstring>
+        <name>ordered_map</name>
+        <qualifiedname>ordered_map::ordered_map</qualifiedname>
+        <param>
+          <type>const Allocator &amp;</type>
+          <declname>alloc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="18927" column="14" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="18927" bodyend="18927"/>
+      </memberdef>
+      <memberdef kind="function" id="structordered__map_1ac0fa192a94f9d4bba7ae4fc3eedd583f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class It</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::ordered_map</definition>
+        <argsstring>(It first, It last, const Allocator &amp;alloc=Allocator())</argsstring>
+        <name>ordered_map</name>
+        <qualifiedname>ordered_map::ordered_map</qualifiedname>
+        <param>
+          <type>It</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>It</type>
+          <declname>last</declname>
+        </param>
+        <param>
+          <type>const Allocator &amp;</type>
+          <declname>alloc</declname>
+          <defval>Allocator()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="18929" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="18929" bodyend="18930"/>
+      </memberdef>
+      <memberdef kind="function" id="structordered__map_1ab57d658b6e341a80a7a882c0d5cf38e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::ordered_map</definition>
+        <argsstring>(std::initializer_list&lt; value_type &gt; init, const Allocator &amp;alloc=Allocator())</argsstring>
+        <name>ordered_map</name>
+        <qualifiedname>ordered_map::ordered_map</qualifiedname>
+        <param>
+          <type>std::initializer_list&lt; <ref refid="structordered__map_1a49a3a4f4eb960dcbcc15fd2692f18a91" kindref="member">value_type</ref> &gt;</type>
+          <declname>init</declname>
+        </param>
+        <param>
+          <type>const Allocator &amp;</type>
+          <declname>alloc</declname>
+          <defval>Allocator()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="18931" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="18931" bodyend="18932"/>
+      </memberdef>
+      <memberdef kind="function" id="structordered__map_1af10e949a24c4732fd00cb562f2100bf2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::pair&lt; <ref refid="structordered__map_1a57c27034b40422a4b37ab8f4f60b9f14" kindref="member">iterator</ref>, bool &gt;</type>
+        <definition>std::pair&lt; iterator, bool &gt; ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::emplace</definition>
+        <argsstring>(const key_type &amp;key, T &amp;&amp;t)</argsstring>
+        <name>emplace</name>
+        <qualifiedname>ordered_map::emplace</qualifiedname>
+        <param>
+          <type>const <ref refid="structordered__map_1abe63d891859a3d0b156933d5b44ac85f" kindref="member">key_type</ref> &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>T &amp;&amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="18934" column="15" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="18934" bodyend="18945"/>
+      </memberdef>
+      <memberdef kind="function" id="structordered__map_1a96f82e84243f3d17fb9d584262df183e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class KeyType</type>
+          </param>
+          <param>
+            <type><ref refid="namespacedetail_1a469b9c0b78404c24509a221801bc4c26" kindref="member">detail::enable_if_t</ref>&lt; <ref refid="namespacedetail_1a4ae51f74b87e207cfffc3f081a47abe6" kindref="member">detail::is_usable_as_key_type</ref>&lt; <ref refid="structordered__map_1a4bbf207217197f997a9f3da8f149368b" kindref="member">key_compare</ref>, <ref refid="structordered__map_1abe63d891859a3d0b156933d5b44ac85f" kindref="member">key_type</ref>, KeyType &gt;::value, int &gt;</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type>std::pair&lt; <ref refid="structordered__map_1a57c27034b40422a4b37ab8f4f60b9f14" kindref="member">iterator</ref>, bool &gt;</type>
+        <definition>std::pair&lt; iterator, bool &gt; ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::emplace</definition>
+        <argsstring>(KeyType &amp;&amp;key, T &amp;&amp;t)</argsstring>
+        <name>emplace</name>
+        <qualifiedname>ordered_map::emplace</qualifiedname>
+        <param>
+          <type>KeyType &amp;&amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>T &amp;&amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="18949" column="15" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="18949" bodyend="18960"/>
+      </memberdef>
+      <memberdef kind="function" id="structordered__map_1a77e420320702cc341ea1a3be4389c321" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T &amp; ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::operator[]</definition>
+        <argsstring>(const key_type &amp;key)</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>ordered_map::operator[]</qualifiedname>
+        <param>
+          <type>const <ref refid="structordered__map_1abe63d891859a3d0b156933d5b44ac85f" kindref="member">key_type</ref> &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="18962" column="7" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="18962" bodyend="18965"/>
+      </memberdef>
+      <memberdef kind="function" id="structordered__map_1a51784a0c6bb5f61d123d729d8380448b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class KeyType</type>
+          </param>
+          <param>
+            <type><ref refid="namespacedetail_1a469b9c0b78404c24509a221801bc4c26" kindref="member">detail::enable_if_t</ref>&lt; <ref refid="namespacedetail_1a4ae51f74b87e207cfffc3f081a47abe6" kindref="member">detail::is_usable_as_key_type</ref>&lt; <ref refid="structordered__map_1a4bbf207217197f997a9f3da8f149368b" kindref="member">key_compare</ref>, <ref refid="structordered__map_1abe63d891859a3d0b156933d5b44ac85f" kindref="member">key_type</ref>, KeyType &gt;::value, int &gt;</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type>T &amp;</type>
+        <definition>T &amp; ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::operator[]</definition>
+        <argsstring>(KeyType &amp;&amp;key)</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>ordered_map::operator[]</qualifiedname>
+        <param>
+          <type>KeyType &amp;&amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="18969" column="8" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="18969" bodyend="18972"/>
+      </memberdef>
+      <memberdef kind="function" id="structordered__map_1ac6c0136296a6ad89948fc23e057f14e0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T &amp; ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::operator[]</definition>
+        <argsstring>(const key_type &amp;key) const</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>ordered_map::operator[]</qualifiedname>
+        <param>
+          <type>const <ref refid="structordered__map_1abe63d891859a3d0b156933d5b44ac85f" kindref="member">key_type</ref> &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="18974" column="13" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="18974" bodyend="18977"/>
+      </memberdef>
+      <memberdef kind="function" id="structordered__map_1a5ff84bb2df6faf249535aa196373155a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class KeyType</type>
+          </param>
+          <param>
+            <type><ref refid="namespacedetail_1a469b9c0b78404c24509a221801bc4c26" kindref="member">detail::enable_if_t</ref>&lt; <ref refid="namespacedetail_1a4ae51f74b87e207cfffc3f081a47abe6" kindref="member">detail::is_usable_as_key_type</ref>&lt; <ref refid="structordered__map_1a4bbf207217197f997a9f3da8f149368b" kindref="member">key_compare</ref>, <ref refid="structordered__map_1abe63d891859a3d0b156933d5b44ac85f" kindref="member">key_type</ref>, KeyType &gt;::value, int &gt;</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type>const T &amp;</type>
+        <definition>const T &amp; ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::operator[]</definition>
+        <argsstring>(KeyType &amp;&amp;key) const</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>ordered_map::operator[]</qualifiedname>
+        <param>
+          <type>KeyType &amp;&amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="18981" column="14" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="18981" bodyend="18984"/>
+      </memberdef>
+      <memberdef kind="function" id="structordered__map_1ad76186edef70d3249c26efe3c2efcd4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T &amp; ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::at</definition>
+        <argsstring>(const key_type &amp;key)</argsstring>
+        <name>at</name>
+        <qualifiedname>ordered_map::at</qualifiedname>
+        <param>
+          <type>const <ref refid="structordered__map_1abe63d891859a3d0b156933d5b44ac85f" kindref="member">key_type</ref> &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="18986" column="7" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="18986" bodyend="18997"/>
+      </memberdef>
+      <memberdef kind="function" id="structordered__map_1a5f4b6b084c11eafdad36171487c4b724" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class KeyType</type>
+          </param>
+          <param>
+            <type><ref refid="namespacedetail_1a469b9c0b78404c24509a221801bc4c26" kindref="member">detail::enable_if_t</ref>&lt; <ref refid="namespacedetail_1a4ae51f74b87e207cfffc3f081a47abe6" kindref="member">detail::is_usable_as_key_type</ref>&lt; <ref refid="structordered__map_1a4bbf207217197f997a9f3da8f149368b" kindref="member">key_compare</ref>, <ref refid="structordered__map_1abe63d891859a3d0b156933d5b44ac85f" kindref="member">key_type</ref>, KeyType &gt;::value, int &gt;</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type>T &amp;</type>
+        <definition>T &amp; ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::at</definition>
+        <argsstring>(KeyType &amp;&amp;key)</argsstring>
+        <name>at</name>
+        <qualifiedname>ordered_map::at</qualifiedname>
+        <param>
+          <type>KeyType &amp;&amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="19001" column="8" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="19001" bodyend="19012"/>
+      </memberdef>
+      <memberdef kind="function" id="structordered__map_1a6c80b0a9084177596ec87759d683dc7f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T &amp; ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::at</definition>
+        <argsstring>(const key_type &amp;key) const</argsstring>
+        <name>at</name>
+        <qualifiedname>ordered_map::at</qualifiedname>
+        <param>
+          <type>const <ref refid="structordered__map_1abe63d891859a3d0b156933d5b44ac85f" kindref="member">key_type</ref> &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="19014" column="13" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="19014" bodyend="19025"/>
+      </memberdef>
+      <memberdef kind="function" id="structordered__map_1a57d4781cdf5ce839172d3537bb8c67da" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class KeyType</type>
+          </param>
+          <param>
+            <type><ref refid="namespacedetail_1a469b9c0b78404c24509a221801bc4c26" kindref="member">detail::enable_if_t</ref>&lt; <ref refid="namespacedetail_1a4ae51f74b87e207cfffc3f081a47abe6" kindref="member">detail::is_usable_as_key_type</ref>&lt; <ref refid="structordered__map_1a4bbf207217197f997a9f3da8f149368b" kindref="member">key_compare</ref>, <ref refid="structordered__map_1abe63d891859a3d0b156933d5b44ac85f" kindref="member">key_type</ref>, KeyType &gt;::value, int &gt;</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type>const T &amp;</type>
+        <definition>const T &amp; ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::at</definition>
+        <argsstring>(KeyType &amp;&amp;key) const</argsstring>
+        <name>at</name>
+        <qualifiedname>ordered_map::at</qualifiedname>
+        <param>
+          <type>KeyType &amp;&amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="19029" column="14" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="19029" bodyend="19040"/>
+      </memberdef>
+      <memberdef kind="function" id="structordered__map_1aaa50926fc8df543dbe294859db97514e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structordered__map_1a832acce07db0bec6c73675b35ad399c2" kindref="member">size_type</ref></type>
+        <definition>size_type ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::erase</definition>
+        <argsstring>(const key_type &amp;key)</argsstring>
+        <name>erase</name>
+        <qualifiedname>ordered_map::erase</qualifiedname>
+        <param>
+          <type>const <ref refid="structordered__map_1abe63d891859a3d0b156933d5b44ac85f" kindref="member">key_type</ref> &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="19042" column="15" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="19042" bodyend="19059"/>
+      </memberdef>
+      <memberdef kind="function" id="structordered__map_1a7d72919fabb5f477e69add51877e415f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class KeyType</type>
+          </param>
+          <param>
+            <type><ref refid="namespacedetail_1a469b9c0b78404c24509a221801bc4c26" kindref="member">detail::enable_if_t</ref>&lt; <ref refid="namespacedetail_1a4ae51f74b87e207cfffc3f081a47abe6" kindref="member">detail::is_usable_as_key_type</ref>&lt; <ref refid="structordered__map_1a4bbf207217197f997a9f3da8f149368b" kindref="member">key_compare</ref>, <ref refid="structordered__map_1abe63d891859a3d0b156933d5b44ac85f" kindref="member">key_type</ref>, KeyType &gt;::value, int &gt;</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structordered__map_1a832acce07db0bec6c73675b35ad399c2" kindref="member">size_type</ref></type>
+        <definition>size_type ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::erase</definition>
+        <argsstring>(KeyType &amp;&amp;key)</argsstring>
+        <name>erase</name>
+        <qualifiedname>ordered_map::erase</qualifiedname>
+        <param>
+          <type>KeyType &amp;&amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="19063" column="15" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="19063" bodyend="19080"/>
+      </memberdef>
+      <memberdef kind="function" id="structordered__map_1a4c3baa0920e81bd651ea01b9d735951b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structordered__map_1a57c27034b40422a4b37ab8f4f60b9f14" kindref="member">iterator</ref></type>
+        <definition>iterator ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::erase</definition>
+        <argsstring>(iterator pos)</argsstring>
+        <name>erase</name>
+        <qualifiedname>ordered_map::erase</qualifiedname>
+        <param>
+          <type><ref refid="structordered__map_1a57c27034b40422a4b37ab8f4f60b9f14" kindref="member">iterator</ref></type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="19082" column="14" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="19082" bodyend="19085"/>
+      </memberdef>
+      <memberdef kind="function" id="structordered__map_1a6945910b941f51c9a81250d99ae34441" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structordered__map_1a57c27034b40422a4b37ab8f4f60b9f14" kindref="member">iterator</ref></type>
+        <definition>iterator ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::erase</definition>
+        <argsstring>(iterator first, iterator last)</argsstring>
+        <name>erase</name>
+        <qualifiedname>ordered_map::erase</qualifiedname>
+        <param>
+          <type><ref refid="structordered__map_1a57c27034b40422a4b37ab8f4f60b9f14" kindref="member">iterator</ref></type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type><ref refid="structordered__map_1a57c27034b40422a4b37ab8f4f60b9f14" kindref="member">iterator</ref></type>
+          <declname>last</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="19087" column="14" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="19087" bodyend="19138"/>
+      </memberdef>
+      <memberdef kind="function" id="structordered__map_1a94ced73a996cf385aa68b6aae1f85dfe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structordered__map_1a832acce07db0bec6c73675b35ad399c2" kindref="member">size_type</ref></type>
+        <definition>size_type ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::count</definition>
+        <argsstring>(const key_type &amp;key) const</argsstring>
+        <name>count</name>
+        <qualifiedname>ordered_map::count</qualifiedname>
+        <param>
+          <type>const <ref refid="structordered__map_1abe63d891859a3d0b156933d5b44ac85f" kindref="member">key_type</ref> &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="19140" column="15" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="19140" bodyend="19150"/>
+      </memberdef>
+      <memberdef kind="function" id="structordered__map_1abd35ff8bb3cfe4b8951f382fdfb617e5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class KeyType</type>
+          </param>
+          <param>
+            <type><ref refid="namespacedetail_1a469b9c0b78404c24509a221801bc4c26" kindref="member">detail::enable_if_t</ref>&lt; <ref refid="namespacedetail_1a4ae51f74b87e207cfffc3f081a47abe6" kindref="member">detail::is_usable_as_key_type</ref>&lt; <ref refid="structordered__map_1a4bbf207217197f997a9f3da8f149368b" kindref="member">key_compare</ref>, <ref refid="structordered__map_1abe63d891859a3d0b156933d5b44ac85f" kindref="member">key_type</ref>, KeyType &gt;::value, int &gt;</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structordered__map_1a832acce07db0bec6c73675b35ad399c2" kindref="member">size_type</ref></type>
+        <definition>size_type ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::count</definition>
+        <argsstring>(KeyType &amp;&amp;key) const</argsstring>
+        <name>count</name>
+        <qualifiedname>ordered_map::count</qualifiedname>
+        <param>
+          <type>KeyType &amp;&amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="19154" column="15" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="19154" bodyend="19164"/>
+      </memberdef>
+      <memberdef kind="function" id="structordered__map_1a67c6dfc6bc7817980067b40db5c252a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structordered__map_1a57c27034b40422a4b37ab8f4f60b9f14" kindref="member">iterator</ref></type>
+        <definition>iterator ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::find</definition>
+        <argsstring>(const key_type &amp;key)</argsstring>
+        <name>find</name>
+        <qualifiedname>ordered_map::find</qualifiedname>
+        <param>
+          <type>const <ref refid="structordered__map_1abe63d891859a3d0b156933d5b44ac85f" kindref="member">key_type</ref> &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="19166" column="14" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="19166" bodyend="19176"/>
+      </memberdef>
+      <memberdef kind="function" id="structordered__map_1ad3072ca1fdc7dd9f88d5d043deab9639" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class KeyType</type>
+          </param>
+          <param>
+            <type><ref refid="namespacedetail_1a469b9c0b78404c24509a221801bc4c26" kindref="member">detail::enable_if_t</ref>&lt; <ref refid="namespacedetail_1a4ae51f74b87e207cfffc3f081a47abe6" kindref="member">detail::is_usable_as_key_type</ref>&lt; <ref refid="structordered__map_1a4bbf207217197f997a9f3da8f149368b" kindref="member">key_compare</ref>, <ref refid="structordered__map_1abe63d891859a3d0b156933d5b44ac85f" kindref="member">key_type</ref>, KeyType &gt;::value, int &gt;</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structordered__map_1a57c27034b40422a4b37ab8f4f60b9f14" kindref="member">iterator</ref></type>
+        <definition>iterator ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::find</definition>
+        <argsstring>(KeyType &amp;&amp;key)</argsstring>
+        <name>find</name>
+        <qualifiedname>ordered_map::find</qualifiedname>
+        <param>
+          <type>KeyType &amp;&amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="19180" column="14" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="19180" bodyend="19190"/>
+      </memberdef>
+      <memberdef kind="function" id="structordered__map_1a73a21fcebe6f068cd2226c5586ac93d7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structordered__map_1aeb48abad4ceb24e60002c6220d8b18b4" kindref="member">const_iterator</ref></type>
+        <definition>const_iterator ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::find</definition>
+        <argsstring>(const key_type &amp;key) const</argsstring>
+        <name>find</name>
+        <qualifiedname>ordered_map::find</qualifiedname>
+        <param>
+          <type>const <ref refid="structordered__map_1abe63d891859a3d0b156933d5b44ac85f" kindref="member">key_type</ref> &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="19192" column="20" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="19192" bodyend="19202"/>
+      </memberdef>
+      <memberdef kind="function" id="structordered__map_1a1df7da27bb3596044089f9a074a8f6d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::pair&lt; <ref refid="structordered__map_1a57c27034b40422a4b37ab8f4f60b9f14" kindref="member">iterator</ref>, bool &gt;</type>
+        <definition>std::pair&lt; iterator, bool &gt; ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::insert</definition>
+        <argsstring>(value_type &amp;&amp;value)</argsstring>
+        <name>insert</name>
+        <qualifiedname>ordered_map::insert</qualifiedname>
+        <param>
+          <type><ref refid="structordered__map_1a49a3a4f4eb960dcbcc15fd2692f18a91" kindref="member">value_type</ref> &amp;&amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="19204" column="15" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="19204" bodyend="19207"/>
+      </memberdef>
+      <memberdef kind="function" id="structordered__map_1ab78e859d8a867e7673bfb7f27c447ed8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::pair&lt; <ref refid="structordered__map_1a57c27034b40422a4b37ab8f4f60b9f14" kindref="member">iterator</ref>, bool &gt;</type>
+        <definition>std::pair&lt; iterator, bool &gt; ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::insert</definition>
+        <argsstring>(const value_type &amp;value)</argsstring>
+        <name>insert</name>
+        <qualifiedname>ordered_map::insert</qualifiedname>
+        <param>
+          <type>const <ref refid="structordered__map_1a49a3a4f4eb960dcbcc15fd2692f18a91" kindref="member">value_type</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="19209" column="15" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="19209" bodyend="19220"/>
+      </memberdef>
+      <memberdef kind="function" id="structordered__map_1a8e19c1dfa836a39b16b0ce259447a61a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename InputIt</type>
+          </param>
+          <param>
+            <type>typename</type>
+            <defval><ref refid="structordered__map_1a5d64ca358ee69b09b53645baefe317cf" kindref="member">require_input_iter</ref>&lt;InputIt&gt;</defval>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;::insert</definition>
+        <argsstring>(InputIt first, InputIt last)</argsstring>
+        <name>insert</name>
+        <qualifiedname>ordered_map::insert</qualifiedname>
+        <param>
+          <type>InputIt</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>InputIt</type>
+          <declname>last</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="19227" column="10" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="19227" bodyend="19233"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>a minimal map-like container that preserves insertion order </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="https://json.nlohmann.me/api/ordered_map/">https://json.nlohmann.me/api/ordered_map/</ulink></para>
+</simplesect>
+<ref refid="structordered__map" kindref="compound">ordered_map</ref>: a minimal map-like container that preserves insertion order for use within nlohmann::basic_json&lt;ordered_map&gt; </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;</label>
+        <link refid="structordered__map"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::vector&lt; std::pair&lt; const Key, T &gt;, std::allocator&lt;std::pair&lt;const Key, T&gt;&gt; &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ordered_map&lt; Key, T, IgnoredLess, Allocator &gt;</label>
+        <link refid="structordered__map"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::vector&lt; std::pair&lt; const Key, T &gt;, std::allocator&lt;std::pair&lt;const Key, T&gt;&gt; &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="18909" column="19" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="18910" bodyend="19237"/>
+    <listofallmembers>
+      <member refid="structordered__map_1ad76186edef70d3249c26efe3c2efcd4b" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>at</name></member>
+      <member refid="structordered__map_1a5f4b6b084c11eafdad36171487c4b724" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>at</name></member>
+      <member refid="structordered__map_1a6c80b0a9084177596ec87759d683dc7f" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>at</name></member>
+      <member refid="structordered__map_1a57d4781cdf5ce839172d3537bb8c67da" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>at</name></member>
+      <member refid="structordered__map_1aeb48abad4ceb24e60002c6220d8b18b4" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>const_iterator</name></member>
+      <member refid="structordered__map_1a18acd5b0134d2e378160031996ed3ddc" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>Container</name></member>
+      <member refid="structordered__map_1a94ced73a996cf385aa68b6aae1f85dfe" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>count</name></member>
+      <member refid="structordered__map_1abd35ff8bb3cfe4b8951f382fdfb617e5" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>count</name></member>
+      <member refid="structordered__map_1af10e949a24c4732fd00cb562f2100bf2" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>emplace</name></member>
+      <member refid="structordered__map_1a96f82e84243f3d17fb9d584262df183e" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>emplace</name></member>
+      <member refid="structordered__map_1aaa50926fc8df543dbe294859db97514e" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>erase</name></member>
+      <member refid="structordered__map_1a7d72919fabb5f477e69add51877e415f" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>erase</name></member>
+      <member refid="structordered__map_1a4c3baa0920e81bd651ea01b9d735951b" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>erase</name></member>
+      <member refid="structordered__map_1a6945910b941f51c9a81250d99ae34441" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>erase</name></member>
+      <member refid="structordered__map_1a67c6dfc6bc7817980067b40db5c252a4" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>find</name></member>
+      <member refid="structordered__map_1ad3072ca1fdc7dd9f88d5d043deab9639" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>find</name></member>
+      <member refid="structordered__map_1a73a21fcebe6f068cd2226c5586ac93d7" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>find</name></member>
+      <member refid="structordered__map_1a1df7da27bb3596044089f9a074a8f6d2" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>insert</name></member>
+      <member refid="structordered__map_1ab78e859d8a867e7673bfb7f27c447ed8" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>insert</name></member>
+      <member refid="structordered__map_1a8e19c1dfa836a39b16b0ce259447a61a" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>insert</name></member>
+      <member refid="structordered__map_1a57c27034b40422a4b37ab8f4f60b9f14" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>iterator</name></member>
+      <member refid="structordered__map_1a4bbf207217197f997a9f3da8f149368b" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>key_compare</name></member>
+      <member refid="structordered__map_1abe63d891859a3d0b156933d5b44ac85f" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>key_type</name></member>
+      <member refid="structordered__map_1ac743dcd50e67a69a69a422769df1d820" prot="private" virt="non-virtual"><scope>ordered_map</scope><name>m_compare</name></member>
+      <member refid="structordered__map_1a50a68289ec9c8554e5bbb7d0a2128c33" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>mapped_type</name></member>
+      <member refid="structordered__map_1a77e420320702cc341ea1a3be4389c321" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>operator[]</name></member>
+      <member refid="structordered__map_1a51784a0c6bb5f61d123d729d8380448b" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>operator[]</name></member>
+      <member refid="structordered__map_1ac6c0136296a6ad89948fc23e057f14e0" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>operator[]</name></member>
+      <member refid="structordered__map_1a5ff84bb2df6faf249535aa196373155a" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>operator[]</name></member>
+      <member refid="structordered__map_1a8c8eed38b72bca336d07eac3a9ffbd1f" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>ordered_map</name></member>
+      <member refid="structordered__map_1a50b6eea717a66fb6241bbd2e0246849f" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>ordered_map</name></member>
+      <member refid="structordered__map_1ac0fa192a94f9d4bba7ae4fc3eedd583f" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>ordered_map</name></member>
+      <member refid="structordered__map_1ab57d658b6e341a80a7a882c0d5cf38e0" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>ordered_map</name></member>
+      <member refid="structordered__map_1a5d64ca358ee69b09b53645baefe317cf" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>require_input_iter</name></member>
+      <member refid="structordered__map_1a832acce07db0bec6c73675b35ad399c2" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>size_type</name></member>
+      <member refid="structordered__map_1a49a3a4f4eb960dcbcc15fd2692f18a91" prot="public" virt="non-virtual"><scope>ordered_map</scope><name>value_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

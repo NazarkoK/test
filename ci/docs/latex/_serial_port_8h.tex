@@ -1,0 +1,73 @@
+\doxysection{D\+:/csad2425\+KI405\+Kachur\+Nazar11/src/client/client/\+Serial\+Port.h File Reference}
+\hypertarget{_serial_port_8h}{}\label{_serial_port_8h}\index{D:/csad2425KI405KachurNazar11/src/client/client/SerialPort.h@{D:/csad2425KI405KachurNazar11/src/client/client/SerialPort.h}}
+
+
+Header file for serial communication functionality.  
+
+
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$windows.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_serial_communication}{Serial\+Communication}}
+\begin{DoxyCompactList}\small\item\em Handles serial communication with a device. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_serial_port_8h_a77499e647853e73be33ab1b6356c3efd}{load\+Config}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Loads the configuration settings from a JSON file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{_serial_port_8h_a0baa2a14fddc9486557407a0f5813b8f}{port}}
+\begin{DoxyCompactList}\small\item\em Global port identifier for serial communication. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_serial_port_8h_a352a05efbed742a2c47e738725ee5613}{baud\+Rate}}
+\begin{DoxyCompactList}\small\item\em Global baud rate for serial communication. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for serial communication functionality. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_serial_port_8h_a77499e647853e73be33ab1b6356c3efd}\index{SerialPort.h@{SerialPort.h}!loadConfig@{loadConfig}}
+\index{loadConfig@{loadConfig}!SerialPort.h@{SerialPort.h}}
+\doxysubsubsection{\texorpdfstring{loadConfig()}{loadConfig()}}
+{\footnotesize\ttfamily \label{_serial_port_8h_a77499e647853e73be33ab1b6356c3efd} 
+void load\+Config (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename}{}\end{DoxyParamCaption})}
+
+
+
+Loads the configuration settings from a JSON file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The path to the configuration file. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_serial_port_8h_a352a05efbed742a2c47e738725ee5613}\index{SerialPort.h@{SerialPort.h}!baudRate@{baudRate}}
+\index{baudRate@{baudRate}!SerialPort.h@{SerialPort.h}}
+\doxysubsubsection{\texorpdfstring{baudRate}{baudRate}}
+{\footnotesize\ttfamily \label{_serial_port_8h_a352a05efbed742a2c47e738725ee5613} 
+int baud\+Rate\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Global baud rate for serial communication. 
+
+\Hypertarget{_serial_port_8h_a0baa2a14fddc9486557407a0f5813b8f}\index{SerialPort.h@{SerialPort.h}!port@{port}}
+\index{port@{port}!SerialPort.h@{SerialPort.h}}
+\doxysubsubsection{\texorpdfstring{port}{port}}
+{\footnotesize\ttfamily \label{_serial_port_8h_a0baa2a14fddc9486557407a0f5813b8f} 
+std\+::string port\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Global port identifier for serial communication. 
+

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="dir_90aab63e5651e12e9a252aa55928aa74" kind="dir">
+    <compoundname>D:/csad2425KI405KachurNazar11/src/client/client</compoundname>
+    <innerfile refid="_main_game_8cpp">MainGame.cpp</innerfile>
+    <innerfile refid="_serial_port_8cpp">SerialPort.cpp</innerfile>
+    <innerfile refid="_serial_port_8h">SerialPort.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/csad2425KI405KachurNazar11/src/client/client/"/>
+  </compounddef>
+</doxygen>

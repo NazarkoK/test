@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structdetail_1_1is__iterator__traits_3_01iterator__traits_3_01_t_01_4_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>detail::is_iterator_traits&lt; iterator_traits&lt; T &gt; &gt;</compoundname>
+    <includes refid="json_8hpp" local="no">json.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="structdetail_1_1is__iterator__traits_3_01iterator__traits_3_01_t_01_4_01_4_1ae33c850bdf55ebc10ee95ff5bcad7d48" prot="private" static="no">
+        <type><ref refid="structdetail_1_1iterator__traits" kindref="compound">iterator_traits</ref>&lt; T &gt;</type>
+        <definition>using detail::is_iterator_traits&lt; iterator_traits&lt; T &gt; &gt;::traits =  iterator_traits&lt;T&gt;</definition>
+        <argsstring></argsstring>
+        <name>traits</name>
+        <qualifiedname>detail::is_iterator_traits&lt; iterator_traits&lt; T &gt; &gt;::traits</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="3640" column="5" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="3640" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structdetail_1_1is__iterator__traits_3_01iterator__traits_3_01_t_01_4_01_4_1a5d742b42a620bea0ee53dca099a9a91f" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>auto</type>
+        <definition>auto detail::is_iterator_traits&lt; iterator_traits&lt; T &gt; &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <qualifiedname>detail::is_iterator_traits&lt; iterator_traits&lt; T &gt; &gt;::value</qualifiedname>
+        <initializer>=
+        <ref refid="namespacedetail_1a49d7b031250e4de6b66d0f72771c2073" kindref="member">is_detected</ref>&lt;<ref refid="namespacedetail_1a2e47d793fa2685a15f6d2c75114b7759" kindref="member">value_type_t</ref>, <ref refid="structdetail_1_1is__iterator__traits_3_01iterator__traits_3_01_t_01_4_01_4_1ae33c850bdf55ebc10ee95ff5bcad7d48" kindref="member">traits</ref>&gt;::value &amp;&amp;
+        <ref refid="namespacedetail_1a49d7b031250e4de6b66d0f72771c2073" kindref="member">is_detected</ref>&lt;<ref refid="namespacedetail_1a5e21adb880240c2593b35b721f56e6bd" kindref="member">difference_type_t</ref>, <ref refid="structdetail_1_1is__iterator__traits_3_01iterator__traits_3_01_t_01_4_01_4_1ae33c850bdf55ebc10ee95ff5bcad7d48" kindref="member">traits</ref>&gt;::value &amp;&amp;
+        <ref refid="namespacedetail_1a49d7b031250e4de6b66d0f72771c2073" kindref="member">is_detected</ref>&lt;<ref refid="namespacedetail_1a4d78f2ad7a097583f78ae9b4bf11fb04" kindref="member">pointer_t</ref>, <ref refid="structdetail_1_1is__iterator__traits_3_01iterator__traits_3_01_t_01_4_01_4_1ae33c850bdf55ebc10ee95ff5bcad7d48" kindref="member">traits</ref>&gt;::value &amp;&amp;
+        <ref refid="namespacedetail_1a49d7b031250e4de6b66d0f72771c2073" kindref="member">is_detected</ref>&lt;<ref refid="namespacedetail_1ab0d70ce5cca0fd6d88b4906f33bdd876" kindref="member">iterator_category_t</ref>, <ref refid="structdetail_1_1is__iterator__traits_3_01iterator__traits_3_01_t_01_4_01_4_1ae33c850bdf55ebc10ee95ff5bcad7d48" kindref="member">traits</ref>&gt;::value &amp;&amp;
+        <ref refid="namespacedetail_1a49d7b031250e4de6b66d0f72771c2073" kindref="member">is_detected</ref>&lt;<ref refid="namespacedetail_1ae5ac19c7fb5b9a5d5300e506ba5161a7" kindref="member">reference_t</ref>, <ref refid="structdetail_1_1is__iterator__traits_3_01iterator__traits_3_01_t_01_4_01_4_1ae33c850bdf55ebc10ee95ff5bcad7d48" kindref="member">traits</ref>&gt;::value</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="3643" column="27" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="3643" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="3637" column="1" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="3638" bodyend="3649"/>
+    <listofallmembers>
+      <member refid="structdetail_1_1is__iterator__traits_3_01iterator__traits_3_01_t_01_4_01_4_1ae33c850bdf55ebc10ee95ff5bcad7d48" prot="private" virt="non-virtual"><scope>detail::is_iterator_traits&lt; iterator_traits&lt; T &gt; &gt;</scope><name>traits</name></member>
+      <member refid="structdetail_1_1is__iterator__traits_3_01iterator__traits_3_01_t_01_4_01_4_1a5d742b42a620bea0ee53dca099a9a91f" prot="public" virt="non-virtual"><scope>detail::is_iterator_traits&lt; iterator_traits&lt; T &gt; &gt;</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

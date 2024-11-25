@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="structdetail_1_1external__constructor_3_01value__t_1_1array_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>detail::external_constructor&lt; value_t::array &gt;</compoundname>
+    <includes refid="json_8hpp" local="no">json.hpp</includes>
+    <templateparamlist>
+    </templateparamlist>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structdetail_1_1external__constructor_3_01value__t_1_1array_01_4_1ab4ee01b86545c25823e95f06bfb8cec3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename BasicJsonType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void detail::external_constructor&lt; value_t::array &gt;::construct</definition>
+        <argsstring>(BasicJsonType &amp;j, const typename BasicJsonType::array_t &amp;arr)</argsstring>
+        <name>construct</name>
+        <qualifiedname>detail::external_constructor&lt; value_t::array &gt;::construct</qualifiedname>
+        <param>
+          <type>BasicJsonType &amp;</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>const typename BasicJsonType::array_t &amp;</type>
+          <declname>arr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5461" column="17" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="5461" bodyend="5468"/>
+      </memberdef>
+      <memberdef kind="function" id="structdetail_1_1external__constructor_3_01value__t_1_1array_01_4_1aa1344db7d6793021693563dca416e5b4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename BasicJsonType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void detail::external_constructor&lt; value_t::array &gt;::construct</definition>
+        <argsstring>(BasicJsonType &amp;j, typename BasicJsonType::array_t &amp;&amp;arr)</argsstring>
+        <name>construct</name>
+        <qualifiedname>detail::external_constructor&lt; value_t::array &gt;::construct</qualifiedname>
+        <param>
+          <type>BasicJsonType &amp;</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>typename BasicJsonType::array_t &amp;&amp;</type>
+          <declname>arr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5471" column="17" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="5471" bodyend="5478"/>
+      </memberdef>
+      <memberdef kind="function" id="structdetail_1_1external__constructor_3_01value__t_1_1array_01_4_1ae399adc0d10013a567e8646807d650b5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename BasicJsonType</type>
+          </param>
+          <param>
+            <type>typename CompatibleArrayType</type>
+          </param>
+          <param>
+            <type><ref refid="namespacedetail_1a469b9c0b78404c24509a221801bc4c26" kindref="member">enable_if_t</ref>&lt; !std::is_same&lt; CompatibleArrayType, typename BasicJsonType::array_t &gt;<ref refid="namespacedetail_1a47b1bb0bbd3596589ed9187059c312efa2063c1608d6e0baf80249c42e2be5804" kindref="member">::value</ref>, int &gt;</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void detail::external_constructor&lt; value_t::array &gt;::construct</definition>
+        <argsstring>(BasicJsonType &amp;j, const CompatibleArrayType &amp;arr)</argsstring>
+        <name>construct</name>
+        <qualifiedname>detail::external_constructor&lt; value_t::array &gt;::construct</qualifiedname>
+        <param>
+          <type>BasicJsonType &amp;</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>const CompatibleArrayType &amp;</type>
+          <declname>arr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5483" column="17" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="5483" bodyend="5493"/>
+      </memberdef>
+      <memberdef kind="function" id="structdetail_1_1external__constructor_3_01value__t_1_1array_01_4_1a8d6adedb6b308d21cd8a02b68f6cb3c3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename BasicJsonType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void detail::external_constructor&lt; value_t::array &gt;::construct</definition>
+        <argsstring>(BasicJsonType &amp;j, const std::vector&lt; bool &gt; &amp;arr)</argsstring>
+        <name>construct</name>
+        <qualifiedname>detail::external_constructor&lt; value_t::array &gt;::construct</qualifiedname>
+        <param>
+          <type>BasicJsonType &amp;</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; bool &gt; &amp;</type>
+          <declname>arr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5496" column="17" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="5496" bodyend="5508"/>
+      </memberdef>
+      <memberdef kind="function" id="structdetail_1_1external__constructor_3_01value__t_1_1array_01_4_1afe050b2957d0a1f416107909d919a772" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename BasicJsonType</type>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type><ref refid="namespacedetail_1a469b9c0b78404c24509a221801bc4c26" kindref="member">enable_if_t</ref>&lt; std::is_convertible&lt; T, BasicJsonType &gt;<ref refid="namespacedetail_1a47b1bb0bbd3596589ed9187059c312efa2063c1608d6e0baf80249c42e2be5804" kindref="member">::value</ref>, int &gt;</type>
+            <defval>0</defval>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void detail::external_constructor&lt; value_t::array &gt;::construct</definition>
+        <argsstring>(BasicJsonType &amp;j, const std::valarray&lt; T &gt; &amp;arr)</argsstring>
+        <name>construct</name>
+        <qualifiedname>detail::external_constructor&lt; value_t::array &gt;::construct</qualifiedname>
+        <param>
+          <type>BasicJsonType &amp;</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>const std::valarray&lt; T &gt; &amp;</type>
+          <declname>arr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5512" column="17" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="5512" bodyend="5524"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" line="5458" column="1" bodyfile="D:/csad2425KI405KachurNazar11/src/client/packages/nlohmann.json.3.11.2/build/native/include/nlohmann/json.hpp" bodystart="5459" bodyend="5525"/>
+    <listofallmembers>
+      <member refid="structdetail_1_1external__constructor_3_01value__t_1_1array_01_4_1ab4ee01b86545c25823e95f06bfb8cec3" prot="public" virt="non-virtual"><scope>detail::external_constructor&lt; value_t::array &gt;</scope><name>construct</name></member>
+      <member refid="structdetail_1_1external__constructor_3_01value__t_1_1array_01_4_1aa1344db7d6793021693563dca416e5b4" prot="public" virt="non-virtual"><scope>detail::external_constructor&lt; value_t::array &gt;</scope><name>construct</name></member>
+      <member refid="structdetail_1_1external__constructor_3_01value__t_1_1array_01_4_1ae399adc0d10013a567e8646807d650b5" prot="public" virt="non-virtual"><scope>detail::external_constructor&lt; value_t::array &gt;</scope><name>construct</name></member>
+      <member refid="structdetail_1_1external__constructor_3_01value__t_1_1array_01_4_1a8d6adedb6b308d21cd8a02b68f6cb3c3" prot="public" virt="non-virtual"><scope>detail::external_constructor&lt; value_t::array &gt;</scope><name>construct</name></member>
+      <member refid="structdetail_1_1external__constructor_3_01value__t_1_1array_01_4_1afe050b2957d0a1f416107909d919a772" prot="public" virt="non-virtual"><scope>detail::external_constructor&lt; value_t::array &gt;</scope><name>construct</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
