@@ -67,3 +67,13 @@ This script performs the following steps:
    - Transforms the generated XML test results into an HTML report using an XSLT stylesheet.
 8. Output Test Results: 
    - The final test results are saved in HTML format and are available at the specified output path.
+
+# g. details how to generate dpxygen-documentation:   
+
+To build and generate documentation for the project, follow these steps:  
+Run the script (`csad2425KI405KachurNazar11/ci/documentation-script.ps1`) in PowerShell.  
+
+The generated documentation can be found in the following directories:
+- HTML: (`ci/documentation/html`)
+- XML: (`ci/documentation/xml`)
+- LaTeX: (`ci/documentation/latex`)
