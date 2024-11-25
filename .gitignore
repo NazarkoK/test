@@ -66,3 +66,7 @@
 
 # Packages directory
 packages/
+
+# CI directories
+ci/build/
+ci/test_result/

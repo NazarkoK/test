@@ -9,8 +9,8 @@ const int MODE_AI_VS_AI = 3;
 
 char board[BOARD_SIZE][BOARD_SIZE] = { { '1', '2', '3' }, { '4', '5', '6' }, { '7', '8', '9' } };
 bool isGameStarted = false;
-int gameMode = 0;         // 1 - Man vs Man, 2 - Man vs AI, 3 - AI vs AI
-int lastServerMove = -1;  // Last move of the AI
+int gameMode = 0;
+int lastServerMove = -1;
 int playerCount = 0;
 
 char globalCurrentPlayer = PLAYER_X;
@@ -51,7 +51,7 @@ void startGame() {
 void setGameMode(const String& command) {
   String mode = command.substring(8);
   gameMode = mode.toInt();
-  if (gameMode < 0 || gameMode > 3) {
+  if (gameMode < 1 || gameMode > 3) {
     Serial.println("InvailChoice");
     return;
   }
@@ -96,19 +96,17 @@ void handleManvsAI(String command) {
 
 void handleAIvsAI(String command) {
   if (isGameStarted) {
-    globalCurrentPlayer = PLAYER_X;  // Почнемо з гравця X
+    globalCurrentPlayer = PLAYER_X;
 
-    while (!checkGameStatus()) {  // Цикл поки гра не закінчиться
+    while (!checkGameStatus()) {
       int aiMove[2];
       bestMove(globalCurrentPlayer, aiMove);
-      makeAIMove(aiMove, globalCurrentPlayer);  // Виконуємо хід поточного гравця
+      makeAIMove(aiMove, globalCurrentPlayer);
       printBoardGraphically();
 
       delay(500);
-      // Перевіряємо статус гри після кожного ходу
       if (checkGameStatus()) break;
 
-      // Змінюємо поточного гравця
       globalCurrentPlayer = opponent(globalCurrentPlayer);
     }
   }
@@ -190,7 +188,7 @@ void printBoardGraphically() {
     Serial.println();
     Serial.println("-------------");
   }
-  Serial.println();  // Blank line after board output
+  Serial.println();
 }
 
 char opponent(char player) {
@@ -199,20 +197,20 @@ char opponent(char player) {
 
 int minimax(char currentPlayer, char aiPlayer, int depth) {
   if (checkWin(aiPlayer)) {
-    return 10 - depth;  // AI wins
+    return 10 - depth;
   } else if (checkWin(opponent(aiPlayer))) {
-    return depth - 10;  // Opponent wins
+    return depth - 10;
   } else if (isBoardFull()) {
-    return 0;  // Draw
+    return 0;
   }
   int bestScore = (currentPlayer == aiPlayer) ? -1000 : 1000;
 
   for (int i = 0; i < BOARD_SIZE; i++) {
     for (int j = 0; j < BOARD_SIZE; j++) {
       if (board[i][j] != PLAYER_X && board[i][j] != PLAYER_O) {
-        board[i][j] = currentPlayer;  // Make the move
+        board[i][j] = currentPlayer;
         int score = minimax(opponent(currentPlayer), aiPlayer, depth + 1);
-        board[i][j] = '1' + (i * BOARD_SIZE + j);  // Reset the move
+        board[i][j] = '1' + (i * BOARD_SIZE + j);
         if (currentPlayer == aiPlayer) {
           if (score > bestScore) {
             bestScore = score;

@@ -52,7 +52,7 @@ jobs:
       - name: Upload Windows binaries
         uses: actions/upload-artifact@v4
         with:
-          name: Test_Server
+          name: test_server
           path: bin/test_server/test_server.exe
 
       - name: Upload Arduino binaries

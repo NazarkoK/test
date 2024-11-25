@@ -62,7 +62,8 @@ Copy-Item -Path "$hexOutputDir\server.ino.hex" -Destination $outputHexPath -Forc
 
 if ($port) {
     Write-Host "Uploading HEX file to Arduino on port $port with speed $portSpeed..."
-    & $arduinoCliPath upload -p $port --speed $portSpeed --fqbn arduino:avr:uno -i $outputHexPath
+    & $arduinoCliPath upload -p $port --fqbn arduino:avr:uno -i $outputHexPath
+
 }
 
 Write-Host "Building the hardware testing project..."
@@ -75,7 +76,8 @@ if ($port) {
     Start-Process $exePath -ArgumentList $arguments -Wait
 
     $xmlPath = "$testResultsDir\TestResult.xml"
-    $xsltPath = "$testResultsDir\TestResultsToHTML.xslt"
+    $xsltPath = "$repoDir\ci\convert\TestResultsToHTML.xslt"
+
     $htmlOutputPath = "$testResultsDir\TestResult.html"
 
     Write-Host "Transforming test results to HTML format..."

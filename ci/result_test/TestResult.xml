@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites tests="4" failures="0" disabled="0" errors="0" time="3.383" timestamp="2024-11-24T22:05:11.722" name="AllTests">
-  <testsuite name="SerialPortTest" tests="4" failures="0" disabled="0" skipped="0" errors="0" time="3.382" timestamp="2024-11-24T22:05:11.722">
-    <testcase name="TestConnection" status="run" result="completed" time="0.001" timestamp="2024-11-24T22:05:11.722" classname="SerialPortTest" />
-    <testcase name="TestStartGame" status="run" result="completed" time="1.205" timestamp="2024-11-24T22:05:11.724" classname="SerialPortTest" />
-    <testcase name="TestSetGameMode" status="run" result="completed" time="1.082" timestamp="2024-11-24T22:05:12.931" classname="SerialPortTest" />
-    <testcase name="TestInvalidGameMode" status="run" result="completed" time="1.087" timestamp="2024-11-24T22:05:14.016" classname="SerialPortTest" />
-  </testsuite>
-</testsuites>

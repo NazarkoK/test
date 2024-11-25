@@ -21,7 +21,7 @@ git clone https://github.com/NazarkoK/csad2425KI405KachurNazar11
 
 ### Client SW:
 To build and run the client application, follow these steps:
-1. Open the project (`Client.sln`) in Microsoft Visual Studio 2019:
+1. Open the project (`client.sln`) in Microsoft Visual Studio 2019:
 2. Build the project:
    - Click on *Build* in the top menu, then select *Build Solution*.
 3. Run the application:
@@ -29,11 +29,41 @@ To build and run the client application, follow these steps:
 
 ### Server HW:
 To build and run the server application, follow these steps:
-1. Open the project (`Server.ino`) in Arduino IDE:
+1. Open the project (`server.ino`) in Arduino IDE:
    - Launch Adrduino IDE;
 2. Configure the board:
    - Select the appropriate board from the menu: *Tools* > *Board*;
    - Make sure the correct port is selected: *Tools* > *Port*.
 3. Upload the code:
    - Click the *Upload* button to upload the compiled code to your Arduino board.
-   - Wait for the upload process to complete. The IDE will display a message when it is finished. 
+   - Wait for the upload process to complete. The IDE will display a message when it is finished.
+
+# f. details how to test client sw and server hw:   
+## Test Client SW:
+To build and run the testing application, follow these steps:
+1. Open the project (`csad2425KI405KachurNazar11/tests/test_server/test_server.sln`) in Microsoft Visual Studio 2019:
+2. Build the project:
+   - Click on Build in the top menu, then select Build Solution.
+3. Run the application:
+   - Click on Debug in the top menu, then select Start Debugging.
+   - If everything is set up correctly, the application should launch, and you can start using it.
+
+## Testing Server and Automatic Flashing Of the Board:  
+To build and run the testing application, follow: run the script (`csad2425KI405KachurNazar11/ci/server-script.ps1`) in PowerShell.  
+This script performs the following steps:
+1. Install Arduino CLI: 
+   - The script will check if Arduino CLI is present. If not, it will download and install it.
+2. Configure Arduino CLI: 
+   - Initializes Arduino CLI configuration, updates the core index, and installs the necessary board.
+3. Compile Arduino Sketch: 
+   - Compiles the Arduino sketch located in (`src/server/server.ino`) for an Arduino Uno and outputs the .hex file.
+4. Upload Compiled Sketch to Arduino: 
+   - Uploads the compiled .hex file to the Arduino via the specified COM-port.
+5. Build Hardware Testing Project: 
+   - Uses MSBuild to compile the hardware testing project from the solution file (`tests/test_server/test_server.sln`).
+6. Run Hardware Tests: 
+   - Executes the compiled hardware test executable (`test_server.exe`) with parameters specifying the COM-port and generating XML test results.
+7. Transform Test Results: 
+   - Transforms the generated XML test results into an HTML report using an XSLT stylesheet.
+8. Output Test Results: 
+   - The final test results are saved in HTML format and are available at the specified output path.
