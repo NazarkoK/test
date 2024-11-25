@@ -1,11 +1,11 @@
 $repoDir = (Get-Item -Path $PSScriptRoot).Parent.FullName
 $binDir = "$repoDir\bin"
 $srcDir = "$repoDir\src"
-$docsDir = "$repoDir\ci\docs"
-$latexDir = "$docsDir\latex"
-$xmlDir = "$docsDir\xml"
-$htmlDir = "$docsDir\html"
-$dirsToCreate = @($binDir, $docsDir, $xmlDir, $htmlDir, $latexDir)
+$documentationDir = "$repoDir\ci\documentation"
+$latexDir = "$documentationDir\latex"
+$xmlDir = "$documentationDir\xml"
+$htmlDir = "$documentationDir\html"
+$dirsToCreate = @($binDir, $documentationDir, $xmlDir, $htmlDir, $latexDir)
 foreach ($dir in $dirsToCreate) {
 if (-not (Test-Path $dir)) {
 Write-Host "Creating directory: $dir"
@@ -26,11 +26,11 @@ Write-Host "Expanded Doxygen to $doxygenDir"
 Write-Host "Doxygen already installed at $doxygenDir"
 }
 $env:Path += ";$doxygenDir"
-$doxygenConfigFile = "$docsDir\Doxyfile"
+$doxygenConfigFile = "$documentationDir\Doxyfile"
 if (-not (Test-Path $doxygenConfigFile)) {
 & $doxygenExeFile -g $doxygenConfigFile
 }
-$projectName = "csad2425ki405LykhohraiAV19"
+$projectName = "csad2425KI405KachurNazar11"
 (Get-Content $doxygenConfigFile) -replace 'PROJECT_NAME\s*=\s*\".*\"', "PROJECT_NAME = `"$projectName`"" | Set-Content $doxygenConfigFile
 (Get-Content $doxygenConfigFile) -replace 'INPUT\s*=\s*.*', "INPUT = $srcDir" | Set-Content $doxygenConfigFile
 (Get-Content $doxygenConfigFile) -replace 'RECURSIVE\s*=\s*.*', "RECURSIVE = YES" | Set-Content $doxygenConfigFile
@@ -46,4 +46,4 @@ $projectName = "csad2425ki405LykhohraiAV19"
 (Get-Content $doxygenConfigFile) -replace "FILE_PATTERNS\s*=\s*.*", "FILE_PATTERNS = *.ino\" | Set-Content $doxygenConfigFile
 (Get-Content $doxygenConfigFile) -replace 'EXTENSION_MAPPING\s*=\s*.*', 'EXTENSION_MAPPING = ino=C++' | Set-Content $doxygenConfigFile
 & $doxygenExeFile $doxygenConfigFile
-Write-Host "Documentation generated in $docsDir"
+Write-Host "Documentation generated in $documentationDir"
