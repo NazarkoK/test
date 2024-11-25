@@ -51,7 +51,7 @@ jobs:
       - name: Board firmware
         shell: pwsh
         run: |
-            .\ci\documentation-script.ps1
+            .\ci\server-script.ps1
   
       - name: Upload Windows binaries
         uses: actions/upload-artifact@v4
