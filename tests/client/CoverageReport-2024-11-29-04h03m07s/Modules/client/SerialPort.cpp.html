@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+        <meta charset="utf-8"/>
+	    <title>SerialPort.cpp</title>
+	    <link href="../../third-party/google-code-prettify/prettify-CppCoverage.css" type="text/css" rel="stylesheet" />
+	    <script type="text/javascript" src="../../third-party/google-code-prettify/prettify.js"></script>
+	</head>
+    <body onload="prettyPrint()">
+        <h4></h4>
+        <pre class="prettyprint lang-cpp linenums">
+#include "SerialPort.h"
+#include &lt;iostream&gt;
+#include &lt;nlohmann/json.hpp&gt;
+#include &lt;windows.h&gt;
+#include &lt;string&gt;
+
+HANDLE hConsole;
+<span style = "background-color:#dfd">std::string port;</span>
+int baudRate;
+
+<span style = "background-color:#dfd">bool SerialCommunication::connect(const std::string&amp; portName, int baudRate) {
+    std::wstring widePortName(portName.begin(), portName.end());
+    LPCWSTR lpPortName = widePortName.c_str();</span>
+
+<span style = "background-color:#dfd">    hSerial = CreateFile(lpPortName, GENERIC_READ | GENERIC_WRITE, 0, 0, OPEN_EXISTING, 0, 0);
+    if (hSerial == INVALID_HANDLE_VALUE) {
+        std::cerr &lt;&lt; "The serial port is not open: " &lt;&lt; portName &lt;&lt; std::endl;
+        return false;</span>
+    }
+
+<span style = "background-color:#fdd">    DCB dcb = { 0 };
+    dcb.DCBlength = sizeof(dcb);
+    dcb.BaudRate = baudRate;
+    dcb.ByteSize = 8;
+    dcb.StopBits = ONESTOPBIT;
+    dcb.Parity = NOPARITY;</span>
+
+<span style = "background-color:#fdd">    if (!SetCommState(hSerial, &amp;dcb)) {
+        std::cerr &lt;&lt; "The serial port is not open!" &lt;&lt; std::endl;
+        CloseHandle(hSerial);
+        return false;</span>
+    }
+
+<span style = "background-color:#fdd">    COMMTIMEOUTS timeouts = { 0 };
+    timeouts.ReadIntervalTimeout = 50;
+    timeouts.ReadTotalTimeoutConstant = 50;
+    timeouts.ReadTotalTimeoutMultiplier = 10;
+    timeouts.WriteTotalTimeoutConstant = 50;
+    timeouts.WriteTotalTimeoutMultiplier = 10;</span>
+
+<span style = "background-color:#fdd">    if (!SetCommTimeouts(hSerial, &amp;timeouts)) {
+        std::cerr &lt;&lt; "Communication timeouts could not be set!" &lt;&lt; std::endl;
+        CloseHandle(hSerial);
+        return false;</span>
+    }
+
+<span style = "background-color:#fdd">    return true;</span>
+<span style = "background-color:#dfd">}</span>
+
+<span style = "background-color:#dfd">void SerialCommunication::disconnect() {
+    if (hSerial != INVALID_HANDLE_VALUE) {</span>
+<span style = "background-color:#fdd">        CloseHandle(hSerial);
+        hSerial = INVALID_HANDLE_VALUE;</span>
+    }
+<span style = "background-color:#dfd">}</span>
+
+<span style = "background-color:#dfd">std::string SerialCommunication::sendMessage(const std::string&amp; message) {
+    if (hSerial == INVALID_HANDLE_VALUE) {
+        std::cerr &lt;&lt; "The serial port is not open!" &lt;&lt; std::endl;
+        return "";</span>
+    }
+
+    DWORD bytesWritten;
+<span style = "background-color:#fdd">    if (!WriteFile(hSerial, message.c_str(), message.size(), &amp;bytesWritten, nullptr)) {
+        std::cerr &lt;&lt; "Unable to read from the serial port!" &lt;&lt; std::endl;
+        return "";</span>
+    }
+
+    char buffer[256];
+    DWORD bytesRead;
+<span style = "background-color:#fdd">    if (!ReadFile(hSerial, buffer, sizeof(buffer) - 1, &amp;bytesRead, nullptr)) {
+        std::cerr &lt;&lt; "Unable to read from the serial port!" &lt;&lt; std::endl;
+        return "";</span>
+    }
+<span style = "background-color:#fdd">    buffer[bytesRead] = '\0';</span>
+
+<span style = "background-color:#fdd">    return std::string(buffer);</span>
+<span style = "background-color:#dfd">}</span>
+
+<span style = "background-color:#dfd">void SerialCommunication::drawBoard(const std::string&amp; boardState) {
+    std::cout &lt;&lt; "-------------\n";
+    for (int i = 0; i &lt; 3; i++) {
+        std::cout &lt;&lt; "| ";
+        for (int j = 0; j &lt; 3; j++) {
+            char cell = boardState[i * 3 + j];
+            if (cell == 'X' || cell == 'O') {
+                std::cout &lt;&lt; cell &lt;&lt; " | ";
+            }</span>
+            else {
+<span style = "background-color:#dfd">                std::cout &lt;&lt; " " &lt;&lt; " | ";</span>
+            }
+<span style = "background-color:#dfd">        }
+        std::cout &lt;&lt; "\n-------------\n";
+    }
+}</span>
+
+using json = nlohmann::json;
+<span style = "background-color:#dfd">void loadConfig(const std::string&amp; filename) {
+    std::ifstream file(filename);
+    if (!file.is_open()) {
+        std::cerr &lt;&lt; "Failed to open configuration file: " &lt;&lt; filename &lt;&lt; std::endl;
+        return;</span>
+    }
+    try {
+<span style = "background-color:#dfd">        json j;
+        file &gt;&gt; j;
+        port = j["Connection"]["port"].get&lt;std::string&gt;();
+        baudRate = j["Connection"]["baudRate"].get&lt;int&gt;();</span>
+
+<span style = "background-color:#dfd">        if (port.empty() || baudRate == 0) {</span>
+<span style = "background-color:#fdd">            std::cerr &lt;&lt; "Problem reading settings. Verify that the file has the correct format and value." &lt;&lt; std::endl;</span>
+        }
+<span style = "background-color:#dfd">    }</span>
+<span style = "background-color:#fdd">    catch (const std::exception&amp; e) {
+        std::cerr &lt;&lt; "Error parsing JSON file: " &lt;&lt; e.what() &lt;&lt; std::endl;
+    }</span>
+<span style = "background-color:#dfd">}</span></pre>
+        <hr />
+        <table width="100%">
+            <thead>
+                <tr>
+                    <th align="center">
+                        <small>Generated by</small>
+                        <a href="https://github.com/OpenCppCoverage/OpenCppCoverage/releases">
+                            <strong>OpenCppCoverage (Version: 0.9.9.0)</strong>
+                        </a>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+    </body>
+</html>
