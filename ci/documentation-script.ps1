@@ -1,12 +1,11 @@
 $repoDir = (Get-Item -Path $PSScriptRoot).Parent.FullName
 $binDir = "$repoDir\bin"
 $srcDir = "$repoDir\src"
-$testsDir = "$repoDir\tests\test_server\test_server"
 $documentationDir = "$repoDir\ci\documentation"
 $latexDir = "$documentationDir\latex"
 $xmlDir = "$documentationDir\xml"
 $htmlDir = "$documentationDir\html"
-$dirsToCreate = @($binDir, $documentationDir, $xmlDir, $htmlDir, $latexDir, $testsDir)
+$dirsToCreate = @($binDir, $documentationDir, $xmlDir, $htmlDir, $latexDir)
 foreach ($dir in $dirsToCreate) {
     if (-not (Test-Path $dir)) {
         Write-Host "Creating directory: $dir"
@@ -33,7 +32,7 @@ if (-not (Test-Path $doxygenConfigFile)) {
 }
 $projectName = "csad2425KI405KachurNazar11"
 (Get-Content $doxygenConfigFile) -replace 'PROJECT_NAME\s*=\s*\".*\"', "PROJECT_NAME = `"$projectName`"" | Set-Content $doxygenConfigFile
-(Get-Content $doxygenConfigFile) -replace 'INPUT\s*=\s*.*', "INPUT = $srcDir $testsDir" | Set-Content $doxygenConfigFile
+(Get-Content $doxygenConfigFile) -replace 'INPUT\s*=\s*.*', "INPUT = $srcDir" | Set-Content $doxygenConfigFile
 (Get-Content $doxygenConfigFile) -replace "FILE_PATTERNS\s*=\s*.*", "FILE_PATTERNS = *.cpp *.h *.ino" | Set-Content $doxygenConfigFile
 (Get-Content $doxygenConfigFile) -replace 'RECURSIVE\s*=\s*.*', "RECURSIVE = YES" | Set-Content $doxygenConfigFile
 (Get-Content $doxygenConfigFile) -replace 'EXCLUDE_PATTERNS\s*=\s*.*', "EXCLUDE_PATTERNS = *AssemblyAttributes.cpp" | Set-Content $doxygenConfigFile
