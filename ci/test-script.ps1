@@ -107,7 +107,7 @@ $speed,
 )
 & $exePathOpenCppCoverage @arguments
 $xmlPath = "$resultTestServerDir\TestResultServer.xml"
-$xsltPath = "$testResultsDir\convert\TestResultsToHTML.xslt"
+$xsltPath = "$repoDir\ci\convert\TestResultsToHTML.xslt"
 $htmlOutputPath = "$resultTestServerDir\TestResultServer.html"
 Write-Host "`n--------------------------------------------------`n"
 Write-Host "Transforming test results to HTML format..."
@@ -137,7 +137,7 @@ Write-Host "Running the server test and OpenCppCoverage..."
 Write-Host "`n--------------------------------------------------`n"
 & $exePathOpenCppCoverage @arguments
 $xmlPath = "$resultTestClientDir\TestResultClient.xml"
-$xsltPath = "$testResultsDir\convert\TestResultsToHTML.xslt"
+$xsltPath = "$repoDir\ci\convert\TestResultsToHTML.xslt"
 $htmlOutputPath = "$resultTestClientDir\TestResultClient.html"
 Write-Host "`n--------------------------------------------------`n"
 Write-Host "Transforming test results to HTML format..."

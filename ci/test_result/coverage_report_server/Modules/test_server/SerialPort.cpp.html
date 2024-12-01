@@ -130,69 +130,69 @@ protected:
     LPCWSTR lpPortName = widePortName.c_str();</span>
 
 <span style = "background-color:#dfd">    hSerial = CreateFile(lpPortName, GENERIC_READ | GENERIC_WRITE, 0, 0, OPEN_EXISTING, 0, 0);
-    if (hSerial == INVALID_HANDLE_VALUE) {</span>
-<span style = "background-color:#fdd">        std::cerr &lt;&lt; "The serial port is not open: " &lt;&lt; portName &lt;&lt; std::endl;
+    if (hSerial == INVALID_HANDLE_VALUE) {
+        std::cerr &lt;&lt; "The serial port is not open: " &lt;&lt; portName &lt;&lt; std::endl;
         return false;</span>
     }
 
-<span style = "background-color:#dfd">    DCB dcb = { 0 };
+<span style = "background-color:#fdd">    DCB dcb = { 0 };
     dcb.DCBlength = sizeof(dcb);
     dcb.BaudRate = baudRate;
     dcb.ByteSize = 8;
     dcb.StopBits = ONESTOPBIT;
     dcb.Parity = NOPARITY;</span>
 
-<span style = "background-color:#dfd">    if (!SetCommState(hSerial, &amp;dcb)) {</span>
-<span style = "background-color:#fdd">        std::cerr &lt;&lt; "The serial port is not open!" &lt;&lt; std::endl;
+<span style = "background-color:#fdd">    if (!SetCommState(hSerial, &amp;dcb)) {
+        std::cerr &lt;&lt; "The serial port is not open!" &lt;&lt; std::endl;
         CloseHandle(hSerial);
         return false;</span>
     }
 
-<span style = "background-color:#dfd">    COMMTIMEOUTS timeouts = { 0 };
+<span style = "background-color:#fdd">    COMMTIMEOUTS timeouts = { 0 };
     timeouts.ReadIntervalTimeout = 50;
     timeouts.ReadTotalTimeoutConstant = 50;
     timeouts.ReadTotalTimeoutMultiplier = 10;
     timeouts.WriteTotalTimeoutConstant = 50;
     timeouts.WriteTotalTimeoutMultiplier = 10;</span>
 
-<span style = "background-color:#dfd">    if (!SetCommTimeouts(hSerial, &amp;timeouts)) {</span>
-<span style = "background-color:#fdd">        std::cerr &lt;&lt; "Communication timeouts could not be set!" &lt;&lt; std::endl;
+<span style = "background-color:#fdd">    if (!SetCommTimeouts(hSerial, &amp;timeouts)) {
+        std::cerr &lt;&lt; "Communication timeouts could not be set!" &lt;&lt; std::endl;
         CloseHandle(hSerial);
         return false;</span>
     }
 
-<span style = "background-color:#dfd">    return true;
-}</span>
+<span style = "background-color:#fdd">    return true;</span>
+<span style = "background-color:#dfd">}</span>
 
 <span style = "background-color:#dfd">void SerialCommunication::disconnect() {
-    if (hSerial != INVALID_HANDLE_VALUE) {
-        CloseHandle(hSerial);
+    if (hSerial != INVALID_HANDLE_VALUE) {</span>
+<span style = "background-color:#fdd">        CloseHandle(hSerial);
         hSerial = INVALID_HANDLE_VALUE;</span>
     }
 <span style = "background-color:#dfd">}</span>
 
 <span style = "background-color:#dfd">std::string SerialCommunication::sendMessage(const std::string&amp; message) {
-    if (hSerial == INVALID_HANDLE_VALUE) {</span>
-<span style = "background-color:#fdd">        std::cerr &lt;&lt; "The serial port is not open!" &lt;&lt; std::endl;
+    if (hSerial == INVALID_HANDLE_VALUE) {
+        std::cerr &lt;&lt; "The serial port is not open!" &lt;&lt; std::endl;
         return "";</span>
     }
 
     DWORD bytesWritten;
-<span style = "background-color:#dfd">    if (!WriteFile(hSerial, message.c_str(), message.size(), &amp;bytesWritten, nullptr)) {</span>
-<span style = "background-color:#fdd">        std::cerr &lt;&lt; "Unable to read from the serial port!" &lt;&lt; std::endl;
+<span style = "background-color:#fdd">    if (!WriteFile(hSerial, message.c_str(), message.size(), &amp;bytesWritten, nullptr)) {
+        std::cerr &lt;&lt; "Unable to read from the serial port!" &lt;&lt; std::endl;
         return "";</span>
     }
 
     char buffer[256];
     DWORD bytesRead;
-<span style = "background-color:#dfd">    if (!ReadFile(hSerial, buffer, sizeof(buffer) - 1, &amp;bytesRead, nullptr)) {</span>
-<span style = "background-color:#fdd">        std::cerr &lt;&lt; "Unable to read from the serial port!" &lt;&lt; std::endl;
+<span style = "background-color:#fdd">    if (!ReadFile(hSerial, buffer, sizeof(buffer) - 1, &amp;bytesRead, nullptr)) {
+        std::cerr &lt;&lt; "Unable to read from the serial port!" &lt;&lt; std::endl;
         return "";</span>
     }
-<span style = "background-color:#dfd">    buffer[bytesRead] = '\0';</span>
+<span style = "background-color:#fdd">    buffer[bytesRead] = '\0';</span>
 
-<span style = "background-color:#dfd">    return std::string(buffer);
-}</span>
+<span style = "background-color:#fdd">    return std::string(buffer);</span>
+<span style = "background-color:#dfd">}</span>
 
 <span style = "background-color:#dfd">void SerialCommunication::drawBoard(const std::string&amp; boardState) {
     std::cout &lt;&lt; "-------------\n";

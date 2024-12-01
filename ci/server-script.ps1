@@ -3,8 +3,6 @@ param (
     [string]$portSpeed
 )
 
-
-
 $repoDir = (Get-Item -Path $PSScriptRoot).Parent.FullName
 $binDir = "$repoDir\bin"
 $testResultsDir = "$repoDir\ci\result_test"

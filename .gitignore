@@ -69,5 +69,6 @@ packages/
 
 # CI directories
 ci/build/
-ci/result_test/
+ci/test_result/
+ci/*.log
 ci/documentation/
