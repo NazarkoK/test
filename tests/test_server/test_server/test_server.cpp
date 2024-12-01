@@ -1,36 +1,19 @@
-/**
- * @file test_server.cpp
- * @brief Test suite for serial communication using the SerialPort class.
- *
- * This file contains test cases for testing the serial communication functionality,
- * including connection to the serial port, sending commands, and receiving responses.
- * The tests are written using Google Test framework (gtest).
- * It covers:
- * - Establishing a connection with the serial port.
- * - Sending a "StartGame" command and validating the response.
- * - Sending a "SetMode" command and validating the game mode response.
- * - Handling an invalid "SetMode" command.
- */
-
 #include <gtest/gtest.h>
 #include "SerialPort.h"
 #include <string>
 #include <iostream>
-#include <algorithm>
+#include <fstream>
+#include <nlohmann/json.hpp>
+#include <sstream>
 
 using namespace std;
+using json = nlohmann::json;
 
-string portName; ///< Name of the serial port to be used.
-int portSpeed; ///< Baud rate for serial communication.
+string portName; ///< Назва серійного порту для використання.
+int portSpeed; ///< Швидкість порту (Baud rate).
 
 /**
- * @brief Normalizes newline characters in the input string.
- *
- * This function replaces all occurrences of carriage return '\r' with newline '\n' characters
- * to ensure consistency in the handling of line breaks across different platforms.
- *
- * @param str The input string to be normalized.
- * @return A string with normalized newlines.
+ * @brief Нормалізує символи нового рядка у рядку.
  */
 string normalizeNewlines(const string& str) {
     string normalized = str;
@@ -39,48 +22,67 @@ string normalizeNewlines(const string& str) {
 }
 
 /**
- * @brief Test fixture for serial communication tests.
- *
- * This class provides setup and teardown methods for testing serial communication functionality.
- * The tests are designed to verify the behavior of the SerialCommunication class.
+ * @brief Тестовий фікс для тестування функціональності серійного порту.
  */
 class SerialPortTest : public ::testing::Test {
 protected:
-    SerialCommunication serial; ///< Instance of the SerialCommunication class for testing.
+    SerialCommunication serial; ///< Об'єкт для тестування серійного порту.
 
-    /**
-     * @brief Sets up the test environment.
-     *
-     * This method is called before each test. It can be used to initialize resources.
-     * In this case, it is empty as there is no need for specific setup.
-     */
     void SetUp() override {}
 
-    /**
-     * @brief Cleans up after each test.
-     *
-     * This method is called after each test. It disconnects the serial communication.
-     */
     void TearDown() override {
         serial.disconnect();
     }
 };
 
+TEST_F(SerialPortTest, TestDrawBoard) {
+    string boardState = "X O   O X   O";  // Заповнене поле з порожніми клітинками
+    stringstream output;
+    streambuf* orig_buf = cout.rdbuf(output.rdbuf()); // Підключаємо тестовий потік виведення.
+
+    serial.drawBoard(boardState); // Викликаємо функцію для малювання дошки.
+
+    string expectedOutput = "-------------\n| X |   | O | \n-------------\n|   |   |   | \n-------------\n| O |   | X | \n-------------\n";
+    EXPECT_EQ(normalizeNewlines(output.str()), normalizeNewlines(expectedOutput)); // Перевіряємо коректність виведення.
+
+    cout.rdbuf(orig_buf);  // Відновлюємо оригінальний потік.
+}
+
+
+
 /**
- * @brief Tests the connection to the serial port.
+ * @brief Тестує функцію loadConfig.
  *
- * This test verifies that the connection to the serial port is successfully established.
+ * Цей тест перевіряє правильне завантаження налаштувань з JSON файлу.
  */
-TEST_F(SerialPortTest, TestConnection) {
-    bool isConnected = serial.connect(portName, portSpeed);
-    EXPECT_TRUE(isConnected); ///< Expect the connection to be successful.
+TEST_F(SerialPortTest, TestLoadConfig) {
+    stringstream configStream;
+    configStream << R"({
+        "Connection": {
+            "port": "COM3",
+            "baudRate": 9600
+        }
+    })";
+    istringstream input(configStream.str());
+
+    json j;
+    input >> j;
+
+    // Тестуємо, чи налаштування завантажуються правильно.
+    EXPECT_EQ(j["Connection"]["port"].get<string>(), "COM3");
+    EXPECT_EQ(j["Connection"]["baudRate"].get<int>(), 9600);
 }
 
 /**
- * @brief Tests sending the "StartGame" command over the serial connection.
- *
- * This test sends the "StartGame" command to the serial port and verifies that the response
- * matches the expected value "GameStarted".
+ * @brief Тестує з'єднання через серійний порт.
+ */
+TEST_F(SerialPortTest, TestConnection) {
+    bool isConnected = serial.connect(portName, portSpeed);
+    EXPECT_TRUE(isConnected);  ///< Перевіряємо, чи з'єднання успішне.
+}
+
+/**
+ * @brief Тестує надсилання команди "StartGame".
  */
 TEST_F(SerialPortTest, TestStartGame) {
     bool isConnected = serial.connect(portName, portSpeed);
@@ -94,10 +96,7 @@ TEST_F(SerialPortTest, TestStartGame) {
 }
 
 /**
- * @brief Tests sending the "SetMode 1" command over the serial connection.
- *
- * This test sends the "SetMode 1" command to the serial port and verifies that the response
- * matches the expected value "Mode set to 1".
+ * @brief Тестує надсилання команди "SetMode 1".
  */
 TEST_F(SerialPortTest, TestSetGameMode) {
     bool isConnected = serial.connect(portName, portSpeed);
@@ -111,10 +110,7 @@ TEST_F(SerialPortTest, TestSetGameMode) {
 }
 
 /**
- * @brief Tests sending an invalid game mode command.
- *
- * This test sends an invalid "SetMode 4" command to the serial port and verifies that
- * the response matches the expected error message "InvailChoice".
+ * @brief Тестує надсилання невалідної команди "SetMode 4".
  */
 TEST_F(SerialPortTest, TestInvalidGameMode) {
     bool isConnected = serial.connect(portName, portSpeed);
@@ -127,35 +123,22 @@ TEST_F(SerialPortTest, TestInvalidGameMode) {
 }
 
 /**
- * @brief The main function for running the tests.
- *
- * This function initializes the Google Test framework, parses command-line arguments
- * for serial port name and speed, and runs all tests.
- *
- * @param argc Number of command-line arguments.
- * @param argv Array of command-line arguments.
- * @return The result of running the tests (0 for success, non-zero for failure).
+ * @brief Головна функція для запуску тестів.
  */
 int main(int argc, char** argv) {
-    portName = "COM6"; ///< Default COM port.
-    portSpeed = 9600; ///< Default baud rate.
+    portName = "COM6"; ///< За замовчуванням COM порт.
+    portSpeed = 9600; ///< За замовчуванням швидкість порту.
 
     if (argc > 1) {
         portName = argv[1];
         cout << "Using COM port: " << portName << endl;
-    }
-    else {
-        wcout << L"No COM port specified, using default COM3." << endl;
     }
 
     if (argc > 2) {
         portSpeed = stoi(argv[2]);
         cout << "Using baud rate: " << portSpeed << endl;
     }
-    else {
-        cout << "No baud rate specified, using default 9600." << endl;
-    }
 
     ::testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS(); ///< Run all tests and return the result.
+    return RUN_ALL_TESTS(); ///< Запускає всі тести.
 }

@@ -3,29 +3,7 @@ param (
     [string]$portSpeed
 )
 
-# Функція для пошуку msbuild.exe
-function Find-MSBuild {
-    $possiblePaths = @(
-        "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\MSBuild.exe",
-        "C:\Program Files (x86)\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\MSBuild.exe",
-        "C:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Current\Bin\MSBuild.exe",
-        "C:\Program Files (x86)\Microsoft Visual Studio\2022\Professional\MSBuild\Current\Bin\MSBuild.exe",
-        "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\MSBuild.exe",
-        "C:\Program Files (x86)\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\MSBuild.exe"
-    )
 
-    foreach ($path in $possiblePaths) {
-        if (Test-Path $path) {
-            return $path
-        }
-    }
-
-    Write-Error "MSBuild.exe not found. Please ensure it is installed and the path is correct."
-    exit 1
-}
-
-# Пошук MSBuild
-$msbuildPath = Find-MSBuild
 
 $repoDir = (Get-Item -Path $PSScriptRoot).Parent.FullName
 $binDir = "$repoDir\bin"
@@ -34,9 +12,6 @@ $hexOutputDir = "$repoDir\ci\build\"
 $arduinoCliPath = "$binDir\arduino-cli.exe"
 $sketchPath = "$repoDir\src\server\server.ino"
 $outputHexPath = "$hexOutputDir\server-script-arduino-uno-r3.ino.hex"
-$projectTestHWPath = "$repoDir\tests\test_server\test_server.sln"
-$outputProjectTestHWDir = "$binDir\test_server"
-$testResultPath = "../../result_test/TestResult.xml"
 
 if (-not (Test-Path $arduinoCliPath)) {
     Write-Host "Arduino CLI not found, proceeding with installation..."
@@ -66,29 +41,6 @@ if ($port) {
 
 }
 
-Write-Host "Building the hardware testing project..."
-& $msbuildPath $projectTestHWPath "/p:OutDir=$outputProjectTestHWDir\"
-
-if ($port) {
-    $exePath = "$outputProjectTestHWDir\test_server.exe"
-    $arguments = "$port $portSpeed --gtest_output=xml:--gtest_output=xml:$testResultPath"
-    Write-Host "Running hardware tests..."
-    Start-Process $exePath -ArgumentList $arguments -Wait
-
-    $xmlPath = "$testResultsDir\TestResult.xml"
-    $xsltPath = "$repoDir\ci\convert\TestResultsToHTML.xslt"
-
-    $htmlOutputPath = "$testResultsDir\TestResult.html"
-
-    Write-Host "Transforming test results to HTML format..."
-    $xml = New-Object System.Xml.XmlDocument
-    $xml.Load($xmlPath)
-    $xslt = New-Object System.Xml.Xsl.XslCompiledTransform
-    $xslt.Load($xsltPath)
-    $xslt.Transform($xmlPath, $htmlOutputPath)
-
-    Write-Host "Test results are available at: $htmlOutputPath"
-} 
 else {
     Write-Host "No COM port provided. Skipping upload and hardware tests."
 }

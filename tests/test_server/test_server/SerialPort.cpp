@@ -1,7 +1,3 @@
-/**
- * @file SerialPort.cpp
- * @brief Implementation of the serial port communication functions.
- */
 #include "SerialPort.h"
 #include <iostream>
 #include <nlohmann/json.hpp>
@@ -11,15 +7,112 @@
 HANDLE hConsole;
 std::string port;
 int baudRate;
+#include <gtest/gtest.h>
+#include <fstream>
+#include <sstream>
+#include <string>
+#include "SerialPort.h"  // Потрібно підключити файл з визначенням функції loadConfig
+#include <nlohmann/json.hpp>  // Потрібно підключити бібліотеку для роботи з JSON
 
- /**
-  * @brief Sets the text color in the console.
-  * @param textColor The color code for the text.
-  */
-void setColor(int textColor) {
-    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-    SetConsoleTextAttribute(hConsole, textColor);
+using json = nlohmann::json;
+
+// Тестовий клас
+class ConfigTest : public ::testing::Test {
+protected:
+    // Очищаємо глобальні змінні перед кожним тестом
+    void SetUp() override {
+        port.clear();
+        baudRate = 0;
+    }
+
+    // Шлях до тимчасового файлу конфігурації
+    const std::string configFile = "test_config.json";
+
+    // Функція для створення конфігураційного файлу з переданим контентом
+    void createConfigFile(const std::string& content) {
+        std::ofstream file(configFile);
+        file << content;
+        file.close();
+    }
+
+    // Глобальні змінні, що будуть змінюватися в loadConfig
+    std::string port;
+    int baudRate = 0;
+};
+
+// Тест для випадку, коли файл не існує
+TEST_F(ConfigTest, TestLoadConfigFileNotFound) {
+    const std::string invalidFile = "non_existent_config.json";
+
+    loadConfig(invalidFile); // Спробуємо завантажити неіснуючий файл
+
+    // Очікуємо, що порт і baudRate залишаться незмінними
+    EXPECT_EQ(port, "");
+    EXPECT_EQ(baudRate, 0);
 }
+
+// Тест для випадку некоректного формату JSON
+TEST_F(ConfigTest, TestLoadConfigInvalidJSON) {
+    std::string invalidConfig = R"(
+    {
+        "Connection": {
+            "port": "COM3",
+            "baudRate": "not_a_number"
+        }
+    })";
+
+    createConfigFile(invalidConfig); // Створюємо некоректний конфігураційний файл
+
+    loadConfig(configFile);  // Завантажуємо конфігурацію
+
+    // Очікуємо, що порт і baudRate залишаться незмінними
+    EXPECT_EQ(port, "");
+    EXPECT_EQ(baudRate, 0);
+}
+
+// Тест для випадку, коли порт або baudRate відсутні або нульові
+TEST_F(ConfigTest, TestLoadConfigMissingFields) {
+    std::string missingFieldsConfig = R"(
+    {
+        "Connection": {
+            "port": "",
+            "baudRate": 0
+        }
+    })";
+
+    createConfigFile(missingFieldsConfig); // Створюємо конфігураційний файл з порожніми полями
+
+    loadConfig(configFile);  // Завантажуємо конфігурацію
+
+    // Очікуємо, що порт і baudRate залишаться незмінними
+    EXPECT_EQ(port, "");
+    EXPECT_EQ(baudRate, 0);
+}
+
+// Тест для некоректного формату JSON (порушення структури)
+TEST_F(ConfigTest, TestLoadConfigMalformedJSON) {
+    std::string malformedConfig = R"(
+    {
+        "Connection": {
+            "port": "COM3"
+            "baudRate": 9600
+        }
+    })"; // Відсутня кома між полями
+
+    createConfigFile(malformedConfig); // Створюємо некоректний конфігураційний файл
+
+    loadConfig(configFile);  // Завантажуємо конфігурацію
+
+    // Очікуємо, що порт і baudRate залишаться незмінними
+    EXPECT_EQ(port, "");
+    EXPECT_EQ(baudRate, 0);
+}
+
+// Очищаємо файл після тестів
+TEST_F(ConfigTest, TearDown) {
+    std::remove(configFile.c_str());  // Видаляємо тимчасовий файл
+}
+
 
 bool SerialCommunication::connect(const std::string& portName, int baudRate) {
     std::wstring widePortName(portName.begin(), portName.end());
@@ -91,7 +184,6 @@ std::string SerialCommunication::sendMessage(const std::string& message) {
 }
 
 void SerialCommunication::drawBoard(const std::string& boardState) {
-    setColor(FOREGROUND_RED);
     std::cout << "-------------\n";
     for (int i = 0; i < 3; i++) {
         std::cout << "| ";

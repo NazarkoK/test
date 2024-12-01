@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - develop
-      - feature/develop/task4
+      - feature/develop/task5
   pull_request:
     branches:
       - develop
@@ -40,30 +40,47 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4 
 
+      - name: Board firmware
+        shell: pwsh
+        run: |
+            .\ci\server-script.ps1
+  
+      - name: Upload Arduino binaries
+        uses: actions/upload-artifact@v4 
+        with:
+          name: server-hex
+          path: ./ci/build/server.ino.hex
+
+  build_test:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
       - name: Set up Visual Studio
         uses: microsoft/setup-msbuild@v2
         with:
           vs-version: '16.0'
 
       - name: Restore NuGet packages
-        run: nuget restore tests/test_server/test_server.sln
+        run: nuget restore tests/test_client/test_client.sln
 
-      - name: Board firmware
+      - name: Run test-script.ps1
         shell: pwsh
         run: |
-            .\ci\server-script.ps1
-  
-      - name: Upload Windows binaries
+            .\ci\test-script.ps1
+
+      - name: Upload test result
         uses: actions/upload-artifact@v4
         with:
-          name: test_server
-          path: bin/test_server/test_server.exe
+          name: client-test-result
+          path: .\ci\test_result\client\TestResultClient.html
 
-      - name: Upload Arduino binaries
-        uses: actions/upload-artifact@v4 
+      - name: Upload test code coverage
+        uses: actions/upload-artifact@v4
         with:
-          name: server-hex
-          path: ./ci/build/server.ino.hex
+          name: client-coverage-report
+          path: .\ci\test_result\coverage_report_client
 
   build_documentation:
     runs-on: windows-latest

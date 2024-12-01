@@ -1,6 +1,0 @@
-{
-  "Connection": {
-    "port": "COM6",
-    "baudRate": "9600"
-  }
-}

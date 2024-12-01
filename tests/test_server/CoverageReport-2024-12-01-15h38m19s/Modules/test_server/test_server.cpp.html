@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+        <meta charset="utf-8"/>
+	    <title>test_server.cpp</title>
+	    <link href="../../third-party/google-code-prettify/prettify-CppCoverage.css" type="text/css" rel="stylesheet" />
+	    <script type="text/javascript" src="../../third-party/google-code-prettify/prettify.js"></script>
+	</head>
+    <body onload="prettyPrint()">
+        <h4></h4>
+        <pre class="prettyprint lang-cpp linenums">
+/**
+ * @file test_server.cpp
+ * @brief Test suite for serial communication using the SerialPort class.
+ *
+ * This file contains test cases for testing the serial communication functionality,
+ * including connection to the serial port, sending commands, and receiving responses.
+ * The tests are written using Google Test framework (gtest).
+ * It covers:
+ * - Establishing a connection with the serial port.
+ * - Sending a "StartGame" command and validating the response.
+ * - Sending a "SetMode" command and validating the game mode response.
+ * - Handling an invalid "SetMode" command.
+ */
+
+#include &lt;gtest/gtest.h&gt;
+#include "SerialPort.h"
+#include &lt;string&gt;
+#include &lt;iostream&gt;
+#include &lt;algorithm&gt;
+
+using namespace std;
+
+<span style = "background-color:#dfd">string portName; ///&lt; Name of the serial port to be used.</span>
+int portSpeed; ///&lt; Baud rate for serial communication.
+
+/**
+ * @brief Normalizes newline characters in the input string.
+ *
+ * This function replaces all occurrences of carriage return '\r' with newline '\n' characters
+ * to ensure consistency in the handling of line breaks across different platforms.
+ *
+ * @param str The input string to be normalized.
+ * @return A string with normalized newlines.
+ */
+<span style = "background-color:#dfd">string normalizeNewlines(const string&amp; str) {
+    string normalized = str;
+    replace(normalized.begin(), normalized.end(), '\r', '\n');
+    return normalized;
+}</span>
+
+/**
+ * @brief Test fixture for serial communication tests.
+ *
+ * This class provides setup and teardown methods for testing serial communication functionality.
+ * The tests are designed to verify the behavior of the SerialCommunication class.
+ */
+class SerialPortTest : public ::testing::Test {
+protected:
+    SerialCommunication serial; ///&lt; Instance of the SerialCommunication class for testing.
+
+    /**
+     * @brief Sets up the test environment.
+     *
+     * This method is called before each test. It can be used to initialize resources.
+     * In this case, it is empty as there is no need for specific setup.
+     */
+<span style = "background-color:#dfd">    void SetUp() override {}</span>
+
+    /**
+     * @brief Cleans up after each test.
+     *
+     * This method is called after each test. It disconnects the serial communication.
+     */
+<span style = "background-color:#dfd">    void TearDown() override {
+        serial.disconnect();
+    }</span>
+};
+
+/**
+ * @brief Tests the connection to the serial port.
+ *
+ * This test verifies that the connection to the serial port is successfully established.
+ */
+<span style = "background-color:#dfd">TEST_F(SerialPortTest, TestConnection) {
+    bool isConnected = serial.connect(portName, portSpeed);
+    EXPECT_TRUE(isConnected); ///&lt; Expect the connection to be successful.
+}</span>
+
+/**
+ * @brief Tests sending the "StartGame" command over the serial connection.
+ *
+ * This test sends the "StartGame" command to the serial port and verifies that the response
+ * matches the expected value "GameStarted".
+ */
+<span style = "background-color:#dfd">TEST_F(SerialPortTest, TestStartGame) {
+    bool isConnected = serial.connect(portName, portSpeed);
+    EXPECT_TRUE(isConnected);</span>
+
+<span style = "background-color:#dfd">    string command = "StartGame";
+    string response = serial.sendMessage(command);</span>
+
+<span style = "background-color:#dfd">    string expectedResponse = "GameStarted";
+    EXPECT_EQ(normalizeNewlines(response.substr(0, expectedResponse.length())), normalizeNewlines(expectedResponse));
+}</span>
+
+/**
+ * @brief Tests sending the "SetMode 1" command over the serial connection.
+ *
+ * This test sends the "SetMode 1" command to the serial port and verifies that the response
+ * matches the expected value "Mode set to 1".
+ */
+<span style = "background-color:#dfd">TEST_F(SerialPortTest, TestSetGameMode) {
+    bool isConnected = serial.connect(portName, portSpeed);
+    EXPECT_TRUE(isConnected);</span>
+
+<span style = "background-color:#dfd">    string command = "SetMode 1";
+    string response = serial.sendMessage(command);</span>
+
+<span style = "background-color:#dfd">    string expectedResponse = "Mode set to 1";
+    EXPECT_EQ(normalizeNewlines(response.substr(0, expectedResponse.length())), normalizeNewlines(expectedResponse));
+}</span>
+
+/**
+ * @brief Tests sending an invalid game mode command.
+ *
+ * This test sends an invalid "SetMode 4" command to the serial port and verifies that
+ * the response matches the expected error message "InvailChoice".
+ */
+<span style = "background-color:#dfd">TEST_F(SerialPortTest, TestInvalidGameMode) {
+    bool isConnected = serial.connect(portName, portSpeed);
+    EXPECT_TRUE(isConnected);</span>
+
+<span style = "background-color:#dfd">    string command = "SetMode 4";
+    string response = serial.sendMessage(command);
+    string expectedResponse = "InvailChoice";
+    EXPECT_EQ(normalizeNewlines(response.substr(0, expectedResponse.length())), normalizeNewlines(expectedResponse));
+}</span>
+
+/**
+ * @brief The main function for running the tests.
+ *
+ * This function initializes the Google Test framework, parses command-line arguments
+ * for serial port name and speed, and runs all tests.
+ *
+ * @param argc Number of command-line arguments.
+ * @param argv Array of command-line arguments.
+ * @return The result of running the tests (0 for success, non-zero for failure).
+ */
+<span style = "background-color:#dfd">int main(int argc, char** argv) {
+    portName = "COM6"; ///&lt; Default COM port.
+    portSpeed = 9600; ///&lt; Default baud rate.</span>
+
+<span style = "background-color:#dfd">    if (argc &gt; 1) {</span>
+<span style = "background-color:#fdd">        portName = argv[1];
+        cout &lt;&lt; "Using COM port: " &lt;&lt; portName &lt;&lt; endl;
+    }</span>
+    else {
+<span style = "background-color:#dfd">        wcout &lt;&lt; L"No COM port specified, using default COM3." &lt;&lt; endl;</span>
+    }
+
+<span style = "background-color:#dfd">    if (argc &gt; 2) {</span>
+<span style = "background-color:#fdd">        portSpeed = stoi(argv[2]);
+        cout &lt;&lt; "Using baud rate: " &lt;&lt; portSpeed &lt;&lt; endl;
+    }</span>
+    else {
+<span style = "background-color:#dfd">        cout &lt;&lt; "No baud rate specified, using default 9600." &lt;&lt; endl;</span>
+    }
+
+<span style = "background-color:#dfd">    ::testing::InitGoogleTest(&amp;argc, argv);
+    return RUN_ALL_TESTS(); ///&lt; Run all tests and return the result.
+}</span></pre>
+        <hr />
+        <table width="100%">
+            <thead>
+                <tr>
+                    <th align="center">
+                        <small>Generated by</small>
+                        <a href="https://github.com/OpenCppCoverage/OpenCppCoverage/releases">
+                            <strong>OpenCppCoverage (Version: 0.9.9.0)</strong>
+                        </a>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+    </body>
+</html>

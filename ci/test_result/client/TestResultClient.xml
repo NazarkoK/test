@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="10" failures="0" disabled="0" errors="0" time="0.831" timestamp="2024-12-01T15:55:32.921" name="AllTests">
+  <testsuite name="SerialCommunicationTest" tests="6" failures="0" disabled="0" skipped="0" errors="0" time="0.42" timestamp="2024-12-01T15:55:32.951">
+    <testcase name="ConnectValidPort" status="run" result="completed" time="0.001" timestamp="2024-12-01T15:55:32.983" classname="SerialCommunicationTest" />
+    <testcase name="SendMessageWhenNotConnected" status="run" result="completed" time="0.001" timestamp="2024-12-01T15:55:33.060" classname="SerialCommunicationTest" />
+    <testcase name="DisconnectWithoutConnection" status="run" result="completed" time="0.001" timestamp="2024-12-01T15:55:33.090" classname="SerialCommunicationTest" />
+    <testcase name="DrawBoard" status="run" result="completed" time="0.123" timestamp="2024-12-01T15:55:33.123" classname="SerialCommunicationTest" />
+    <testcase name="ConnectWithInvalidBaudRate" status="run" result="completed" time="0.001" timestamp="2024-12-01T15:55:33.311" classname="SerialCommunicationTest" />
+    <testcase name="DisconnectWhenNotConnected" status="run" result="completed" time="0.001" timestamp="2024-12-01T15:55:33.340" classname="SerialCommunicationTest" />
+  </testsuite>
+  <testsuite name="ConfigTest" tests="4" failures="0" disabled="0" skipped="0" errors="0" time="0.308" timestamp="2024-12-01T15:55:33.401">
+    <testcase name="LoadValidConfigFile" status="run" result="completed" time="0.003" timestamp="2024-12-01T15:55:33.401" classname="ConfigTest" />
+    <testcase name="LoadInvalidConfigFile" status="run" result="completed" time="0.049" timestamp="2024-12-01T15:55:33.470" classname="ConfigTest" />
+    <testcase name="LoadValidConfigFileCorrectValues" status="run" result="completed" time="0.003" timestamp="2024-12-01T15:55:33.570" classname="ConfigTest" />
+    <testcase name="LoadInvalidJsonConfigFile" status="run" result="completed" time="0.003" timestamp="2024-12-01T15:55:33.654" classname="ConfigTest" />
+  </testsuite>
+</testsuites>

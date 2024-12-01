@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="11" failures="0" disabled="0" errors="0" time="3.938" timestamp="2024-12-01T15:55:27.645" name="AllTests">
+  <testsuite name="ConfigTest" tests="5" failures="0" disabled="0" skipped="0" errors="0" time="0.289" timestamp="2024-12-01T15:55:27.716">
+    <testcase name="TestLoadConfigFileNotFound" status="run" result="completed" time="0.039" timestamp="2024-12-01T15:55:27.717" classname="ConfigTest" />
+    <testcase name="TestLoadConfigInvalidJSON" status="run" result="completed" time="0.004" timestamp="2024-12-01T15:55:27.821" classname="ConfigTest" />
+    <testcase name="TestLoadConfigMissingFields" status="run" result="completed" time="0.041" timestamp="2024-12-01T15:55:27.851" classname="ConfigTest" />
+    <testcase name="TestLoadConfigMalformedJSON" status="run" result="completed" time="0.039" timestamp="2024-12-01T15:55:27.928" classname="ConfigTest" />
+    <testcase name="TearDown" status="run" result="completed" time="0.001" timestamp="2024-12-01T15:55:28.005" classname="ConfigTest" />
+  </testsuite>
+  <testsuite name="SerialPortTest" tests="6" failures="0" disabled="0" skipped="0" errors="0" time="3.547" timestamp="2024-12-01T15:55:28.035">
+    <testcase name="TestDrawBoard" status="run" result="completed" time="0.002" timestamp="2024-12-01T15:55:28.073" classname="SerialPortTest" />
+    <testcase name="TestLoadConfig" status="run" result="completed" time="0.001" timestamp="2024-12-01T15:55:28.112" classname="SerialPortTest" />
+    <testcase name="TestConnection" status="run" result="completed" time="0.003" timestamp="2024-12-01T15:55:28.164" classname="SerialPortTest" />
+    <testcase name="TestStartGame" status="run" result="completed" time="1.196" timestamp="2024-12-01T15:55:28.195" classname="SerialPortTest" />
+    <testcase name="TestSetGameMode" status="run" result="completed" time="1.093" timestamp="2024-12-01T15:55:29.392" classname="SerialPortTest" />
+    <testcase name="TestInvalidGameMode" status="run" result="completed" time="1.095" timestamp="2024-12-01T15:55:30.487" classname="SerialPortTest" />
+  </testsuite>
+</testsuites>
